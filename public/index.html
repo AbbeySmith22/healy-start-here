@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CUSTOMIZE: Change this title to match your tool -->
+<title>Healy Start Here Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     CUSTOMIZE: Change these color variables to
+     match your brand.
+  ============================================ */
+  :root {
+    --bg-page:        #080B1A;
+    --bg-card:        #0F1629;
+    --bg-card-inner:  #141D35;
+    --accent-primary: #7C3AED;
+    --accent-secondary: #06B6D4;
+    --accent-glow:    rgba(124, 58, 237, 0.25);
+    --text-primary:   #F0F4FF;
+    --text-secondary: #9BA8C4;
+    --border-color:   rgba(124, 58, 237, 0.3);
+    --border-subtle:  rgba(255, 255, 255, 0.08);
+    --error-color:    #F87171;
+    --success-color:  #34D399;
+    --btn-gradient:   linear-gradient(135deg, #7C3AED, #06B6D4);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg-page);
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 32px 20px 80px;
+  }
+
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  /* ---- Header ---- */
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .kicker {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+  }
+  /* CUSTOMIZE: Change the subtitle */
+  .header p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ---- Progress bar ---- */
+  .progress-wrap {
+    margin-bottom: 28px;
+  }
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .progress-bar {
+    height: 4px;
+    background: var(--bg-card-inner);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--btn-gradient);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 20px;
+  }
+
+  /* Question steps */
+  .question-step { display: none; }
+  .question-step.active { display: block; }
+
+  .question-text {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .question-hint {
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    margin-bottom: 22px;
+    line-height: 1.6;
+  }
+
+  /* Option buttons (multi-choice) */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option-btn {
+    text-align: left;
+    background: var(--bg-card-inner);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text-primary);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    line-height: 1.4;
+  }
+  .option-btn:hover {
+    border-color: var(--accent-primary);
+    background: rgba(124,58,237,0.08);
+  }
+  .option-btn.selected {
+    border-color: var(--accent-primary);
+    background: rgba(124,58,237,0.15);
+    color: var(--text-primary);
+  }
+  .option-btn .option-label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 3px;
+  }
+
+  /* Text input fields */
+  .field { margin-bottom: 16px; }
+  .field:last-child { margin-bottom: 0; }
+  label {
+    display: block;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+  }
+  .field-hint {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    background: var(--bg-card-inner);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+  }
+  input::placeholder, textarea::placeholder { color: var(--text-secondary); opacity: 0.7; }
+  select option { background: var(--bg-card); }
+
+  /* Navigation */
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .btn-primary {
+    flex: 1;
+    background: var(--btn-gradient);
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .btn-back {
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    white-space: nowrap;
+  }
+  .btn-back:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+  /* ---- Email gate ---- */
+  #email-gate {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  #email-gate h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  #email-gate p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  /* ---- Error ---- */
+  .error-msg {
+    background: rgba(248,113,113,0.1);
+    border: 1px solid rgba(248,113,113,0.3);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--error-color);
+    margin-top: 12px;
+    display: none;
+  }
+
+  /* ---- Results ---- */
+  #results { display: none; }
+
+  .result-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 16px;
+  }
+
+  .result-headline {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .result-label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    margin-bottom: 14px;
+  }
+
+  .result-body {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-secondary);
+  }
+  .result-body p { margin-bottom: 12px; }
+  .result-body p:last-child { margin-bottom: 0; }
+
+  /* Pathway name */
+  .pathway-box {
+    background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(6,182,212,0.1));
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .pathway-box .label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 8px;
+  }
+  .pathway-box .name {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--text-primary);
+  }
+
+  /* Step-by-step plan */
+  .steps-list {
+    list-style: none;
+    margin: 20px 0 0;
+  }
+  .steps-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--btn-gradient);
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    padding-top: 4px;
+  }
+  .step-text strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  /* Next step */
+  .next-step {
+    background: rgba(52, 211, 153, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .next-step .label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--success-color);
+    margin-bottom: 8px;
+  }
+  .next-step .content {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .actions .btn-primary { flex: 1; }
+
+  .disclaimer {
+    font-size: 11.5px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 28px;
+    line-height: 1.6;
+    opacity: 0.7;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 500px) {
+    .header h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============================================
+    CUSTOMIZE: Header section
+  ============================================ -->
+  <div class="header">
+    <div class="kicker">High Vibrancy Living</div>
+    <h1>Healy Start Here Guide</h1>
+    <p>Not sure where to begin with your Healy? Answer a few questions and get a simple, personalised starting pathway.</p>
+  </div>
+
+  <!-- Question form -->
+  <div class="card" id="question-card">
+
+    <!-- Progress bar -->
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span id="step-label">Question 1 of 4</span>
+        <span id="step-pct">25%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width:25%"></div>
+      </div>
+    </div>
+
+    <!-- ============================================
+      CUSTOMIZE: These are the questions.
+      Change them to match what YOUR planner needs
+      to know. Keep it to 3-5 questions.
+
+      Question types available:
+      - options: multiple choice buttons (set type: 'options')
+      - text: free-text input (set type: 'text')
+      - textarea: longer text (set type: 'textarea')
+      - select: dropdown (set type: 'select')
+    ============================================ -->
+
+    <!-- Question 1: What they want support with -->
+    <div class="question-step active" data-step="1" data-type="options">
+      <div class="question-text">What do you most want support with right now?</div>
+      <div class="question-hint">Choose the area that feels most pressing for you.</div>
+      <div class="options">
+        <button class="option-btn" data-value="Energy and vitality -- I'm tired and I want to feel more alive">
+          <div class="option-label">Energy</div>
+          Energy and vitality -- I'm tired and want to feel more alive
+        </button>
+        <button class="option-btn" data-value="Stress and emotional balance -- I feel overwhelmed or anxious">
+          <div class="option-label">Stress</div>
+          Stress and emotional balance -- I feel overwhelmed or anxious
+        </button>
+        <button class="option-btn" data-value="Sleep and recovery -- I'm not sleeping well or feeling rested">
+          <div class="option-label">Sleep</div>
+          Sleep and recovery -- I'm not sleeping well or feeling rested
+        </button>
+        <button class="option-btn" data-value="Clarity and focus -- my mind feels scattered or foggy">
+          <div class="option-label">Clarity</div>
+          Clarity and focus -- my mind feels scattered or foggy
+        </button>
+        <button class="option-btn" data-value="Physical discomfort or tension -- I have pain or tension in my body">
+          <div class="option-label">Physical</div>
+          Physical discomfort or tension -- I have pain or tension in my body
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 2: Experience level -->
+    <div class="question-step" data-step="2" data-type="options">
+      <div class="question-text">How new are you to using Healy?</div>
+      <div class="question-hint">This helps me tailor the complexity of your pathway.</div>
+      <div class="options">
+        <button class="option-btn" data-value="Brand new -- I just got my device and haven't really used it yet">
+          Brand new -- I just got my device and haven't really used it yet
+        </button>
+        <button class="option-btn" data-value="A few weeks in -- I've tried it a couple of times but I'm not sure what I'm doing">
+          A few weeks in -- I've tried it but I'm not sure what I'm doing
+        </button>
+        <button class="option-btn" data-value="A few months in -- I use it sometimes but I haven't found my routine yet">
+          A few months in -- I use it sometimes but haven't found my routine yet
+        </button>
+        <button class="option-btn" data-value="Regular user -- I use Healy often but I want to deepen my practice">
+          Regular user -- I use it often but want to deepen my practice
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 3: Which device / programs they have -->
+    <div class="question-step" data-step="3" data-type="options">
+      <div class="question-text">Which Healy edition or programs do you have access to?</div>
+      <div class="question-hint">If you're not sure, choose the closest option.</div>
+      <div class="options">
+        <button class="option-btn" data-value="Healy Gold or Healy -- basic programs only">
+          Healy Gold -- basic programs only
+        </button>
+        <button class="option-btn" data-value="Healy Holistic Health or Holistic Health Plus -- wider program range">
+          Healy Holistic Health -- wider program range
+        </button>
+        <button class="option-btn" data-value="Healy Resonance or Professional -- full program library including resonance analysis">
+          Healy Resonance or Professional -- full library including resonance analysis
+        </button>
+        <button class="option-btn" data-value="I'm not sure what edition I have">
+          I'm not sure what edition I have
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 4: What they've already tried -->
+    <div class="question-step" data-step="4" data-type="textarea">
+      <div class="question-text">Is there anything you've already tried, or anything specific you want to avoid?</div>
+      <div class="question-hint">Optional -- but the more context you give, the more personalised your pathway will be.</div>
+      <div class="field">
+        <textarea id="q4-text" rows="3" placeholder="e.g. I've tried the Sleep program but it didn't seem to help. I'd like to focus more on emotional support."></textarea>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-row">
+      <button class="btn-back" id="back-btn" onclick="prevStep()" style="display:none;">Back</button>
+      <button class="btn-primary" id="next-btn" onclick="nextStep()">Next</button>
+    </div>
+    <div class="error-msg" id="step-error"></div>
+
+  </div>
+
+  <!-- Email gate -->
+  <div id="email-gate">
+    <h2>Your personalised pathway is ready</h2>
+    <!-- CUSTOMIZE: Change this description -->
+    <p>Enter your email to reveal your starting pathway -- and to get it sent straight to your inbox.</p>
+    <div class="field" style="margin-bottom:14px;">
+      <label for="user-email">Email address</label>
+      <input type="email" id="user-email" placeholder="you@example.com">
+    </div>
+    <button class="btn-primary" onclick="handleEmailSubmit()">Show My Pathway</button>
+    <div class="error-msg" id="email-error"></div>
+  </div>
+
+  <!-- Results -->
+  <div id="results">
+
+    <div class="result-card">
+      <div class="result-label">Your personalised pathway</div>
+
+      <!-- Pathway name -->
+      <div class="pathway-box">
+        <div class="label">Your starting point</div>
+        <div class="name" id="result-pathway-name"></div>
+      </div>
+
+      <!-- Why this pathway -->
+      <div class="result-label" style="margin-top:20px;">Why this pathway</div>
+      <div id="result-why" class="result-body"></div>
+
+      <!-- Step-by-step plan -->
+      <div class="result-label" style="margin-top:24px;">Your simple plan</div>
+      <ol class="steps-list" id="result-steps"></ol>
+
+      <!-- Immediate next step -->
+      <div class="next-step">
+        <div class="label">Start here today</div>
+        <div class="content" id="result-first-step"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-primary" onclick="downloadResult()">Download My Pathway</button>
+      <button class="btn-secondary" onclick="resetTool()">Start Over</button>
+    </div>
+
+    <!-- CUSTOMIZE: Adapt disclaimer -->
+    <p class="disclaimer">This pathway is for wellness exploration and self-awareness only. It is not medical advice, diagnosis, or treatment. Always work with a qualified healthcare professional for medical concerns.</p>
+
+  </div>
+
+  <!-- CUSTOMIZE: Change footer brand name -->
+  <div class="footer">High Vibrancy Living &nbsp;·&nbsp; Powered by AI</div>
+
+</div>
+
+<script>
+// ============================================
+// State
+// ============================================
+// CUSTOMIZE: Update totalSteps if you add/remove questions
+const totalSteps = 4;
+let currentStep = 1;
+const answers = {};
+let currentResult = null;
+
+// ============================================
+// Step navigation
+// ============================================
+function updateProgress() {
+  const pct = Math.round((currentStep / totalSteps) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('step-pct').textContent = pct + '%';
+  document.getElementById('step-label').textContent = `Question ${currentStep} of ${totalSteps}`;
+  document.getElementById('back-btn').style.display = currentStep > 1 ? 'block' : 'none';
+
+  // On last step, change button text
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.textContent = currentStep === totalSteps ? 'Get My Pathway' : 'Next';
+}
+
+function showStep(n) {
+  document.querySelectorAll('.question-step').forEach(el => el.classList.remove('active'));
+  const target = document.querySelector(`.question-step[data-step="${n}"]`);
+  if (target) target.classList.add('active');
+  updateProgress();
+  hideError('step-error');
+}
+
+function getStepValue(step) {
+  const stepEl = document.querySelector(`.question-step[data-step="${step}"]`);
+  if (!stepEl) return null;
+  const type = stepEl.dataset.type;
+
+  if (type === 'options') {
+    const selected = stepEl.querySelector('.option-btn.selected');
+    return selected ? selected.dataset.value : null;
+  }
+  if (type === 'text') {
+    const input = stepEl.querySelector('input[type="text"]');
+    return input ? input.value.trim() : null;
+  }
+  if (type === 'textarea') {
+    const ta = stepEl.querySelector('textarea');
+    return ta ? ta.value.trim() : '';  // textarea is optional, return '' not null
+  }
+  if (type === 'select') {
+    const sel = stepEl.querySelector('select');
+    return sel && sel.value ? sel.value : null;
+  }
+  return null;
+}
+
+function nextStep() {
+  hideError('step-error');
+  const stepEl = document.querySelector(`.question-step[data-step="${currentStep}"]`);
+  const type = stepEl ? stepEl.dataset.type : '';
+  const val = getStepValue(currentStep);
+
+  // Textarea is optional; all others required
+  if (type !== 'textarea' && !val) {
+    showError('step-error', 'Please make a selection before continuing.');
+    return;
+  }
+
+  answers[`step_${currentStep}`] = val || '';
+
+  if (currentStep < totalSteps) {
+    currentStep++;
+    showStep(currentStep);
+  } else {
+    // All questions answered -- build input and show email gate
+    showEmailGate();
+  }
+}
+
+function prevStep() {
+  if (currentStep > 1) {
+    currentStep--;
+    showStep(currentStep);
+  }
+}
+
+// Option button selection
+document.querySelectorAll('.option-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const parent = this.closest('.question-step');
+    parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+    this.classList.add('selected');
+  });
+});
+
+// ============================================
+// Email gate
+// ============================================
+function showEmailGate() {
+  document.getElementById('question-card').style.display = 'none';
+  document.getElementById('email-gate').style.display = 'block';
+  document.getElementById('email-gate').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function buildInputSummary() {
+  // CUSTOMIZE: Update these labels to match your questions
+  const lines = [
+    `What they want support with: ${answers.step_1 || 'not specified'}`,
+    `Experience level: ${answers.step_2 || 'not specified'}`,
+    `Device / programs available: ${answers.step_3 || 'not specified'}`,
+  ];
+  if (answers.step_4) lines.push(`Additional context: ${answers.step_4}`);
+  return lines.join('\n');
+}
+
+async function handleEmailSubmit() {
+  hideError('email-error');
+  const email = document.getElementById('user-email').value.trim();
+  if (!email || !email.includes('@')) {
+    showError('email-error', 'Please enter a valid email address.');
+    return;
+  }
+
+  const btn = document.querySelector('#email-gate .btn-primary');
+  btn.disabled = true;
+  btn.textContent = 'Building your pathway...';
+
+  const userInput = buildInputSummary();
+
+  try {
+    // CUSTOMIZE: Change '/api/planner' to match your Vercel function filename
+    const res = await fetch('/api/planner', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userInput, email })
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+
+    currentResult = data;
+    userInput && (window._lastInput = userInput);
+    showResults(data);
+
+  } catch (err) {
+    showError('email-error', err.message);
+    btn.disabled = false;
+    btn.textContent = 'Show My Pathway';
+  }
+}
+
+// ============================================
+// Render results
+// ============================================
+function showResults(data) {
+  document.getElementById('result-pathway-name').textContent = data.pathway_name || '';
+
+  const whyEl = document.getElementById('result-why');
+  const paras = (data.why || '').split('\n').filter(l => l.trim());
+  whyEl.innerHTML = paras.map(p => `<p>${p}</p>`).join('');
+
+  // Render step list
+  const stepsEl = document.getElementById('result-steps');
+  stepsEl.innerHTML = '';
+  (data.steps || []).forEach((step, i) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<div class="step-num">${i + 1}</div><div class="step-text">${step}</div>`;
+    stepsEl.appendChild(li);
+  });
+
+  document.getElementById('result-first-step').textContent = data.first_step || '';
+
+  document.getElementById('email-gate').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ============================================
+// Download
+// ============================================
+function downloadResult() {
+  if (!currentResult) return;
+  const steps = (currentResult.steps || []).map((s, i) => `${i+1}. ${s}`).join('\n');
+  // CUSTOMIZE: Change the header and filename
+  const text = [
+    'HIGH VIBRANCY LIVING -- HEALY START HERE GUIDE',
+    '='.repeat(48),
+    '',
+    'YOUR PATHWAY: ' + (currentResult.pathway_name || ''),
+    '',
+    'YOUR ANSWERS',
+    '-'.repeat(24),
+    window._lastInput || '',
+    '',
+    'WHY THIS PATHWAY',
+    '-'.repeat(24),
+    currentResult.why || '',
+    '',
+    'YOUR SIMPLE PLAN',
+    '-'.repeat(24),
+    steps,
+    '',
+    'START HERE TODAY',
+    '-'.repeat(24),
+    currentResult.first_step || '',
+    '',
+    '='.repeat(48),
+    'For wellness exploration only. Not medical advice.'
+  ].join('\n');
+
+  const blob = new Blob([text], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  // CUSTOMIZE: Change the filename
+  a.download = 'healy-starting-pathway.txt';
+  a.click();
+}
+
+// ============================================
+// Reset
+// ============================================
+function resetTool() {
+  currentStep = 1;
+  Object.keys(answers).forEach(k => delete answers[k]);
+  currentResult = null;
+  document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelectorAll('textarea, input[type="text"]').forEach(el => el.value = '');
+  document.getElementById('user-email').value = '';
+  document.getElementById('question-card').style.display = 'block';
+  document.getElementById('email-gate').style.display = 'none';
+  document.getElementById('results').style.display = 'none';
+  hideError('step-error');
+  hideError('email-error');
+  showStep(1);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Utility
+function showError(id, msg) {
+  const el = document.getElementById(id);
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+function hideError(id) { document.getElementById(id).style.display = 'none'; }
+
+// Init
+updateProgress();
+</script>
+</body>
+</html>
