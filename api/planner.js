@@ -261,8 +261,10 @@ async function saveSystemeContact(email) {
 
   if (response.ok) {
     contact = await response.json();
-  } else if (response.status === 409) {
-    // Existing contact: find their ID.
+} else if (
+  response.status === 409 ||
+  response.status === 422
+) {    // Existing contact: find their ID.
     const search = await fetch(
       `${base}/contacts?email=${encodeURIComponent(email)}`,
       { headers }
