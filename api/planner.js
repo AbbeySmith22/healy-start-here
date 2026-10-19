@@ -231,6 +231,76 @@ function validatePlan(plan, approved) {
   };
 }
 
+async function saveSystemeContact(email) {
+  const apiKey = process.env.SYSTEME_API_KEY;
+  const tagId = 2238450;
+
+  if (!apiKey) {
+    throw new Error('SYSTEME_API_KEY is missing in Vercel');
+  }
+
+  const headers = {
+    'X-API-Key': apiKey,
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  };
+
+  const base = 'https://api.systeme.io/api';
+
+  // Create the contact.
+  const response = await fetch(`${base}/contacts`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      email,
+      locale: 'en'
+    })
+  });
+
+  let contact;
+
+  if (response.ok) {
+    contact = await response.json();
+  } else if (response.status === 409) {
+    // Existing contact: find their ID.
+    const search = await fetch(
+      `${base}/contacts?email=${encodeURIComponent(email)}`,
+      { headers }
+    );
+
+    if (!search.ok) {
+      throw new Error('Could not find existing Systeme contact');
+    }
+
+    const data = await search.json();
+    contact = (data.items || []).find(
+      item => item.email?.toLowerCase() === email.toLowerCase()
+    );
+  } else {
+    throw new Error(`Systeme contact error: ${response.status}`);
+  }
+
+  if (!contact?.id) {
+    throw new Error('Systeme contact ID not found');
+  }
+
+  // Apply your Healy Start Here Guide tag.
+  const tagResponse = await fetch(
+    `${base}/contacts/${contact.id}/tags`,
+    {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({ tagId })
+    }
+  );
+
+  if (!tagResponse.ok && tagResponse.status !== 409) {
+    throw new Error(`Systeme tagging error: ${tagResponse.status}`);
+  }
+
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -241,7 +311,11 @@ export default async function handler(req, res) {
   }
 
   const input = parseInput(req.body || {});
+const email = String(req.body?.email || '').trim().toLowerCase();
 
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  return res.status(400).json({ error: 'Valid email required' });
+}
   if (!input.userText || input.userText === '{}') {
     return res.status(400).json({ error: 'Missing answers' });
   }
@@ -357,8 +431,14 @@ Each day must contain one or two approved programs.
     const plan = JSON.parse(text);
     const result = validatePlan(plan, candidates);
 
-    // Email capture can be connected here separately.
-
+try {
+  await saveSystemeContact(email);
+} catch (error) {
+  console.error('Systeme.io:', error.message);
+  return res.status(502).json({
+    error: 'Your pathway was generated, but we could not save your email. Please try again.'
+  });
+}
     return res.status(200).json(result);
 
   } catch (error) {
