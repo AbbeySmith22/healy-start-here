@@ -269,6 +269,11 @@
   }
   .btn-secondary:hover { border-color: var(--accent-primary); color: var(--text-primary); }
 
+  .extra-groups-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+  .extra-groups-grid label { display:flex;align-items:center;gap:9px;font-family:Inter,sans-serif;font-size:12px;font-weight:500;background:var(--bg-card-inner);padding:10px;border-radius:8px;margin:0;cursor:pointer; }
+  .extra-groups-grid input { accent-color:var(--accent-primary);flex-shrink:0; }
+  @media(max-width:550px){.extra-groups-grid{grid-template-columns:1fr;}}
+
   /* ---- Email gate ---- */
   #email-gate {
     background: var(--bg-card);
@@ -579,15 +584,50 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
       </div>
     </div>
 
-    <!-- Question 3: Program access -->
+    <!-- Question 3: Edition and confirmed extra access -->
     <div class="question-step" data-step="3" data-type="options">
-      <div class="question-text">Which Healy programs do you have access to?</div>
-      <div class="question-hint">Choose what you can see in your app. Don't worry if you're not sure.</div>
+      <div class="question-text">Which Healy edition do you have?</div>
+      <div class="question-hint">Choose the edition shown in your Healy account or purchase details. We'll only suggest programs you can access.</div>
       <div class="options">
-        <button class="option-btn" data-value="Gold Cycle only">Gold Cycle only</button>
-        <button class="option-btn" data-value="Gold Cycle + some additional program groups">Gold Cycle + some additional program groups</button>
-        <button class="option-btn" data-value="Full Healy program library">Full Healy program library</button>
-        <button class="option-btn" data-value="Not sure which programs are available">I'm not sure</button>
+        <button class="option-btn" data-value="gold">Healy Gold</button>
+        <button class="option-btn" data-value="holistic">Healy Holistic</button>
+        <button class="option-btn" data-value="resonance">Healy Resonance</button>
+        <button class="option-btn" data-value="resonance-plus">Healy Resonance Plus</button>
+        <button class="option-btn" data-value="professional">Healy Professional</button>
+        <button class="option-btn" data-value="discover">Healy Discover</button>
+        <button class="option-btn" data-value="evolve">Healy Evolve</button>
+        <button class="option-btn" data-value="pro">Healy Pro</button>
+        <button class="option-btn" data-value="obsidian">Healy Obsidian</button>
+        <button class="option-btn" data-value="unknown">Other / I'm not sure</button>
+      </div>
+      <div class="field" style="margin-top:22px;">
+        <label for="extras-choice">Have you activated any additional program groups?</label>
+        <div class="field-hint">Only select groups you can actually see in your Healy app. Analysis features such as Aura and Resonance aren't frequency program groups.</div>
+        <select id="extras-choice" onchange="toggleExtraGroups()">
+          <option value="no">No additional groups</option>
+          <option value="yes">Yes — let me select them</option>
+          <option value="unsure">I'm not sure</option>
+        </select>
+      </div>
+      <div id="extra-groups" class="field" style="display:none;">
+        <label>Which extra groups can you access?</label>
+        <div class="extra-groups-grid">
+          <label><input type="checkbox" value="Bioenergetic Harmony 1"> Bioenergetic Harmony 1</label>
+          <label><input type="checkbox" value="Bioenergetic Harmony 2"> Bioenergetic Harmony 2</label>
+          <label><input type="checkbox" value="Mental Balance"> Mental Balance</label>
+          <label><input type="checkbox" value="Meridians 1"> Meridians 1</label>
+          <label><input type="checkbox" value="Meridians 2"> Meridians 2</label>
+          <label><input type="checkbox" value="Chakras"> Chakras</label>
+          <label><input type="checkbox" value="Fitness"> Fitness</label>
+          <label><input type="checkbox" value="Local Stimulation"> Local Stimulation</label>
+          <label><input type="checkbox" value="Sleep"> Sleep</label>
+          <label><input type="checkbox" value="The Power of Three"> The Power of Three</label>
+          <label><input type="checkbox" value="Deep Cycle H"> Deep Cycle H</label>
+          <label><input type="checkbox" value="Learning"> Learning</label>
+          <label><input type="checkbox" value="Skin"> Skin</label>
+          <label><input type="checkbox" value="Job"> Job</label>
+          <label><input type="checkbox" value="Beauty"> Beauty</label>
+        </div>
       </div>
     </div>
 
@@ -776,13 +816,25 @@ function showEmailGate() {
   document.getElementById('email-gate').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+function toggleExtraGroups() {
+  document.getElementById('extra-groups').style.display =
+    document.getElementById('extras-choice').value === 'yes' ? 'block' : 'none';
+}
+
+function getConfirmedGroups() {
+  if (document.getElementById('extras-choice').value !== 'yes') return [];
+  return [...document.querySelectorAll('#extra-groups input:checked')].map(el => el.value);
+}
+
 function buildInputSummary() {
   // CUSTOMIZE: Update these labels to match your questions
   const lines = [
     `Main wellness priority: ${answers.step_1 || 'not specified'}`,
     `More detail about their situation: ${answers.step_1_details || 'not provided'}`,
     `Experience level: ${answers.step_2 || 'not specified'}`,
-    `Program groups available: ${answers.step_3 || 'not specified'}`,
+    `Healy edition: ${answers.step_3 || 'not specified'}`,
+    `Additional program groups confirmed: ${getConfirmedGroups().join(', ') || 'none'}`,
+    `Additional groups status: ${document.getElementById('extras-choice').value}`,
   ];
   if (answers.step_4) lines.push(`Additional context: ${answers.step_4}`);
   return lines.join('\n');
@@ -807,7 +859,14 @@ async function handleEmailSubmit() {
     const res = await fetch('/api/planner', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userInput, email })
+      body: JSON.stringify({
+        userInput,
+        email,
+        edition: answers.step_3,
+        experience: answers.step_2,
+        confirmedGroups: getConfirmedGroups(),
+        avoid: answers.step_4 || ''
+      })
     });
 
     const data = await res.json();
@@ -908,6 +967,9 @@ function resetTool() {
   document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
   document.querySelectorAll('textarea, input[type="text"]').forEach(el => el.value = '');
   document.getElementById('user-email').value = '';
+  document.getElementById('extras-choice').value = 'no';
+  document.querySelectorAll('#extra-groups input').forEach(el => el.checked = false);
+  toggleExtraGroups();
   document.querySelector('#email-gate .btn-primary').disabled = false;
   document.querySelector('#email-gate .btn-primary').textContent = 'Show My Pathway';
   document.getElementById('question-card').style.display = 'block';
