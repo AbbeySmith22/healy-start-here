@@ -7,7 +7,7 @@
 <title>Healy Start Here Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   /* ============================================
      CUSTOMIZE: Change these color variables to
@@ -456,6 +456,53 @@
   @media (max-width: 500px) {
     .header h1 { font-size: 24px; }
   }
+
+/* HIGH VIBRANCY LIVING — BRAND MATCH */
+:root {
+  --bg-page:#F8F7FF; --bg-card:#FFFFFF; --bg-card-inner:#F0EDFC;
+  --accent-primary:#8370D9; --accent-secondary:#A8E9E1;
+  --accent-glow:rgba(131,112,217,.18); --text-primary:#19172F;
+  --text-secondary:#68657C; --border-color:#DCD7F4;
+  --border-subtle:rgba(131,112,217,.16); --error-color:#D65C72;
+  --success-color:#248A76;
+  --btn-gradient:linear-gradient(135deg,#8370D9 0%,#A8E9E1 100%);
+}
+body {font-family:'Inter',sans-serif;padding:22px 16px 70px;}
+.wrap {max-width:900px;margin:auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 12px 35px rgba(25,23,47,.05);}
+.header {background:var(--btn-gradient);text-align:left;padding:44px 48px 40px;margin-bottom:30px;}
+.kicker {font-family:'Fraunces',serif;font-weight:400;color:#fff;font-size:12px;letter-spacing:2px;margin-bottom:14px;}
+.header h1 {font-family:'Fraunces',serif;font-weight:400;font-size:42px;line-height:1.18;color:#fff;background:none;-webkit-text-fill-color:#fff;margin-bottom:16px;}
+.header p {font-family:'Inter',sans-serif;color:#D8FFF5;max-width:600px;margin:0;line-height:1.7;font-size:16px;}
+.header .credibility {font-style:italic;color:rgba(255,255,255,.88);font-size:13px;margin-top:20px;}
+#question-card,#email-gate,#results {margin-left:36px;margin-right:36px;}
+.card,#email-gate,.result-card {border:1px solid var(--border-color);border-radius:18px;padding:34px;}
+.question-text {font-family:'Fraunces',serif;font-size:25px;font-weight:500;letter-spacing:0;text-transform:none;}
+.question-hint {font-size:14px;}
+.option-btn {font-family:'Inter',sans-serif;border-color:var(--border-color);padding:16px 18px;}
+.option-btn:hover {background:#F5F1FF;}
+.option-btn.selected {background:#F0EDFC;border-color:#8370D9;box-shadow:inset 3px 0 0 #8370D9;}
+.option-btn .option-label {font-family:'Inter',sans-serif;color:#6D5AC2;}
+label,.btn-primary,.btn-back,.btn-secondary,.result-label,.next-step .label,.pathway-box .label {font-family:'Inter',sans-serif;}
+input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans-serif;background:#F0EDFC;border:1px solid #DCD7F4;}
+.btn-primary {background:var(--btn-gradient);color:#fff;}
+.progress-fill,.step-num {background:var(--btn-gradient);}
+.pathway-box {background:linear-gradient(135deg,#F0EDFC,#E6F9F6);}
+.pathway-box .name {font-family:'Fraunces',serif;font-weight:500;font-size:30px;}
+.next-step {background:#F0FAF8;border-color:#C5EAE4;}
+.footer {padding:24px 20px 32px;margin-top:28px;opacity:1;text-align:center;}
+.footer-logo {display:block;width:90px;height:auto;object-fit:contain;margin:0 auto 15px;}
+.footer p {font-family:'Inter',sans-serif;font-size:12px;color:#68657C;}
+@media(max-width:600px) {
+ body {padding:0 0 36px;}
+ .wrap {border-radius:0;}
+ .header {padding:30px 24px;}
+ .header h1 {font-size:31px;}
+ .header p {font-size:14px;}
+ #question-card,#email-gate,#results {margin-left:16px;margin-right:16px;}
+ .card,#email-gate,.result-card {padding:22px 18px;}
+ .question-text {font-size:22px;}
+ .pathway-box .name {font-size:25px;}
+}
 </style>
 </head>
 <body>
@@ -467,7 +514,7 @@
   <div class="header">
     <div class="kicker">High Vibrancy Living</div>
     <h1>Healy Start Here Guide</h1>
-    <p>Not sure where to begin with your Healy? Answer a few questions and get a simple, personalised starting pathway.</p>
+    <p>So many Healy programs, and no idea where to start? Answer four quick questions and get a simple, personalised pathway — without running 10 programs a day.</p>
   </div>
 
   <!-- Question form -->
@@ -496,80 +543,60 @@
       - select: dropdown (set type: 'select')
     ============================================ -->
 
-    <!-- Question 1: What they want support with -->
+    <!-- Question 1: Main priority and optional context -->
     <div class="question-step active" data-step="1" data-type="options">
-      <div class="question-text">What do you most want support with right now?</div>
-      <div class="question-hint">Choose the area that feels most pressing for you.</div>
+      <div class="question-text">What would you most like support with right now?</div>
+      <div class="question-hint">Choose the area that feels most important. You don't need to tackle everything at once.</div>
       <div class="options">
-        <button class="option-btn" data-value="Energy and vitality -- I'm tired and I want to feel more alive">
-          <div class="option-label">Energy</div>
-          Energy and vitality -- I'm tired and want to feel more alive
-        </button>
-        <button class="option-btn" data-value="Stress and emotional balance -- I feel overwhelmed or anxious">
-          <div class="option-label">Stress</div>
-          Stress and emotional balance -- I feel overwhelmed or anxious
-        </button>
-        <button class="option-btn" data-value="Sleep and recovery -- I'm not sleeping well or feeling rested">
-          <div class="option-label">Sleep</div>
-          Sleep and recovery -- I'm not sleeping well or feeling rested
-        </button>
-        <button class="option-btn" data-value="Clarity and focus -- my mind feels scattered or foggy">
-          <div class="option-label">Clarity</div>
-          Clarity and focus -- my mind feels scattered or foggy
-        </button>
-        <button class="option-btn" data-value="Physical discomfort or tension -- I have pain or tension in my body">
-          <div class="option-label">Physical</div>
-          Physical discomfort or tension -- I have pain or tension in my body
-        </button>
+        <button class="option-btn" data-value="Energy & exhaustion"><div class="option-label">Energy & exhaustion</div>I'm tired and want to feel more alive.</button>
+        <button class="option-btn" data-value="Stress & overwhelm"><div class="option-label">Stress & overwhelm</div>I feel stressed, overwhelmed or anxious.</button>
+        <button class="option-btn" data-value="Sleep & rest"><div class="option-label">Sleep & rest</div>I'm struggling to sleep or feel rested.</button>
+        <button class="option-btn" data-value="Focus & brain fog"><div class="option-label">Focus & brain fog</div>My mind feels scattered or foggy.</button>
+        <button class="option-btn" data-value="Physical discomfort & tension"><div class="option-label">Physical discomfort & tension</div>I'm dealing with discomfort or tension.</button>
+        <button class="option-btn" data-value="Emotional wellbeing & mood"><div class="option-label">Emotional wellbeing & mood</div>I'd like more emotional balance.</button>
+        <button class="option-btn" data-value="Confidence & self-worth"><div class="option-label">Confidence & self-worth</div>I want to feel more confident and grounded.</button>
+        <button class="option-btn" data-value="Motivation, work & money blocks"><div class="option-label">Motivation, work & money blocks</div>I feel stuck or held back.</button>
+        <button class="option-btn" data-value="Hormonal changes & women's wellbeing"><div class="option-label">Hormonal changes & women's wellbeing</div>I'd like wellness support while navigating changes.</button>
+        <button class="option-btn" data-value="General wellbeing & maintenance"><div class="option-label">General wellbeing & maintenance</div>I want a simple ongoing routine.</button>
+        <button class="option-btn" data-value="Something else"><div class="option-label">Something else</div>My main concern isn't listed.</button>
+      </div>
+      <div class="field" style="margin-top:20px;">
+        <label for="q1-details">Tell me a little more (optional)</label>
+        <div class="field-hint">What's actually happening? A little detail helps make your pathway personal.</div>
+        <textarea id="q1-details" rows="3" placeholder="e.g. I wake up exhausted, struggle to focus by lunchtime and feel wired at bedtime."></textarea>
       </div>
     </div>
 
-    <!-- Question 2: Experience level -->
+    <!-- Question 2: Experience stage -->
     <div class="question-step" data-step="2" data-type="options">
-      <div class="question-text">How new are you to using Healy?</div>
-      <div class="question-hint">This helps me tailor the complexity of your pathway.</div>
+      <div class="question-text">Where are you on your Healy journey?</div>
+      <div class="question-hint">This helps me keep your pathway at the right level. No complicated routines!</div>
       <div class="options">
-        <button class="option-btn" data-value="Brand new -- I just got my device and haven't really used it yet">
-          Brand new -- I just got my device and haven't really used it yet
-        </button>
-        <button class="option-btn" data-value="A few weeks in -- I've tried it a couple of times but I'm not sure what I'm doing">
-          A few weeks in -- I've tried it but I'm not sure what I'm doing
-        </button>
-        <button class="option-btn" data-value="A few months in -- I use it sometimes but I haven't found my routine yet">
-          A few months in -- I use it sometimes but haven't found my routine yet
-        </button>
-        <button class="option-btn" data-value="Regular user -- I use Healy often but I want to deepen my practice">
-          Regular user -- I use it often but want to deepen my practice
-        </button>
+        <button class="option-btn" data-value="Brand new — I've barely used my Healy">Brand new — I've barely used my Healy.</button>
+        <button class="option-btn" data-value="Beginner — I've tried a few programs">Beginner — I've tried a few programs but I'm still figuring it out.</button>
+        <button class="option-btn" data-value="Finding my rhythm — I use it on and off">Finding my rhythm — I use it on and off but don't have a consistent routine.</button>
+        <button class="option-btn" data-value="Experienced — I use my Healy regularly">Experienced — I use my Healy regularly and want more targeted recommendations.</button>
       </div>
     </div>
 
-    <!-- Question 3: Which device / programs they have -->
+    <!-- Question 3: Program access -->
     <div class="question-step" data-step="3" data-type="options">
-      <div class="question-text">Which Healy edition or programs do you have access to?</div>
-      <div class="question-hint">If you're not sure, choose the closest option.</div>
+      <div class="question-text">Which Healy programs do you have access to?</div>
+      <div class="question-hint">Choose what you can see in your app. Don't worry if you're not sure.</div>
       <div class="options">
-        <button class="option-btn" data-value="Healy Gold or Healy -- basic programs only">
-          Healy Gold -- basic programs only
-        </button>
-        <button class="option-btn" data-value="Healy Holistic Health or Holistic Health Plus -- wider program range">
-          Healy Holistic Health -- wider program range
-        </button>
-        <button class="option-btn" data-value="Healy Resonance or Professional -- full program library including resonance analysis">
-          Healy Resonance or Professional -- full library including resonance analysis
-        </button>
-        <button class="option-btn" data-value="I'm not sure what edition I have">
-          I'm not sure what edition I have
-        </button>
+        <button class="option-btn" data-value="Gold Cycle only">Gold Cycle only</button>
+        <button class="option-btn" data-value="Gold Cycle + some additional program groups">Gold Cycle + some additional program groups</button>
+        <button class="option-btn" data-value="Full Healy program library">Full Healy program library</button>
+        <button class="option-btn" data-value="Not sure which programs are available">I'm not sure</button>
       </div>
     </div>
 
-    <!-- Question 4: What they've already tried -->
+    <!-- Question 4: Previous experience and preferences -->
     <div class="question-step" data-step="4" data-type="textarea">
-      <div class="question-text">Is there anything you've already tried, or anything specific you want to avoid?</div>
-      <div class="question-hint">Optional -- but the more context you give, the more personalised your pathway will be.</div>
+      <div class="question-text">What have you already tried, or what would you like to avoid?</div>
+      <div class="question-hint">Optional — tell me what's worked, what hasn't, or anything else I should know.</div>
       <div class="field">
-        <textarea id="q4-text" rows="3" placeholder="e.g. I've tried the Sleep program but it didn't seem to help. I'd like to focus more on emotional support."></textarea>
+        <textarea id="q4-text" rows="3" placeholder="e.g. I've been using Pure for two weeks. I want to work on sleep next, but don't have much time each day."></textarea>
       </div>
     </div>
 
@@ -586,7 +613,7 @@
   <div id="email-gate">
     <h2>Your personalised pathway is ready</h2>
     <!-- CUSTOMIZE: Change this description -->
-    <p>Enter your email to reveal your starting pathway -- and to get it sent straight to your inbox.</p>
+    <p>Enter your email to reveal your starting pathway.</p>
     <div class="field" style="margin-bottom:14px;">
       <label for="user-email">Email address</label>
       <input type="email" id="user-email" placeholder="you@example.com">
@@ -633,7 +660,7 @@
   </div>
 
   <!-- CUSTOMIZE: Change footer brand name -->
-  <div class="footer">High Vibrancy Living &nbsp;·&nbsp; Powered by AI</div>
+  <div class="footer"><img src="/images/HVL%20Icon%20Logo%20final%20(trans).png" alt="High Vibrancy Living" class="footer-logo" onerror="this.style.display='none'"><p>High Vibrancy Living · Powered by AI · frequencytoolkit.com</p></div>
 
 </div>
 
@@ -707,6 +734,13 @@ function nextStep() {
   }
 
   answers[`step_${currentStep}`] = val || '';
+  if (currentStep === 1) {
+    answers.step_1_details = document.getElementById('q1-details').value.trim();
+    if (val === 'Something else' && !answers.step_1_details) {
+      showError('step-error', 'Please tell me a little more about what you need support with.');
+      return;
+    }
+  }
 
   if (currentStep < totalSteps) {
     currentStep++;
@@ -745,9 +779,10 @@ function showEmailGate() {
 function buildInputSummary() {
   // CUSTOMIZE: Update these labels to match your questions
   const lines = [
-    `What they want support with: ${answers.step_1 || 'not specified'}`,
+    `Main wellness priority: ${answers.step_1 || 'not specified'}`,
+    `More detail about their situation: ${answers.step_1_details || 'not provided'}`,
     `Experience level: ${answers.step_2 || 'not specified'}`,
-    `Device / programs available: ${answers.step_3 || 'not specified'}`,
+    `Program groups available: ${answers.step_3 || 'not specified'}`,
   ];
   if (answers.step_4) lines.push(`Additional context: ${answers.step_4}`);
   return lines.join('\n');
@@ -797,14 +832,21 @@ function showResults(data) {
 
   const whyEl = document.getElementById('result-why');
   const paras = (data.why || '').split('\n').filter(l => l.trim());
-  whyEl.innerHTML = paras.map(p => `<p>${p}</p>`).join('');
+  whyEl.replaceChildren();
+  paras.forEach(p => { const el = document.createElement('p'); el.textContent = p; whyEl.appendChild(el); });
 
   // Render step list
   const stepsEl = document.getElementById('result-steps');
   stepsEl.innerHTML = '';
   (data.steps || []).forEach((step, i) => {
     const li = document.createElement('li');
-    li.innerHTML = `<div class="step-num">${i + 1}</div><div class="step-text">${step}</div>`;
+    const number = document.createElement('div');
+    number.className = 'step-num';
+    number.textContent = i + 1;
+    const content = document.createElement('div');
+    content.className = 'step-text';
+    content.textContent = step;
+    li.append(number, content);
     stepsEl.appendChild(li);
   });
 
@@ -866,6 +908,8 @@ function resetTool() {
   document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
   document.querySelectorAll('textarea, input[type="text"]').forEach(el => el.value = '');
   document.getElementById('user-email').value = '';
+  document.querySelector('#email-gate .btn-primary').disabled = false;
+  document.querySelector('#email-gate .btn-primary').textContent = 'Show My Pathway';
   document.getElementById('question-card').style.display = 'block';
   document.getElementById('email-gate').style.display = 'none';
   document.getElementById('results').style.display = 'none';
