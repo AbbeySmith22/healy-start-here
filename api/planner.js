@@ -3,8 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const library = JSON.parse(
-  readFileSync(join(process.cwd(), 'healy-programs.json'), 'utf8')
-);
+readFileSync(join(process.cwd(), 'api', 'data', 'healy-programs.json'), 'utf8'));
 
 // Provisional edition map based on your supplied list.
 // Verify activated access against each user's Healy app.
