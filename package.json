@@ -1,0 +1,6 @@
+{
+  "name": "start-here-guide-secure-preparation",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test/*.test.js" }
+}
