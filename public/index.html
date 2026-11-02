@@ -584,52 +584,51 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
       </div>
     </div>
 
-    <!-- Question 3: Edition and confirmed extra access -->
-    <div class="question-step" data-step="3" data-type="options">
-      <div class="question-text">Which Healy edition do you have?</div>
-      <div class="question-hint">Choose the edition shown in your Healy account or purchase details. We'll only suggest programs you can access.</div>
-      <div class="options">
-        <button class="option-btn" data-value="gold">Healy Gold</button>
-        <button class="option-btn" data-value="holistic">Healy Holistic</button>
-        <button class="option-btn" data-value="resonance">Healy Resonance</button>
-        <button class="option-btn" data-value="resonance-plus">Healy Resonance Plus</button>
-        <button class="option-btn" data-value="professional">Healy Professional</button>
-        <button class="option-btn" data-value="discover">Healy Discover</button>
-        <button class="option-btn" data-value="evolve">Healy Evolve</button>
-        <button class="option-btn" data-value="pro">Healy Pro</button>
-        <button class="option-btn" data-value="obsidian">Healy Obsidian</button>
-        <button class="option-btn" data-value="unknown">Other / I'm not sure</button>
-      </div>
-      <div class="field" style="margin-top:22px;">
-        <label for="extras-choice">Have you activated any additional program groups?</label>
-        <div class="field-hint">Only select groups you can actually see in your Healy app. Analysis features such as Aura and Resonance aren't frequency program groups.</div>
-        <select id="extras-choice" onchange="toggleExtraGroups()">
-          <option value="no">No additional groups</option>
-          <option value="yes">Yes — let me select them</option>
-          <option value="unsure">I'm not sure</option>
-        </select>
-      </div>
-      <div id="extra-groups" class="field" style="display:none;">
-        <label>Which extra groups can you access?</label>
-        <div class="extra-groups-grid">
-          <label><input type="checkbox" value="Bioenergetic Harmony 1"> Bioenergetic Harmony 1</label>
-          <label><input type="checkbox" value="Bioenergetic Harmony 2"> Bioenergetic Harmony 2</label>
-          <label><input type="checkbox" value="Mental Balance"> Mental Balance</label>
-          <label><input type="checkbox" value="Meridians 1"> Meridians 1</label>
-          <label><input type="checkbox" value="Meridians 2"> Meridians 2</label>
-          <label><input type="checkbox" value="Chakras"> Chakras</label>
-          <label><input type="checkbox" value="Fitness"> Fitness</label>
-          <label><input type="checkbox" value="Local Stimulation"> Local Stimulation</label>
-          <label><input type="checkbox" value="Sleep"> Sleep</label>
-          <label><input type="checkbox" value="The Power of Three"> The Power of Three</label>
-          <label><input type="checkbox" value="Deep Cycle H"> Deep Cycle H</label>
-          <label><input type="checkbox" value="Learning"> Learning</label>
-          <label><input type="checkbox" value="Skin"> Skin</label>
-          <label><input type="checkbox" value="Job"> Job</label>
-          <label><input type="checkbox" value="Beauty"> Beauty</label>
-        </div>
-      </div>
+    
+<!-- Question 3: Edition and module access -->
+<div class="question-step" data-step="3" data-type="options">
+  <div class="question-text">Which Healy edition do you have?</div>
+  <div class="question-hint">
+    Choose your edition, then tell me which analysis modules
+    you can actually open in your HealAdvisor Analyse app.
+  </div>
+
+  <div class="options">
+    <button class="option-btn" data-value="gold">Healy Gold</button>
+    <button class="option-btn" data-value="holistic">Healy Holistic</button>
+    <button class="option-btn" data-value="resonance">Healy Resonance</button>
+    <button class="option-btn" data-value="resonance-plus">Healy Resonance Plus</button>
+    <button class="option-btn" data-value="professional">Healy Professional</button>
+    <button class="option-btn" data-value="discover">Healy Discover</button>
+    <button class="option-btn" data-value="evolve">Healy Evolve</button>
+    <button class="option-btn" data-value="pro">Healy Pro</button>
+    <button class="option-btn" data-value="obsidian">Healy Obsidian</button>
+    <button class="option-btn" data-value="unknown">Other / I'm not sure</button>
+  </div>
+
+  <div class="field" style="margin-top:22px;">
+    <label for="module-access">
+      Which analysis modules can you access?
+    </label>
+    <div class="field-hint">
+      Select only modules you can open. If you're unsure,
+      choose that option instead.
     </div>
+    <select id="module-access" onchange="toggleModules()">
+      <option value="unsure">I'm not sure</option>
+      <option value="confirmed">I know which modules I have</option>
+    </select>
+  </div>
+
+  <div id="module-options" class="field" style="display:none;">
+    <div class="extra-groups-grid">
+      <label><input type="checkbox" value="Aura"> Aura</label>
+      <label><input type="checkbox" value="Resonance"> Resonance</label>
+      <label><input type="checkbox" value="Coaching"> Coaching</label>
+    </div>
+  </div>
+</div>
+
 
     <!-- Question 4: Previous experience and preferences -->
     <div class="question-step" data-step="4" data-type="textarea">
@@ -663,41 +662,56 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
   </div>
 
   <!-- Results -->
-  <div id="results">
+ 
+<div id="results">
+  <div class="result-card">
+    <div class="result-label">Your personalised starting point</div>
 
-    <div class="result-card">
-      <div class="result-label">Your personalised pathway</div>
-
-      <!-- Pathway name -->
-      <div class="pathway-box">
-        <div class="label">Your starting point</div>
-        <div class="name" id="result-pathway-name"></div>
-      </div>
-
-      <!-- Why this pathway -->
-      <div class="result-label" style="margin-top:20px;">Why this pathway</div>
-      <div id="result-why" class="result-body"></div>
-
-      <!-- Step-by-step plan -->
-      <div class="result-label" style="margin-top:24px;">Your simple plan</div>
-      <ol class="steps-list" id="result-steps"></ol>
-
-      <!-- Immediate next step -->
-      <div class="next-step">
-        <div class="label">Start here today</div>
-        <div class="content" id="result-first-step"></div>
-      </div>
+    <div class="pathway-box">
+      <div class="label" id="result-module"></div>
+      <div class="name" id="result-pathway-name"></div>
     </div>
 
-    <div class="actions">
-      <button class="btn-primary" onclick="downloadResult()">Download My Pathway</button>
-      <button class="btn-secondary" onclick="resetTool()">Start Over</button>
+    <div class="result-label">Why this fits you</div>
+    <div id="result-why" class="result-body"></div>
+
+    <div class="result-label" style="margin-top:24px;">
+      Your personal intention
+    </div>
+    <div id="result-intention" class="result-body"></div>
+
+    <div class="result-label" style="margin-top:24px;">
+      Your simple starting steps
+    </div>
+    <ol class="steps-list" id="result-steps"></ol>
+
+    <div class="next-step">
+      <div class="label">Start here today</div>
+      <div class="content" id="result-first-step"></div>
     </div>
 
-    <!-- CUSTOMIZE: Adapt disclaimer -->
-    <p class="disclaimer">This pathway is for wellness exploration and self-awareness only. It is not medical advice, diagnosis, or treatment. Always work with a qualified healthcare professional for medical concerns.</p>
+    <div id="result-alternative" class="result-body"
+         style="margin-top:24px;"></div>
 
+    <p id="result-access" class="disclaimer"></p>
   </div>
+
+  <div class="actions">
+    <button class="btn-primary" onclick="downloadResult()">
+      Download My Pathway
+    </button>
+    <button class="btn-secondary" onclick="resetTool()">
+      Start Over
+    </button>
+  </div>
+
+  <p class="disclaimer">
+    This guide is for wellness exploration and self-awareness only.
+    Healy analyses are not medical advice, diagnosis or treatment.
+    Consult a qualified healthcare professional for medical concerns.
+  </p>
+</div>
+
 
   <!-- CUSTOMIZE: Change footer brand name -->
   <div class="footer"><img src="/images/HVL%20Icon%20Logo%20final%20(trans).png" alt="High Vibrancy Living" class="footer-logo" onerror="this.style.display='none'"><p>High Vibrancy Living · Powered by AI · frequencytoolkit.com</p></div>
@@ -810,52 +824,67 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 // ============================================
 // Email gate
 // ============================================
-function showEmailGate() {
-  document.getElementById('question-card').style.display = 'none';
-  document.getElementById('email-gate').style.display = 'block';
-  document.getElementById('email-gate').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+function toggleModules() {
+  const confirmed =
+    document.getElementById('module-access').value === 'confirmed';
+
+  document.getElementById('module-options').style.display =
+    confirmed ? 'block' : 'none';
 }
 
-function toggleExtraGroups() {
-  document.getElementById('extra-groups').style.display =
-    document.getElementById('extras-choice').value === 'yes' ? 'block' : 'none';
-}
+function getConfirmedModules() {
+  if (document.getElementById('module-access').value !== 'confirmed') {
+    return [];
+  }
 
-function getConfirmedGroups() {
-  if (document.getElementById('extras-choice').value !== 'yes') return [];
-  return [...document.querySelectorAll('#extra-groups input:checked')].map(el => el.value);
+  return [...document.querySelectorAll(
+    '#module-options input:checked'
+  )].map(el => el.value);
 }
 
 function buildInputSummary() {
-  // CUSTOMIZE: Update these labels to match your questions
-  const lines = [
-    `Main wellness priority: ${answers.step_1 || 'not specified'}`,
-    `More detail about their situation: ${answers.step_1_details || 'not provided'}`,
-    `Experience level: ${answers.step_2 || 'not specified'}`,
-    `Healy edition: ${answers.step_3 || 'not specified'}`,
-    `Additional program groups confirmed: ${getConfirmedGroups().join(', ') || 'none'}`,
-    `Additional groups status: ${document.getElementById('extras-choice').value}`,
-  ];
-  if (answers.step_4) lines.push(`Additional context: ${answers.step_4}`);
-  return lines.join('\n');
+  return {
+    priority: answers.step_1 || '',
+    situation: answers.step_1_details || '',
+    experience: answers.step_2 || '',
+    edition: answers.step_3 || '',
+    moduleAccess: document.getElementById('module-access').value,
+    confirmedModules: getConfirmedModules(),
+    previousExperienceAndPreferences: answers.step_4 || ''
+  };
 }
+
+
 
 async function handleEmailSubmit() {
   hideError('email-error');
+
   const email = document.getElementById('user-email').value.trim();
-  if (!email || !email.includes('@')) {
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     showError('email-error', 'Please enter a valid email address.');
+    return;
+  }
+
+  const confirmed =
+    document.getElementById('module-access').value === 'confirmed';
+
+  const modules = getConfirmedModules();
+
+  if (confirmed && !modules.length) {
+    showError('email-error',
+      'Please select your available analysis modules, or choose "I’m not sure".');
     return;
   }
 
   const btn = document.querySelector('#email-gate .btn-primary');
   btn.disabled = true;
-  btn.textContent = 'Building your pathway...';
+  btn.textContent = 'Creating your recommendation...';
 
   const userInput = buildInputSummary();
 
   try {
-    // CUSTOMIZE: Change '/api/planner' to match your Vercel function filename
     const res = await fetch('/api/planner', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -864,16 +893,21 @@ async function handleEmailSubmit() {
         email,
         edition: answers.step_3,
         experience: answers.step_2,
-        confirmedGroups: getConfirmedGroups(),
+        confirmedModules: modules,
+        moduleAccessKnown: confirmed,
+        confirmedGroups: [],
         avoid: answers.step_4 || ''
       })
     });
 
     const data = await res.json();
-    if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+
+    if (!res.ok) {
+      throw new Error(data.error || 'Something went wrong.');
+    }
 
     currentResult = data;
-    userInput && (window._lastInput = userInput);
+    window._lastInput = JSON.stringify(userInput, null, 2);
     showResults(data);
 
   } catch (err) {
@@ -883,79 +917,124 @@ async function handleEmailSubmit() {
   }
 }
 
+
 // ============================================
 // Render results
 // ============================================
+
 function showResults(data) {
-  document.getElementById('result-pathway-name').textContent = data.pathway_name || '';
+  document.getElementById('result-module').textContent =
+    data.module || '';
 
-  const whyEl = document.getElementById('result-why');
-  const paras = (data.why || '').split('\n').filter(l => l.trim());
-  whyEl.replaceChildren();
-  paras.forEach(p => { const el = document.createElement('p'); el.textContent = p; whyEl.appendChild(el); });
+  document.getElementById('result-pathway-name').textContent =
+    data.pathway_name || '';
 
-  // Render step list
+  document.getElementById('result-why').textContent =
+    data.why || '';
+
+  document.getElementById('result-intention').textContent =
+    data.intention || '';
+
   const stepsEl = document.getElementById('result-steps');
-  stepsEl.innerHTML = '';
+  stepsEl.replaceChildren();
+
   (data.steps || []).forEach((step, i) => {
     const li = document.createElement('li');
+
     const number = document.createElement('div');
     number.className = 'step-num';
     number.textContent = i + 1;
+
     const content = document.createElement('div');
     content.className = 'step-text';
     content.textContent = step;
+
     li.append(number, content);
     stepsEl.appendChild(li);
   });
 
-  document.getElementById('result-first-step').textContent = data.first_step || '';
+  document.getElementById('result-first-step').textContent =
+    data.first_step || '';
+
+  const alternative = document.getElementById('result-alternative');
+
+  if (data.alternative) {
+    alternative.textContent =
+      'Another option: ' + data.alternative.module +
+      ' — ' + data.alternative.name +
+      '. ' + (data.alternative.why || '');
+  } else {
+    alternative.textContent = '';
+  }
+
+  document.getElementById('result-access').textContent =
+    data.access_note || '';
 
   document.getElementById('email-gate').style.display = 'none';
   document.getElementById('results').style.display = 'block';
-  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  document.getElementById('results').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
 }
+
 
 // ============================================
 // Download
 // ============================================
+
 function downloadResult() {
   if (!currentResult) return;
-  const steps = (currentResult.steps || []).map((s, i) => `${i+1}. ${s}`).join('\n');
-  // CUSTOMIZE: Change the header and filename
+
+  const r = currentResult;
+  const steps = (r.steps || [])
+    .map((s, i) => `${i + 1}. ${s}`)
+    .join('\n');
+
+  const alternative = r.alternative
+    ? `${r.alternative.module} — ${r.alternative.name}\n${r.alternative.why || ''}`
+    : 'None';
+
   const text = [
-    'HIGH VIBRANCY LIVING -- HEALY START HERE GUIDE',
-    '='.repeat(48),
+    'HIGH VIBRANCY LIVING — HEALY START HERE GUIDE',
     '',
-    'YOUR PATHWAY: ' + (currentResult.pathway_name || ''),
+    'YOUR STARTING POINT',
+    `${r.module || ''} — ${r.pathway_name || ''}`,
     '',
     'YOUR ANSWERS',
-    '-'.repeat(24),
     window._lastInput || '',
     '',
-    'WHY THIS PATHWAY',
-    '-'.repeat(24),
-    currentResult.why || '',
+    'WHY THIS FITS YOU',
+    r.why || '',
     '',
-    'YOUR SIMPLE PLAN',
-    '-'.repeat(24),
+    'YOUR PERSONAL INTENTION',
+    r.intention || '',
+    '',
+    'YOUR SIMPLE STARTING STEPS',
     steps,
     '',
     'START HERE TODAY',
-    '-'.repeat(24),
-    currentResult.first_step || '',
+    r.first_step || '',
     '',
-    '='.repeat(48),
+    'ANOTHER OPTION',
+    alternative,
+    '',
+    'ACCESS',
+    r.access_note || '',
+    '',
     'For wellness exploration only. Not medical advice.'
   ].join('\n');
 
   const blob = new Blob([text], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  // CUSTOMIZE: Change the filename
-  a.download = 'healy-starting-pathway.txt';
+  a.href = url;
+  a.download = 'healy-start-here-guide.txt';
   a.click();
+  URL.revokeObjectURL(url);
 }
+
 
 // ============================================
 // Reset
@@ -967,9 +1046,9 @@ function resetTool() {
   document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
   document.querySelectorAll('textarea, input[type="text"]').forEach(el => el.value = '');
   document.getElementById('user-email').value = '';
-  document.getElementById('extras-choice').value = 'no';
-  document.querySelectorAll('#extra-groups input').forEach(el => el.checked = false);
-  toggleExtraGroups();
+  document.getElementById('module-access').value = 'unsure';
+document.querySelectorAll('#module-options input').forEach(el => el.checked = false);
+toggleModules();
   document.querySelector('#email-gate .btn-primary').disabled = false;
   document.querySelector('#email-gate .btn-primary').textContent = 'Show My Pathway';
   document.getElementById('question-card').style.display = 'block';
