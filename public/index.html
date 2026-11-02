@@ -825,6 +825,17 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 // Email gate
 // ============================================
 
+function showEmailGate() {
+  document.getElementById('question-card').style.display = 'none';
+  document.getElementById('email-gate').style.display = 'block';
+  document.getElementById('results').style.display = 'none';
+
+  document.getElementById('email-gate').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
 function toggleModules() {
   const confirmed =
     document.getElementById('module-access').value === 'confirmed';
