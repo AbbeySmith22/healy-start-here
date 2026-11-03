@@ -825,16 +825,55 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 // Email gate
 // ============================================
 
-function showEmailGate() {
+
+async function showEmailGate() {
   document.getElementById('question-card').style.display = 'none';
   document.getElementById('email-gate').style.display = 'block';
   document.getElementById('results').style.display = 'none';
 
-  document.getElementById('email-gate').scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
+  const emailGate = document.getElementById('email-gate');
+
+  emailGate.textContent = 'Creating your personalised pathway...';
+
+  const userInput = buildInputSummary();
+
+  try {
+    const res = await fetch('/api/planner', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userInput,
+        edition: answers.step_3,
+        experience: answers.step_2,
+        confirmedModules: getConfirmedModules(),
+        moduleAccessKnown:
+          document.getElementById('module-access').value === 'confirmed',
+        confirmedGroups: [],
+        avoid: answers.step_4 || ''
+      })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || 'Generation failed');
+    }
+
+    currentResult = data;
+    window._lastInput = JSON.stringify(userInput, null, 2);
+    showResults(data);
+
+  } catch (error) {
+    emailGate.textContent = 'Something went wrong: ' + error.message;
+
+    const retry = document.createElement('button');
+    retry.textContent = 'Try again';
+    retry.className = 'btn-primary';
+    retry.onclick = () => showEmailGate();
+    emailGate.appendChild(retry);
+  }
 }
+
 
 function toggleModules() {
   const confirmed =
