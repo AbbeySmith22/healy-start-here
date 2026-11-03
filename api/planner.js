@@ -310,14 +310,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "API key missing" });
   }
 
-  const body = req.body || {};
-  const email = cleanText(body.email, 320).toLowerCase();
-
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return res.status(400).json({
-      error: "Valid email required"
-    });
-  }
+const body = req.body || {};
 
   const input = parseInput(body);
 
@@ -483,14 +476,6 @@ different but relevant starting route.
     const plan = JSON.parse(text);
     const result = validateResult(plan, choices, input);
 
-    try {
-      await saveSystemeContact(email);
-    } catch (error) {
-      console.error("Systeme.io:", error.message);
-      return res.status(502).json({
-        error: "Your recommendation was generated, but we could not save your email. Please try again."
-      });
-    }
 
     return res.status(200).json(result);
 
