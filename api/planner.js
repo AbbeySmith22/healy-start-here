@@ -232,7 +232,7 @@ const WATCH_MODULES = ["Healy Watch", "Meridian Healy Watch", "Healy Watch DN"];
 function pinkShortlist(input) {
   const text = textFromAnswers(input.answers);
   const ids = healy.matchIssues(text, { max: 3 }).map(m => m.issue.id);
-  if (!ids.length) return [];
+  if (!ids.length) return pinkFallback();
 
   const result = healy.recommend({
     issueIds: ids,
@@ -241,7 +241,7 @@ function pinkShortlist(input) {
     maxPrograms: 3
   });
 
-  return result.recommendations.map(r => ({
+  const list = result.recommendations.map(r => ({
     id: r.programId,
     name: r.name,
     module: r.module,
@@ -249,6 +249,21 @@ function pinkShortlist(input) {
     whyFromDatabase: r.why,
     notes: r.notes
   }));
+
+  return list.length ? list : pinkFallback();
+}
+
+// Database rule R14: when nothing matches, suggest the general balance program.
+function pinkFallback() {
+  const p = PROGRAM_BY_CODE.get("GC_BALANCE");
+  return p ? [{
+    id: p.id,
+    name: p.displayName,
+    module: p.module,
+    summary: p.summary,
+    whyFromDatabase: p.summary,
+    notes: p.notes
+  }] : [];
 }
 
 function approvedChoices(input) {
@@ -308,10 +323,12 @@ function validateResult(plan, choices, input, pinkOptions) {
     ? "This recommendation uses the analysis modules you confirmed. Check that the specific database or Coaching category is available in your activated app."
     : "Before starting, check that this analysis module and database or category are available in your activated Healy app.";
 
-  // Pink program: only accepted if it came from the database shortlist.
+  // Pink program: always one. Must come from the database shortlist; if the model
+  // gives none or an unknown one, the top database suggestion is used.
   // Name, delivery and cautions come from your data, never from the model.
   let pink = null;
-  const pinkChoice = pinkOptions.find(x => x.id === plan.pink_program_id);
+  const pinkChoice =
+    pinkOptions.find(x => x.id === plan.pink_program_id) || pinkOptions[0];
 
   if (pinkChoice) {
     const program = healy.data.programs.find(p => p.id === pinkChoice.id);
@@ -450,9 +467,8 @@ You are the High Vibrancy Living Healy Start Here Guide.
 
 GOAL
 Give this person ONE simple, personalised starting point, so they
-know exactly what to do first. Less is better: one main scan, at
-most one alternative, and only if it genuinely helps, one Pink
-program.
+know exactly what to do first. Less is better: one main scan, one
+Pink program, and at most one alternative scan if it genuinely helps.
 
 HOW TO CHOOSE
 1. Read the person's whole situation: what they feel now and what
@@ -468,14 +484,14 @@ HOW TO CHOOSE
 5. Respect anything they say they want to avoid or have already tried.
 6. Never name a database, program or scan result that is not supplied.
 
-OPTIONAL PINK PROGRAM
-Pink programs are microcurrent programs run in the Healy app, in
-addition to the scan. Pick ONE from "pinkShortlist" only when it
-really suits the need (for example sleep, stress, focus, energy,
-everyday body comfort, or when the person wants a program to run).
-Leave pink_program_id as null when the need is mainly reflection,
-decisions, relationships or goal-setting, or when nothing on the
-shortlist fits. Never invent a Pink program.
+PINK PROGRAM (always include exactly ONE)
+Pink programs are microcurrent programs run in the Healy app, alongside
+the scan. Every result must include one: choose the single best fit from
+"pinkShortlist" and set pink_program_id. Say in "pink_why" (1-2 sentences)
+how it supports what the person described. When the need is mainly
+reflection, decisions or goals, choose the gentlest general option and
+describe it as a supportive companion to the scan. Never invent a program
+and never pick one that is not on the shortlist.
 
 ROUTES
 - Aura: chakra-related self-awareness, grounding, expression.
@@ -508,7 +524,7 @@ Return ONLY valid JSON:
   "first_step": "one simple action for today",
   "alternative_id": null,
   "alternative_why": "",
-  "pink_program_id": null,
+  "pink_program_id": "id from pinkShortlist",
   "pink_why": ""
 }
 `;
