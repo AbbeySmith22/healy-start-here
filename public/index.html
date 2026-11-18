@@ -833,6 +833,21 @@ document.querySelectorAll('.option-btn').forEach(btn => {
 // ============================================
 
 
+// Remembers (in this browser only) what this person was recently given,
+// so the next result is different.
+function loadHistory() {
+  try {
+    return JSON.parse(localStorage.getItem('healyHistory') || '[]');
+  } catch (e) { return []; }
+}
+
+function saveHistory(entries) {
+  try {
+    const all = loadHistory().concat(entries || []).slice(-60);
+    localStorage.setItem('healyHistory', JSON.stringify(all));
+  } catch (e) { /* storage unavailable: results still work */ }
+}
+
 async function showEmailGate() {
   document.getElementById('question-card').style.display = 'none';
   document.getElementById('email-gate').style.display = 'block';
@@ -856,7 +871,8 @@ async function showEmailGate() {
         moduleAccessKnown:
           document.getElementById('module-access').value === 'confirmed',
         confirmedGroups: [],
-        avoid: answers.step_4 || ''
+        avoid: answers.step_4 || '',
+        history: loadHistory()
       })
     });
 
@@ -867,6 +883,7 @@ async function showEmailGate() {
     }
 
     currentResult = data;
+    saveHistory(data.history_entries);
     window._lastInput = JSON.stringify(userInput, null, 2);
     showResults(data);
 
@@ -953,7 +970,8 @@ async function handleEmailSubmit() {
         confirmedModules: modules,
         moduleAccessKnown: confirmed,
         confirmedGroups: [],
-        avoid: answers.step_4 || ''
+        avoid: answers.step_4 || '',
+        history: loadHistory()
       })
     });
 
@@ -964,6 +982,7 @@ async function handleEmailSubmit() {
     }
 
     currentResult = data;
+    saveHistory(data.history_entries);
     window._lastInput = JSON.stringify(userInput, null, 2);
     showResults(data);
 

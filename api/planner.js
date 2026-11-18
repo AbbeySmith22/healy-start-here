@@ -190,7 +190,17 @@ function parseInput(body) {
     confirmedGroups: Array.isArray(body.confirmedGroups)
       ? body.confirmedGroups.map(x => cleanText(x, 100))
       : [],
-    avoid: cleanText(body.avoid, 1000)
+    avoid: cleanText(body.avoid, 1000),
+    // What this person was recently given (kept in their own browser) so the
+    // same suggestions are not repeated for them.
+    history: Array.isArray(body.history)
+      ? body.history.slice(-60)
+          .filter(h => h && typeof h.programId === "string")
+          .map(h => ({
+            programId: cleanText(h.programId, 20),
+            date: cleanText(h.date, 40)
+          }))
+      : []
   };
 }
 
@@ -204,15 +214,26 @@ function textFromAnswers(answers) {
 
 // Issues flagged as heavier topics (e.g. Low mood) no longer block a
 // recommendation. They add a gentle "talk to someone you trust" note instead.
-// Only explicit self-harm wording (detectCrisis) stops a request.
+// Nothing blocks a request; explicit self-harm wording also just adds that note.
 function matchedIssues(input) {
   const text = textFromAnswers(input.answers);
   const all = healy.matchIssues(text, { max: 3 }).map(m => m.issue);
   const usable = all;
-  const needsSupportNote = all.some(i =>
+  const needsSupportNote = healy.detectCrisis(text) || all.some(i =>
     ["crisis", "professional", "medical"].includes(i.escalationLevel)
   );
   return { ids: usable.map(i => i.id), needsSupportNote };
+}
+
+// The database lists its best match first, and models lean towards whatever is
+// listed first, so the order is shuffled to keep the choice varied.
+function shuffled(list) {
+  const a = [...list];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 function databaseShortlist(input, choices) {
@@ -224,6 +245,7 @@ function databaseShortlist(input, choices) {
     issueIds: ids,
     includeTypes: BLUE_TYPES,
     crisisBlocking: false,
+    history: input.history,
     maxPrograms: 4
   });
 
@@ -250,6 +272,7 @@ function pinkShortlist(input) {
     issueIds: ids,
     includeTypes: [PINK_TYPE],
     crisisBlocking: false,
+    history: input.history,
     excludeModules: WATCH_MODULES,
     maxPrograms: 3
   });
@@ -277,6 +300,22 @@ function pinkFallback() {
     whyFromDatabase: p.summary,
     notes: p.notes
   }] : [];
+}
+
+// Analyses this person was given in the last 14 days.
+function recentAnalysisIds(input) {
+  const cutoff = Date.now() - 14 * 86400000;
+  const recent = new Set(
+    input.history
+      .filter(h => new Date(h.date).getTime() > cutoff)
+      .map(h => h.programId)
+  );
+  return ANALYSES
+    .filter(a => {
+      const p = PROGRAM_BY_CODE.get(DB_CODE[a.id]);
+      return p && recent.has(p.id);
+    })
+    .map(a => a.id);
 }
 
 function approvedChoices(input) {
@@ -372,6 +411,10 @@ function validateResult(plan, choices, input, pinkOptions) {
       why: cleanText(plan.alternative_why, 400)
     } : null,
     pink_program: pink,
+    history_entries: [
+      { programId: PROGRAM_BY_CODE.get(DB_CODE[primary.id])?.id, date: new Date().toISOString() },
+      ...(pinkChoice ? [{ programId: pinkChoice.id, date: new Date().toISOString() }] : [])
+    ].filter(e => e.programId),
     access_note: accessNote,
     disclaimer: "For wellness exploration and self-awareness only. Healy analyses are not medical diagnoses or treatments."
   };
@@ -465,12 +508,6 @@ const body = req.body || {};
     });
   }
 
-  if (healy.detectCrisis(textFromAnswers(input.answers))) {
-    return res.status(400).json({
-      error: "It sounds like you are going through something really hard. Healy analyses are not the right support for this. Please reach out to a local crisis line or emergency services, or someone you trust, right now."
-    });
-  }
-
   const choices = approvedChoices(input);
 
   if (!choices.length) {
@@ -496,10 +533,12 @@ HOW TO CHOOSE
    reasons. Do not add claims of your own about what a scan does.
 3. "databaseShortlist" holds the owner's database suggestions. Prefer
    one of them unless another approved analysis clearly fits better.
-4. Match the person's experience. For a beginner pick the most
+4. Do not choose anything listed in "recentlyUsedAnalyses" unless it
+   is clearly the only good fit; the person has just been given it.
+5. Match the person's experience. For a beginner pick the most
    straightforward option and keep everything very simple.
-5. Respect anything they say they want to avoid or have already tried.
-6. Never name a database, program or scan result that is not supplied.
+6. Respect anything they say they want to avoid or have already tried.
+7. Never name a database, program or scan result that is not supplied.
 
 PINK PROGRAM (always include exactly ONE)
 Pink programs are microcurrent programs run in the Healy app, alongside
@@ -577,8 +616,9 @@ Return ONLY valid JSON:
                 ...c,
                 reasonsToUse: reasonsFor(c.id)
               })),
-              databaseShortlist: databaseShortlist(input, choices),
-              pinkShortlist: pinkOptions
+              databaseShortlist: shuffled(databaseShortlist(input, choices)),
+              pinkShortlist: shuffled(pinkOptions),
+              recentlyUsedAnalyses: recentAnalysisIds(input)
             })
           }]
         })

@@ -5958,5 +5958,197 @@
     "role": "Supporting",
     "weight": 1.0,
     "why": "Scan 3 times to separate own results from picked-up energy"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Triage scan when someone just wants to feel better and does not know where to start"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Names the life areas that matter most when the need is general"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore positive qualities and personal growth"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Look at emotional patterns behind a general feeling of being off"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P220",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports an overall sense of energetic balance"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports feeling good in general"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P001",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle all-round starting point"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Success Coach style exploration of goals, career and finances"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P211",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports confidence when launching or growing"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports inner strength during a big step"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P019",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports focus while building"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P036",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports energy during long working stretches"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P211",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports confidence in the vision"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P033",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports getting going on the vision"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore emotional sensitivity and worry when feeling unsafe"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore stability and foundations"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Chakra scan for grounding and energetic awareness"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore confidence and security"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Explore grounding, boundaries and overwhelm"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Look at the pattern behind carrying everything"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra scan to see where energy feels heavy"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Explore worry, fear and overwhelm behind stress"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore grounding and overwhelm"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra scan for energetic awareness of stress"
   }
 ]
