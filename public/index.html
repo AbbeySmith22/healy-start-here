@@ -693,6 +693,13 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
     <div id="result-alternative" class="result-body"
          style="margin-top:24px;"></div>
 
+    <div id="result-pink" class="result-body" style="display:none;margin-top:24px;">
+      <div class="result-label">Pink program to pair with it</div>
+      <div id="result-pink-name" style="font-weight:600;"></div>
+      <div id="result-pink-why"></div>
+      <div id="result-pink-use" class="disclaimer"></div>
+    </div>
+
     <p id="result-access" class="disclaimer"></p>
   </div>
 
@@ -1017,6 +1024,22 @@ function showResults(data) {
     alternative.textContent = '';
   }
 
+  const pinkBox = document.getElementById('result-pink');
+  if (data.pink_program) {
+    document.getElementById('result-pink-name').textContent =
+      data.pink_program.name;
+    document.getElementById('result-pink-why').textContent =
+      data.pink_program.why || '';
+    document.getElementById('result-pink-use').textContent =
+      [data.pink_program.how_to_use && 'Use with: ' + data.pink_program.how_to_use,
+       data.pink_program.note]
+        .filter(Boolean).join('. ') +
+      ' Check the program is available in your Healy app.';
+    pinkBox.style.display = 'block';
+  } else {
+    pinkBox.style.display = 'none';
+  }
+
   document.getElementById('result-access').textContent =
     data.access_note || '';
 
@@ -1069,6 +1092,11 @@ function downloadResult() {
     '',
     'ANOTHER OPTION',
     alternative,
+    '',
+    'PINK PROGRAM TO PAIR WITH IT',
+    r.pink_program
+      ? `${r.pink_program.name}\n${r.pink_program.why || ''}\nUse with: ${r.pink_program.how_to_use || ''}`
+      : 'None',
     '',
     'ACCESS',
     r.access_note || '',
