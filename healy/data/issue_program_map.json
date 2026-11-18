@@ -1,0 +1,6154 @@
+[
+  {
+    "issueId": "I001",
+    "programId": "P006",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Core anti-stress program"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P195",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Inner peace and muscle relaxation"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P212",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Calm in stressful situations"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P128",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Balances excess stress"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P004",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Keeps you centred"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P196",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mind harmonisation"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P014",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Local CNS support for stress and anxiety"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P044",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Self-confidence in anxious states"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P211",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Everyday fear and worry"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P051",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Acute mental balance"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P004",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional centring"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Calm when worried"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P211",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Designed for everyday fear and news-driven worry"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P212",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Acceptance of what cannot be changed"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner strength"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root causes; only after symptoms subside"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P046",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Low spirits and low self-worth"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P214",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Optimism and positive waking mood"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P034",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Orients toward positive thoughts"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P303",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mood-related nutrient frequencies"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P279",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Psyche nutrient frequencies"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P015",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Supportive local CNS program"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages and limiting beliefs"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P214",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Counters negative thoughts"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P187",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Weakness, sadness, fear of life"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Low spirits"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P046",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Low self-worth and esteem"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P209",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Accepting yourself as you are"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P210",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Builds self-confidence"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power and confidence"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner strength"
+  },
+  {
+    "issueId": "I007",
+    "programId": "P210",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Confidence to say or do what is needed"
+  },
+  {
+    "issueId": "I007",
+    "programId": "P111",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Self-confidence and personal power"
+  },
+  {
+    "issueId": "I007",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner strength"
+  },
+  {
+    "issueId": "I007",
+    "programId": "P109",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Constructive communication"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P217",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Release from anger and irritation"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P216",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Letting go"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P215",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Processing emotions"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Calming"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P216",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Burdens, panic, trauma-related fear"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P045",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P215",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Emotion processing"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root-cause work; only after symptoms subside"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P208",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "If trauma followed a physical event"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P205",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Underlying conflicts"
+  },
+  {
+    "issueId": "I010",
+    "programId": "P050",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Compulsive/obsessive behaviours"
+  },
+  {
+    "issueId": "I010",
+    "programId": "P049",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Wholeness from within"
+  },
+  {
+    "issueId": "I010",
+    "programId": "P213",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Inner balance"
+  },
+  {
+    "issueId": "I011",
+    "programId": "P047",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Reduces pull of addictive behaviours"
+  },
+  {
+    "issueId": "I011",
+    "programId": "P048",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Acute cravings e.g. nicotine"
+  },
+  {
+    "issueId": "I011",
+    "programId": "P259",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Nutrient frequencies for alcohol intake"
+  },
+  {
+    "issueId": "I011",
+    "programId": "P050",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Compulsive behaviours"
+  },
+  {
+    "issueId": "I012",
+    "programId": "P209",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Self-acceptance, incl. body image"
+  },
+  {
+    "issueId": "I012",
+    "programId": "P049",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Wholeness"
+  },
+  {
+    "issueId": "I012",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Self-worth"
+  },
+  {
+    "issueId": "I012",
+    "programId": "P052",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Inner beauty"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P214",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Optimism and happiness"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P034",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Positive thinking"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P213",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Positive thinking and balance"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P303",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mood nutrient frequencies"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Uplift"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P215",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Supports processing of emotions"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P045",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Emotional wellbeing"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P004",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Emotional balance"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P213",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner balance"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P110",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Heart-centred emotion"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P110",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Love, empathy, compassion"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P205",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Harmonises conflicts"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P213",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balance spreads to surroundings"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P052",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Compassion and caring"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P040",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Shift into deep sleep"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P013",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Local CNS support for insomnia"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P041",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Parasympathetic wind-down"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P043",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Ionic movement for sleep"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P042",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Deep-sleep balance"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P280",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sleep nutrient frequencies"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P042",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Balances deep-sleep phase"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P043",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Sleep-state regulation"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P041",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Recovery and relaxation"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P118",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Protection during sleep"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P305",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Rest nutrient frequencies"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P005",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Supports response to demands"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P036",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Reduces strain behind fatigue"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P219",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Quick lift; not in evening"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P186",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Morning use; only when somewhat balanced"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P271",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energy nutrient frequencies"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P272",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Fatigue nutrient frequencies"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P037",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Adrenal fatigue and burnout"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P038",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Acute exhaustion"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Let go of chronic stress"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P218",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Evening regeneration"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P298",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Exhaustion nutrient frequencies"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P220",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balances energy centres"
+  },
+  {
+    "issueId": "I020",
+    "programId": "P218",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Recommended for energy vampires"
+  },
+  {
+    "issueId": "I020",
+    "programId": "P217",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Aura cleansing"
+  },
+  {
+    "issueId": "I020",
+    "programId": "P219",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Daytime boost"
+  },
+  {
+    "issueId": "I020",
+    "programId": "P114",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic shielding"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P019",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Systemic concentration support"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P020",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Acute concentration support"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P035",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Alert, attentive beta state"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P033",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Mental clarity"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P018",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Brain metabolism"
+  },
+  {
+    "issueId": "I022",
+    "programId": "P018",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Memory and brain metabolism"
+  },
+  {
+    "issueId": "I022",
+    "programId": "P016",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Learning state"
+  },
+  {
+    "issueId": "I022",
+    "programId": "P235",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Brain nutrient frequencies"
+  },
+  {
+    "issueId": "I023",
+    "programId": "P022",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Test anxiety"
+  },
+  {
+    "issueId": "I023",
+    "programId": "P021",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Systemic exam support"
+  },
+  {
+    "issueId": "I023",
+    "programId": "P024",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acute study stress"
+  },
+  {
+    "issueId": "I023",
+    "programId": "P020",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Focus"
+  },
+  {
+    "issueId": "I024",
+    "programId": "P016",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Systemic learning support"
+  },
+  {
+    "issueId": "I024",
+    "programId": "P017",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Acute learning support"
+  },
+  {
+    "issueId": "I024",
+    "programId": "P018",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Memory"
+  },
+  {
+    "issueId": "I024",
+    "programId": "P019",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Concentration"
+  },
+  {
+    "issueId": "I024",
+    "programId": "P023",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Learning-related stress"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P033",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Clarity to perform"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P035",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Decisions and problem solving"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P117",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Clear perception"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P034",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Positive orientation"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P219",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Daytime lift"
+  },
+  {
+    "issueId": "I026",
+    "programId": "P007",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Systemic pain at its source"
+  },
+  {
+    "issueId": "I026",
+    "programId": "P008",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Local chronic pain via CNS"
+  },
+  {
+    "issueId": "I026",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stress-pain cycle"
+  },
+  {
+    "issueId": "I027",
+    "programId": "P009",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Chronic back pain"
+  },
+  {
+    "issueId": "I027",
+    "programId": "P007",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Systemic pain release"
+  },
+  {
+    "issueId": "I027",
+    "programId": "P008",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "General chronic pain"
+  },
+  {
+    "issueId": "I027",
+    "programId": "P086",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "If pain runs along sciatic area"
+  },
+  {
+    "issueId": "I028",
+    "programId": "P011",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Local joint pain"
+  },
+  {
+    "issueId": "I028",
+    "programId": "P085",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Cartilage and bone support"
+  },
+  {
+    "issueId": "I028",
+    "programId": "P094",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Joint/connective tissue energy"
+  },
+  {
+    "issueId": "I028",
+    "programId": "P070",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Flexibility"
+  },
+  {
+    "issueId": "I028",
+    "programId": "P287",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mobility nutrient frequencies"
+  },
+  {
+    "issueId": "I029",
+    "programId": "P012",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Headache and migraine"
+  },
+  {
+    "issueId": "I029",
+    "programId": "P081",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Head tension"
+  },
+  {
+    "issueId": "I029",
+    "programId": "P239",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Head nutrient frequencies"
+  },
+  {
+    "issueId": "I029",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stress-related tension"
+  },
+  {
+    "issueId": "I030",
+    "programId": "P010",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Tooth, mouth and jaw"
+  },
+  {
+    "issueId": "I030",
+    "programId": "P306",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Teeth nutrient frequencies"
+  },
+  {
+    "issueId": "I031",
+    "programId": "P086",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Local sciatic area"
+  },
+  {
+    "issueId": "I031",
+    "programId": "P009",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Back pain"
+  },
+  {
+    "issueId": "I031",
+    "programId": "P008",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chronic pain"
+  },
+  {
+    "issueId": "I032",
+    "programId": "P122",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Eliminates stiffness"
+  },
+  {
+    "issueId": "I032",
+    "programId": "P130",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Reduces tension"
+  },
+  {
+    "issueId": "I032",
+    "programId": "P132",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Body pressure"
+  },
+  {
+    "issueId": "I032",
+    "programId": "P191",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "General energetic stiffness"
+  },
+  {
+    "issueId": "I032",
+    "programId": "P292",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stiffness nutrient frequencies"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P026",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Muscle repair"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P031",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Recovery after exertion"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P032",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Rest and reset"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P241",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Muscle nutrient frequencies"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P192",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Athlete recovery"
+  },
+  {
+    "issueId": "I034",
+    "programId": "P028",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Athletic performance"
+  },
+  {
+    "issueId": "I034",
+    "programId": "P029",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Strength"
+  },
+  {
+    "issueId": "I034",
+    "programId": "P030",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Endurance"
+  },
+  {
+    "issueId": "I034",
+    "programId": "P274",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sports nutrient frequencies"
+  },
+  {
+    "issueId": "I034",
+    "programId": "P285",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Competition nutrient frequencies"
+  },
+  {
+    "issueId": "I035",
+    "programId": "P025",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Organs that eliminate waste"
+  },
+  {
+    "issueId": "I035",
+    "programId": "P092",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Lipid metabolism"
+  },
+  {
+    "issueId": "I035",
+    "programId": "P252",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Weight nutrient frequencies"
+  },
+  {
+    "issueId": "I036",
+    "programId": "P068",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Intestinal muscles and tissues"
+  },
+  {
+    "issueId": "I036",
+    "programId": "P075",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Gastrointestinal tract"
+  },
+  {
+    "issueId": "I036",
+    "programId": "P189",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Food breakdown; stuck digestion"
+  },
+  {
+    "issueId": "I036",
+    "programId": "P102",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gastric function"
+  },
+  {
+    "issueId": "I036",
+    "programId": "P207",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Microbe balance"
+  },
+  {
+    "issueId": "I037",
+    "programId": "P079",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Food tolerance"
+  },
+  {
+    "issueId": "I037",
+    "programId": "P065",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Reactions"
+  },
+  {
+    "issueId": "I037",
+    "programId": "P268",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sensitivity nutrient frequencies"
+  },
+  {
+    "issueId": "I037",
+    "programId": "P189",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Digestion"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P001",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Supports filtering organs"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P188",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Complete energetic detox; drink water"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P080",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Excretory processes"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P059",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Toxin transport"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P099",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Liver"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P101",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Lymph"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P264",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Detox nutrient frequencies"
+  },
+  {
+    "issueId": "I039",
+    "programId": "P002",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Immune support"
+  },
+  {
+    "issueId": "I039",
+    "programId": "P063",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Defence system"
+  },
+  {
+    "issueId": "I039",
+    "programId": "P206",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Defence rebalancing"
+  },
+  {
+    "issueId": "I039",
+    "programId": "P076",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Microbe balance"
+  },
+  {
+    "issueId": "I039",
+    "programId": "P269",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Defence nutrient frequencies"
+  },
+  {
+    "issueId": "I040",
+    "programId": "P064",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Calms mucous membranes"
+  },
+  {
+    "issueId": "I040",
+    "programId": "P063",
+    "relevance": 4,
+    "role": "Supporting",
+    "weight": 2.0,
+    "why": "Defence"
+  },
+  {
+    "issueId": "I040",
+    "programId": "P077",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Infections"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P065",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Allergic reactions"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P087",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Desensitisation"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P268",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sensitivity nutrients"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P184",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sensitive people"
+  },
+  {
+    "issueId": "I042",
+    "programId": "P067",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Hormone release"
+  },
+  {
+    "issueId": "I042",
+    "programId": "P097",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Hormonal balance"
+  },
+  {
+    "issueId": "I042",
+    "programId": "P003",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Includes hormones"
+  },
+  {
+    "issueId": "I042",
+    "programId": "P266",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Hormone nutrients"
+  },
+  {
+    "issueId": "I043",
+    "programId": "P073",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Menopause"
+  },
+  {
+    "issueId": "I043",
+    "programId": "P299",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mature women nutrients"
+  },
+  {
+    "issueId": "I043",
+    "programId": "P097",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Hormonal balance"
+  },
+  {
+    "issueId": "I044",
+    "programId": "P074",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Menstruation relaxation"
+  },
+  {
+    "issueId": "I044",
+    "programId": "P193",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Women's kidney/sexual organ support"
+  },
+  {
+    "issueId": "I044",
+    "programId": "P262",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Women's nutrients"
+  },
+  {
+    "issueId": "I045",
+    "programId": "P072",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Reproductive organs"
+  },
+  {
+    "issueId": "I045",
+    "programId": "P082",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Prostate"
+  },
+  {
+    "issueId": "I045",
+    "programId": "P194",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Men's kidney/sexual organ support"
+  },
+  {
+    "issueId": "I045",
+    "programId": "P275",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Men's nutrients"
+  },
+  {
+    "issueId": "I045",
+    "programId": "P267",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Libido nutrients"
+  },
+  {
+    "issueId": "I046",
+    "programId": "P071",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Circulation"
+  },
+  {
+    "issueId": "I046",
+    "programId": "P027",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Blood flow and oxygen delivery"
+  },
+  {
+    "issueId": "I046",
+    "programId": "P098",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Meridian circulation"
+  },
+  {
+    "issueId": "I046",
+    "programId": "P191",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "After kidney and lung balancing"
+  },
+  {
+    "issueId": "I046",
+    "programId": "P291",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Circulation nutrients"
+  },
+  {
+    "issueId": "I047",
+    "programId": "P126",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "HRV balance"
+  },
+  {
+    "issueId": "I047",
+    "programId": "P124",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Heart-rate balance"
+  },
+  {
+    "issueId": "I047",
+    "programId": "P096",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Heart meridian"
+  },
+  {
+    "issueId": "I047",
+    "programId": "P191",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Circulation support"
+  },
+  {
+    "issueId": "I047",
+    "programId": "P238",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Heart nutrients"
+  },
+  {
+    "issueId": "I048",
+    "programId": "P105",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Fluid balance"
+  },
+  {
+    "issueId": "I048",
+    "programId": "P193",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Kidney (female)"
+  },
+  {
+    "issueId": "I048",
+    "programId": "P194",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Kidney (male)"
+  },
+  {
+    "issueId": "I048",
+    "programId": "P089",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Bladder"
+  },
+  {
+    "issueId": "I048",
+    "programId": "P244",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Kidney nutrients"
+  },
+  {
+    "issueId": "I049",
+    "programId": "P084",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Thyroid function"
+  },
+  {
+    "issueId": "I049",
+    "programId": "P246",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Thyroid nutrients"
+  },
+  {
+    "issueId": "I050",
+    "programId": "P078",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Liver metabolism"
+  },
+  {
+    "issueId": "I050",
+    "programId": "P099",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Liver meridian"
+  },
+  {
+    "issueId": "I050",
+    "programId": "P253",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Liver nutrients"
+  },
+  {
+    "issueId": "I050",
+    "programId": "P188",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Detox"
+  },
+  {
+    "issueId": "I051",
+    "programId": "P083",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Lung function"
+  },
+  {
+    "issueId": "I051",
+    "programId": "P100",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Respiratory system"
+  },
+  {
+    "issueId": "I051",
+    "programId": "P187",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Lungs and related emotions"
+  },
+  {
+    "issueId": "I051",
+    "programId": "P283",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Breath nutrients"
+  },
+  {
+    "issueId": "I052",
+    "programId": "P066",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Retina and eyes"
+  },
+  {
+    "issueId": "I052",
+    "programId": "P273",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Eyesight nutrients"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P054",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Skin layers"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P057",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Collagen, elastin"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P058",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Cellular skin support"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P059",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Toxin transport"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P237",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Skin nutrients"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P095",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Skin meridian"
+  },
+  {
+    "issueId": "I054",
+    "programId": "P053",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Hair follicles"
+  },
+  {
+    "issueId": "I054",
+    "programId": "P056",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Nail bed"
+  },
+  {
+    "issueId": "I054",
+    "programId": "P236",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Hair nutrients"
+  },
+  {
+    "issueId": "I054",
+    "programId": "P242",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Nail nutrients"
+  },
+  {
+    "issueId": "I055",
+    "programId": "P061",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Local scar tissue"
+  },
+  {
+    "issueId": "I055",
+    "programId": "P062",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Scar interference fields"
+  },
+  {
+    "issueId": "I055",
+    "programId": "P060",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Local cell metabolism"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P055",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Cell organelles and renewal"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P170",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Capacity for activity"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P161",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "3-week regeneration series"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P172",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Cell harmony"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P171",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Epigenetic field"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P247",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Age nutrients"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P192",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "After injury, procedures, operations"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P165",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Tissue"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P164",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Bones"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P058",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Wounds"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P208",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "After physical events"
+  },
+  {
+    "issueId": "I058",
+    "programId": "P164",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Bone field"
+  },
+  {
+    "issueId": "I058",
+    "programId": "P085",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Bone cells and cartilage"
+  },
+  {
+    "issueId": "I058",
+    "programId": "P192",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stimulates bone growth"
+  },
+  {
+    "issueId": "I059",
+    "programId": "P115",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "EMF tolerance"
+  },
+  {
+    "issueId": "I059",
+    "programId": "P184",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Electro-sensitivity"
+  },
+  {
+    "issueId": "I059",
+    "programId": "P114",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Shielding"
+  },
+  {
+    "issueId": "I060",
+    "programId": "P119",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Interference fields"
+  },
+  {
+    "issueId": "I060",
+    "programId": "P121",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Planetary influences"
+  },
+  {
+    "issueId": "I060",
+    "programId": "P120",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Subtle influences"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P114",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Blanket protection"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P120",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "External influences"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P116",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Strengthens cells"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P117",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Protects mental pathways"
+  },
+  {
+    "issueId": "I062",
+    "programId": "P184",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Designed for sensitive people"
+  },
+  {
+    "issueId": "I062",
+    "programId": "P115",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "EMF"
+  },
+  {
+    "issueId": "I062",
+    "programId": "P001",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Gentle starting program"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P001",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Starting point for new users"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P184",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Good start; especially if sensitive"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P002",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Next step"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P003",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Deep overall balancing"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P197",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Body resonances"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P196",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Mind resonances"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P198",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Spirit resonances"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P159",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Coherence"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P158",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "General harmonising"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P167",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Holistic support"
+  },
+  {
+    "issueId": "I065",
+    "programId": "P208",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "After accidents, loud sounds, vaccinations, assaults"
+  },
+  {
+    "issueId": "I065",
+    "programId": "P205",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Conflict-related stress"
+  },
+  {
+    "issueId": "I065",
+    "programId": "P206",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Defence rebalancing"
+  },
+  {
+    "issueId": "I065",
+    "programId": "P207",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Flora and emotional balance"
+  },
+  {
+    "issueId": "I066",
+    "programId": "P201",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "7-20-7-20-7 zapper protocol"
+  },
+  {
+    "issueId": "I066",
+    "programId": "P199",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Classical frequencies"
+  },
+  {
+    "issueId": "I066",
+    "programId": "P200",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Classical frequencies"
+  },
+  {
+    "issueId": "I067",
+    "programId": "P221",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Start of a Natural Cycle"
+  },
+  {
+    "issueId": "I067",
+    "programId": "P222",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "After about 4 weeks of daily"
+  },
+  {
+    "issueId": "I067",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Coherence"
+  },
+  {
+    "issueId": "I068",
+    "programId": "P129",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Watch stress reading"
+  },
+  {
+    "issueId": "I068",
+    "programId": "P127",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Watch HRV reading"
+  },
+  {
+    "issueId": "I068",
+    "programId": "P131",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Watch tension reading"
+  },
+  {
+    "issueId": "I068",
+    "programId": "P152",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Nutrition version"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P113",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Basic trust and safety"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P213",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balance"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P004",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Staying centred"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P108",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Intuition and awareness"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P107",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Higher-self connection"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P198",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Spectral light resonances"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P185",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Spiritual balance"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P052",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Soul-level beauty"
+  },
+  {
+    "issueId": "I071",
+    "programId": "P109",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Constructive communication"
+  },
+  {
+    "issueId": "I071",
+    "programId": "P210",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Courage to speak"
+  },
+  {
+    "issueId": "I072",
+    "programId": "P112",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Creativity"
+  },
+  {
+    "issueId": "I072",
+    "programId": "P160",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Natural growth dynamics"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P178",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Fears, nervousness"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P180",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Excitement and fears"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P182",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Immunity"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P183",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Joints and stiffness"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P181",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Weakness, recovery"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P177",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Allergies, digestion"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for unresolved grief, loneliness, alienation and a heart closed after loss/separation"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P110",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Heart chakra: love, compassion"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P187",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Lungs-related sadness and fear of life"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P216",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Releasing what is carried"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for repetitive or circular thoughts and an overactive mind"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Calm and acceptance"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Letting go of stress loops"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P117",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Clear perception and mental pathways"
+  },
+  {
+    "issueId": "I076",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for acting or deciding too quickly before things settle"
+  },
+  {
+    "issueId": "I076",
+    "programId": "P035",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Alert, considered thinking"
+  },
+  {
+    "issueId": "I076",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Calm before deciding"
+  },
+  {
+    "issueId": "I077",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for difficulty connecting in meditation"
+  },
+  {
+    "issueId": "I077",
+    "programId": "P107",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Higher-self connection"
+  },
+  {
+    "issueId": "I077",
+    "programId": "P108",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Awareness"
+  },
+  {
+    "issueId": "I077",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Settling the system"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for guilt, shame, anger and jealousy"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Self-acceptance"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P216",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Releasing burdens"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P217",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Cleansing negative emotions"
+  },
+  {
+    "issueId": "I079",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for seeing the negative in everything and lack of trust in the universe"
+  },
+  {
+    "issueId": "I079",
+    "programId": "P214",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Optimism"
+  },
+  {
+    "issueId": "I079",
+    "programId": "P034",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Positive orientation"
+  },
+  {
+    "issueId": "I079",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Uplift"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for limiting beliefs and fear of taking risks"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P045",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Limiting belief systems"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P210",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Courage"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for trouble manifesting and not feeling worthy of money or abundance"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Self-worth"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power"
+  },
+  {
+    "issueId": "I082",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Primary",
+    "weight": 3.0,
+    "why": "Listed for not being able to commit"
+  },
+  {
+    "issueId": "I082",
+    "programId": "P210",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Confidence in choices"
+  },
+  {
+    "issueId": "I082",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Will and power"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for feeling lost or at a crossroads; pairs well with the I Ching (per your notes)"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P159",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Sense of purpose and inner order"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P108",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Intuition"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P107",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Higher self"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for insecurity at the start of something new"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P210",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Confidence in new situations"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner strength"
+  },
+  {
+    "issueId": "I085",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Your own experience: supported stepping into visibility, authority and leadership"
+  },
+  {
+    "issueId": "I085",
+    "programId": "P210",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Confidence to speak and act"
+  },
+  {
+    "issueId": "I085",
+    "programId": "P109",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Communication and expression"
+  },
+  {
+    "issueId": "I085",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for feeling stuck, stagnant or blocked"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P106",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "For feeling blocked or stuck"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P191",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Free-flowing energy"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P218",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic regeneration"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for being strongly affected by others' energy (empaths, healers)"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P114",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Blanket protection"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P120",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "External influences"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P217",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Aura cleansing"
+  },
+  {
+    "issueId": "I088",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for being easily influenced and comparing yourself on social media"
+  },
+  {
+    "issueId": "I088",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Self-acceptance"
+  },
+  {
+    "issueId": "I088",
+    "programId": "P210",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Confidence"
+  },
+  {
+    "issueId": "I089",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for relationships that are not for your highest good"
+  },
+  {
+    "issueId": "I089",
+    "programId": "P205",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Conflict harmonisation"
+  },
+  {
+    "issueId": "I089",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Self-acceptance"
+  },
+  {
+    "issueId": "I090",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for feeling unprotected or vulnerable after being 'cracked open'; strengthens energetic boundaries"
+  },
+  {
+    "issueId": "I090",
+    "programId": "P114",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shielding"
+  },
+  {
+    "issueId": "I090",
+    "programId": "P113",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Safety and basic trust"
+  },
+  {
+    "issueId": "I090",
+    "programId": "P184",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle for sensitive people"
+  },
+  {
+    "issueId": "I091",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for inharmonious energies in an aura or space (home or workspace)"
+  },
+  {
+    "issueId": "I092",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for reconnecting with injured or traumatised body parts"
+  },
+  {
+    "issueId": "I092",
+    "programId": "P216",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Trauma-related release"
+  },
+  {
+    "issueId": "I092",
+    "programId": "P192",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "After injury"
+  },
+  {
+    "issueId": "I093",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for uneven sexual energy after shock or trauma"
+  },
+  {
+    "issueId": "I093",
+    "programId": "P112",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Creativity and balanced sexuality"
+  },
+  {
+    "issueId": "I094",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Your own use: balancing masculine and feminine; reconnecting with feminine energy"
+  },
+  {
+    "issueId": "I094",
+    "programId": "P112",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Creativity and sexuality"
+  },
+  {
+    "issueId": "I094",
+    "programId": "P198",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Spirit resonances"
+  },
+  {
+    "issueId": "I095",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for nurturing the inner child"
+  },
+  {
+    "issueId": "I095",
+    "programId": "P215",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotion processing"
+  },
+  {
+    "issueId": "I095",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I096",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for cloudy psychic vision and not hearing or understanding universal guidance"
+  },
+  {
+    "issueId": "I096",
+    "programId": "P108",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Psychic vision and intuition"
+  },
+  {
+    "issueId": "I096",
+    "programId": "P107",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Higher-self connection"
+  },
+  {
+    "issueId": "I097",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Listed for feeling separate from all that is"
+  },
+  {
+    "issueId": "I097",
+    "programId": "P107",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Higher-self connection"
+  },
+  {
+    "issueId": "I097",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Coherence"
+  },
+  {
+    "issueId": "I098",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Your own use: helps integrate healing daily; a program is the catalyst, embodiment is the work"
+  },
+  {
+    "issueId": "I098",
+    "programId": "P159",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Suggested supporting program in your start routine"
+  },
+  {
+    "issueId": "I098",
+    "programId": "P197",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Body resonances"
+  },
+  {
+    "issueId": "I099",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Part of your morning ritual with an aura/chakra scan"
+  },
+  {
+    "issueId": "I099",
+    "programId": "P186",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Morning use (only when somewhat balanced)"
+  },
+  {
+    "issueId": "I099",
+    "programId": "P219",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Daytime lift; not in the evening"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stabilising when expansion leaves the body behind (fight-or-flight)"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for sadness or lack of joy with no known cause"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Listed for unexplained sadness/depression; supportive only, not a substitute for care"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Listed for fear of not being good enough, low self-esteem, weak sense of identity"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Reconnecting with traumatised parts of the body; supportive only"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for tiredness and fatigue"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for burnout"
+  },
+  {
+    "issueId": "I020",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Strengthens boundaries when affected by others' energy"
+  },
+  {
+    "issueId": "I021",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for lack of mental clarity and concentration"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for insomnia from overusing mental forces"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Mind-driven sleep disruption"
+  },
+  {
+    "issueId": "I062",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Gentle: recommended start if sensitive or Healy feels like too much"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle option if standard programs feel like too much"
+  },
+  {
+    "issueId": "I059",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for sensitivity to environmental toxins or EMF"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Listed for allergies; supportive only"
+  },
+  {
+    "issueId": "I037",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Listed for food intolerances; supportive only"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P307",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Strengthens connection to the earth; listed for feeling ungrounded"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Strengthens energetic boundaries and aura definition"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Listed for relationship and communication struggles"
+  },
+  {
+    "issueId": "I071",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Opens channels of communication; clears confusion"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Heart cleanser; fear of powerful emotions"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Supports spiritual identity and authority"
+  },
+  {
+    "issueId": "I072",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Replenishes creative energy"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balances yin and yang; stabilising daily practice"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Releases toxic energy from mind, emotions and body"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Good place to start when uncomfortable or unable to name what you feel"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P215",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Processing emotions"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P004",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional centring"
+  },
+  {
+    "issueId": "I101",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for intense or recurring feelings: constant anger, black cloud, melancholy"
+  },
+  {
+    "issueId": "I101",
+    "programId": "P217",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Cleansing anger and heavy emotions"
+  },
+  {
+    "issueId": "I101",
+    "programId": "P214",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Optimism"
+  },
+  {
+    "issueId": "I101",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Low spirits"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Useful in life transitions when the next step is unclear (Aspen came up in your class)"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Crossroads and starting something new"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P210",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Confidence in new situations"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sense of purpose"
+  },
+  {
+    "issueId": "I103",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Uncertainty/present-interest groups: stuck in the past, daydreaming, apathy"
+  },
+  {
+    "issueId": "I103",
+    "programId": "P218",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic regeneration"
+  },
+  {
+    "issueId": "I103",
+    "programId": "P185",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotions and wellbeing"
+  },
+  {
+    "issueId": "I104",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Loneliness group: feeling isolated or cut off, sometimes for no clear reason"
+  },
+  {
+    "issueId": "I104",
+    "programId": "P110",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Heart and connection"
+  },
+  {
+    "issueId": "I104",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Loneliness and a closed heart"
+  },
+  {
+    "issueId": "I105",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Oversensitivity group: hiding pain behind a smile"
+  },
+  {
+    "issueId": "I105",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I105",
+    "programId": "P215",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Processing emotions"
+  },
+  {
+    "issueId": "I106",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Despondency group includes shock"
+  },
+  {
+    "issueId": "I106",
+    "programId": "P208",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "After a physical or sudden event"
+  },
+  {
+    "issueId": "I106",
+    "programId": "P216",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Releasing what is carried"
+  },
+  {
+    "issueId": "I107",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Overcare-for-others group: caregivers, controlling, tying own wellbeing to others"
+  },
+  {
+    "issueId": "I107",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I107",
+    "programId": "P220",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balances energy centres"
+  },
+  {
+    "issueId": "I107",
+    "programId": "P114",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Protection"
+  },
+  {
+    "issueId": "I108",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Overcare group includes being too rigid"
+  },
+  {
+    "issueId": "I108",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance of what cannot be changed"
+  },
+  {
+    "issueId": "I108",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Flexibility with stability"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Despondency group: overwhelm and exhaustion from always being the fighter (Oak: the fighter carrying everything, in your class)"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P216",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Releasing burdens"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Letting go of chronic stress"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P039",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Extreme stress"
+  },
+  {
+    "issueId": "I110",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Used around public speaking and job interviews"
+  },
+  {
+    "issueId": "I110",
+    "programId": "P210",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Confidence to speak"
+  },
+  {
+    "issueId": "I110",
+    "programId": "P022",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acute test-type nerves"
+  },
+  {
+    "issueId": "I111",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Clears blocks to starting a business or following soul direction; supports affirmations after release"
+  },
+  {
+    "issueId": "I111",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Trouble manifesting and limiting beliefs"
+  },
+  {
+    "issueId": "I111",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Limiting belief systems"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Targets the emotional layer; catches chronic patterns before they show in the body"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root causes; only after symptoms subside"
+  },
+  {
+    "issueId": "I113",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Primary",
+    "weight": 3.0,
+    "why": "Indirect support: run more often to work on beliefs behind a health issue; not a substitute for medical care"
+  },
+  {
+    "issueId": "I113",
+    "programId": "P003",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Overall balance"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Finds loops and negative beliefs (default programs); helps the personality barrier between soul and beliefs"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "An emotional scan: acts on the emotional body"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Fear group: nervousness, panic, vague or specific fears, worry for others"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Fear group: nervousness and panic"
+  },
+  {
+    "issueId": "I004",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Melancholy and apathy; supportive only"
+  },
+  {
+    "issueId": "I005",
+    "programId": "P308",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Despondency group; supportive only, not a substitute for care"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Uncertainty group: low self-confidence; Holly pointed to self-worth and true love in your class"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Constant anger and resentment"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Despondency group: guilt, shame, resentment"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Exhaustion and burnout"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P308",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Exhaustion and apathy states"
+  },
+  {
+    "issueId": "I009",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Shock and emotional patterns; supportive only"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P308",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Oversensitivity group: absorbing others' moods; Walnut and Centaury are the key ones for healers and empaths"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Protects the energy field when absorbing others' emotions; pair with Bioenergetic Defence"
+  },
+  {
+    "issueId": "I088",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Oversensitive to influence and ideas"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Relationship patterns"
+  },
+  {
+    "issueId": "I082",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Uncertainty group: indecision"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Uncertainty group: no sense of purpose"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Circling thoughts (present-interest group)"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Keeps emotions high; supports affirmations after release"
+  },
+  {
+    "issueId": "I095",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Works on beliefs formed in childhood"
+  },
+  {
+    "issueId": "I023",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Used around exams"
+  },
+  {
+    "issueId": "I085",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Public speaking nerves"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Life transitions"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Clears blocks to moving forward"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P308",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Emotional balance as part of whole-person support"
+  },
+  {
+    "issueId": "I114",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for clients who keep repeating the same patterns and beliefs"
+  },
+  {
+    "issueId": "I114",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Finds emotional loops and limiting beliefs"
+  },
+  {
+    "issueId": "I114",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages and limiting beliefs"
+  },
+  {
+    "issueId": "I114",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root causes; only after symptoms subside"
+  },
+  {
+    "issueId": "I115",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for rejection and abandonment (Ian White's example: a child left out of a birthday party)"
+  },
+  {
+    "issueId": "I115",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Loneliness and emotional patterns"
+  },
+  {
+    "issueId": "I115",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I115",
+    "programId": "P110",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Heart and self-love"
+  },
+  {
+    "issueId": "I116",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Effect similar to meditation; reaches higher-self wisdom so love, joy, faith and courage replace fear, hatred and insecurity"
+  },
+  {
+    "issueId": "I116",
+    "programId": "P107",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Connection to the higher Self"
+  },
+  {
+    "issueId": "I116",
+    "programId": "P108",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Awareness and intuition"
+  },
+  {
+    "issueId": "I116",
+    "programId": "P198",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Spirit resonances"
+  },
+  {
+    "issueId": "I117",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed as support for healers and spiritual workers who need extra support"
+  },
+  {
+    "issueId": "I117",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Empaths and healers; boundaries and integration"
+  },
+  {
+    "issueId": "I117",
+    "programId": "P114",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic protection"
+  },
+  {
+    "issueId": "I117",
+    "programId": "P185",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotions and spiritual balance"
+  },
+  {
+    "issueId": "I118",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Brings strength and commitment to pursue goals and dreams, not just clarity"
+  },
+  {
+    "issueId": "I118",
+    "programId": "P210",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Courage to speak and act"
+  },
+  {
+    "issueId": "I118",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power"
+  },
+  {
+    "issueId": "I118",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Inner strength"
+  },
+  {
+    "issueId": "I119",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Natural and self-adjusting; easy for practitioners, parents, friends and family"
+  },
+  {
+    "issueId": "I119",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Gentle option"
+  },
+  {
+    "issueId": "I119",
+    "programId": "P184",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Gentle Healy program for sensitive people"
+  },
+  {
+    "issueId": "I119",
+    "programId": "P001",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle starting program"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Works alongside physical-focused scans to address the emotional layer"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Emotional scan; balances emotions to go deeper with other work"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Pairs with other work"
+  },
+  {
+    "issueId": "I121",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "69 individual essences and 17 combinations to tailor a remedy to each person's circumstances"
+  },
+  {
+    "issueId": "I121",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Remedies can be mixed"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Listed for feeling stuck or blocked; shifts negative emotions, thoughts and subconscious beliefs"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Emotional support for big emotions"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Fear is one of the big emotions it supports; courage and faith replace fear"
+  },
+  {
+    "issueId": "I008",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Anger is one of the big emotions it supports"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Grief and major emotional change"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Low self-worth; supports self-esteem"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Major life change"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Spiritual growth and higher-self connection"
+  },
+  {
+    "issueId": "I077",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Effect similar to meditation"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Suits 'I'm here to do something but I'm not sure what'"
+  },
+  {
+    "issueId": "I096",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Supports intuition"
+  },
+  {
+    "issueId": "I072",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Supports creativity and fun"
+  },
+  {
+    "issueId": "I007",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Courage and self-esteem"
+  },
+  {
+    "issueId": "I111",
+    "programId": "P309",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Like Bach flowers, breaks down belief-system barriers so you can attract more of what you want"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shifts subconscious beliefs and thought patterns"
+  },
+  {
+    "issueId": "I062",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle and self-adjusting"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle and suitable for everyone"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Gentle enough for animals (a participant uses them with her cats; Flannel Flower, Alpine Mintbush and Sydney Rose come up often)"
+  },
+  {
+    "issueId": "I013",
+    "programId": "P309",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Brings love, joy, faith and courage"
+  },
+  {
+    "issueId": "I110",
+    "programId": "P309",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Courage and self-esteem"
+  },
+  {
+    "issueId": "I122",
+    "programId": "P310",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "The database to return to when something in life feels like it is missing its foundation"
+  },
+  {
+    "issueId": "I122",
+    "programId": "P166",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stability"
+  },
+  {
+    "issueId": "I122",
+    "programId": "P113",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Basic trust and safety"
+  },
+  {
+    "issueId": "I122",
+    "programId": "P003",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Deep overall balancing"
+  },
+  {
+    "issueId": "I123",
+    "programId": "P310",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Brings stability when life feels chaotic and you don't know where to start; gives a base to stand on"
+  },
+  {
+    "issueId": "I123",
+    "programId": "P166",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stability"
+  },
+  {
+    "issueId": "I123",
+    "programId": "P221",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stabilising daily rhythm"
+  },
+  {
+    "issueId": "I123",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Calm amid stress"
+  },
+  {
+    "issueId": "I124",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Goes beyond the body: minerals act as a template for building the missing foundation (relationship, money, abundance)"
+  },
+  {
+    "issueId": "I124",
+    "programId": "P113",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Basic trust and safety"
+  },
+  {
+    "issueId": "I124",
+    "programId": "P209",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I124",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Worthiness and abundance themes"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Run alongside body discomfort in skin, bones or muscles, or during recovery, to support the body's own healing processes"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P008",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Local application for chronic discomfort"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P007",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Systemic pain program"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P192",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Support after injury or procedures"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P026",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Muscle repair"
+  },
+  {
+    "issueId": "I126",
+    "programId": "P310",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "If you only run one resonance database regularly, make it this one; worth working with every day"
+  },
+  {
+    "issueId": "I126",
+    "programId": "P003",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Overall balancing"
+  },
+  {
+    "issueId": "I126",
+    "programId": "P002",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Supports the field daily"
+  },
+  {
+    "issueId": "I127",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Primary",
+    "weight": 3.0,
+    "why": "Traditionally linked with fertility; area to explore alongside medical care"
+  },
+  {
+    "issueId": "I127",
+    "programId": "P072",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Reproductive organs"
+  },
+  {
+    "issueId": "I127",
+    "programId": "P067",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Hormone support"
+  },
+  {
+    "issueId": "I127",
+    "programId": "P097",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Hormonal balance"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Helps in times of transition: new motherhood, a breakup, a career change or any threshold"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Ideal before a move, a new role or any leap"
+  },
+  {
+    "issueId": "I074",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Transition such as a breakup"
+  },
+  {
+    "issueId": "I003",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Supports fear, anxiety and big changes (fear and panic linked to courage and serenity)"
+  },
+  {
+    "issueId": "I002",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Supports fear, anxiety and big changes"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Strong foundations mean we take on less stress"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Take on less from a demanding season of life"
+  },
+  {
+    "issueId": "I061",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Supports protection and resilience: take on less from other people's energy"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Strong foundations: take on less of other people's energy"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Each result names the emotional pattern behind how you feel"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Reveals the emotion behind the imbalance, so you understand why you feel the way you do"
+  },
+  {
+    "issueId": "I035",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Supports weight and metabolism goals: a natural add-on for weight-balance programs and clients"
+  },
+  {
+    "issueId": "I057",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports the body's own healing processes during recovery"
+  },
+  {
+    "issueId": "I058",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Body field results can point to bones"
+  },
+  {
+    "issueId": "I033",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Body field results can point to muscles"
+  },
+  {
+    "issueId": "I053",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Body field results can point to skin; traditional link with beauty"
+  },
+  {
+    "issueId": "I056",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Traditionally linked with healthy aging"
+  },
+  {
+    "issueId": "I042",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Traditionally linked with hormone balance"
+  },
+  {
+    "issueId": "I038",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Traditionally linked with detox"
+  },
+  {
+    "issueId": "I041",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Traditionally linked with allergies"
+  },
+  {
+    "issueId": "I040",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Traditionally linked with fever and cough"
+  },
+  {
+    "issueId": "I019",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Traditionally linked with exhaustion"
+  },
+  {
+    "issueId": "I018",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Traditionally linked with exhaustion"
+  },
+  {
+    "issueId": "I017",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Traditionally linked with sleep"
+  },
+  {
+    "issueId": "I016",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Traditionally linked with sleep"
+  },
+  {
+    "issueId": "I099",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Twice-daily practice, morning and night"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Works on the foundation level: physical, emotional and energetic at once"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Foundational database to run regularly"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Minerals as a template for building abundance and foundation"
+  },
+  {
+    "issueId": "I128",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Works on subconscious blocks; a good choice when something has been worked on for a long time and still isn't shifting"
+  },
+  {
+    "issueId": "I128",
+    "programId": "P309",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Stuck or blocked; subconscious beliefs"
+  },
+  {
+    "issueId": "I128",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root causes; only after symptoms subside"
+  },
+  {
+    "issueId": "I128",
+    "programId": "P045",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional blockages"
+  },
+  {
+    "issueId": "I129",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Treats symptoms as messages; links the stress pattern to physical symptoms and gives clients 'aha' moments"
+  },
+  {
+    "issueId": "I129",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shows where in the body; complements Creative Homeopathy"
+  },
+  {
+    "issueId": "I129",
+    "programId": "P006",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Reducing stress is always a good starting point"
+  },
+  {
+    "issueId": "I129",
+    "programId": "P205",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Underlying conflicts"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Good for releasing limiting beliefs around money"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Not feeling worthy of money and abundance"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Minerals as a template for abundance"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P111",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Personal power"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P113",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Basic trust and safety"
+  },
+  {
+    "issueId": "I131",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Asks what the person's life situation is today, how it came about and where it is going"
+  },
+  {
+    "issueId": "I131",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sense of purpose and inner order"
+  },
+  {
+    "issueId": "I131",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Life purpose and higher self"
+  },
+  {
+    "issueId": "I132",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "You can scan a group as well as an individual"
+  },
+  {
+    "issueId": "I132",
+    "programId": "P205",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Conflict harmonisation in group settings"
+  },
+  {
+    "issueId": "I133",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "348 remedies scanned; the top five are much more specific and often differ a lot from person to person"
+  },
+  {
+    "issueId": "I133",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "69 essences and 17 combinations to tailor"
+  },
+  {
+    "issueId": "I114",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Targets emotional and subconscious patterns that keep coming back"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P311",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Premise: unresolved emotional conflicts and limiting beliefs contribute to physical and mental imbalances"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Subconscious blocks"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Useful in difficult or transformational times, when unbalanced or ungrounded, or at a crossroads"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "At a crossroads"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Helps when feeling unbalanced or ungrounded in a transition"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Money blocks and limiting beliefs"
+  },
+  {
+    "issueId": "I111",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Limiting beliefs around money and moving forward"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shows the stress pattern and emotional conflict beneath symptoms"
+  },
+  {
+    "issueId": "I113",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Connects a physical issue with the stress pattern behind it; clients should keep working with their doctor"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Many results have a physical side to research; for clients with physical complaints who don't know why"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shows the stress pattern first; reducing stress is always a good starting point"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Useful when you don't know where to start; names the stress pattern"
+  },
+  {
+    "issueId": "I014",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Psychological meaning of the results"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Good for client work, especially clients with physical complaints who don't know why"
+  },
+  {
+    "issueId": "I134",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Clarity at a crossroads: a lens on what this moment needs for a big life, work or relationship decision"
+  },
+  {
+    "issueId": "I134",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Lost or at a crossroads"
+  },
+  {
+    "issueId": "I134",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Sense of purpose and inner order"
+  },
+  {
+    "issueId": "I134",
+    "programId": "P212",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Calm before deciding"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Tells whether it is a time to build quietly or to get out, network and be seen"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Money blocks and limiting beliefs"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P033",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mental clarity for work"
+  },
+  {
+    "issueId": "I136",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "A ready-made coaching session: set a focus, scan, read together, let the client find their own meaning"
+  },
+  {
+    "issueId": "I136",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Gives clients aha moments"
+  },
+  {
+    "issueId": "I136",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Emotional scan for client work"
+  },
+  {
+    "issueId": "I137",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Reveals what is at play beneath the surface in family dynamics"
+  },
+  {
+    "issueId": "I137",
+    "programId": "P205",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Harmonises conflicts"
+  },
+  {
+    "issueId": "I137",
+    "programId": "P209",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Acceptance"
+  },
+  {
+    "issueId": "I138",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "64 hexagrams correspond to the 64 Human Design gates; lines map onto the six line profiles"
+  },
+  {
+    "issueId": "I139",
+    "programId": "P312",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Offers perspective on how to move forward now"
+  },
+  {
+    "issueId": "I139",
+    "programId": "P212",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Accepting what cannot be changed"
+  },
+  {
+    "issueId": "I139",
+    "programId": "P216",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Releasing burdens"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Life direction: crossroads, new chapter, life purpose"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Starting a new chapter; what the current cycle is asking for"
+  },
+  {
+    "issueId": "I086",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shows what the current cycle is asking for when nothing seems to move"
+  },
+  {
+    "issueId": "I075",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Cuts through overthinking and points to one clear theme"
+  },
+  {
+    "issueId": "I025",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Mental clarity; one clear theme"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Brings relationship patterns, shadows and shared values into view"
+  },
+  {
+    "issueId": "I089",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Brings relationship dynamics into awareness"
+  },
+  {
+    "issueId": "I131",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Shows where a path is likely to lead and helps shape a strategy"
+  },
+  {
+    "issueId": "I084",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Starting a new chapter"
+  },
+  {
+    "issueId": "I070",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Deepens spiritual practice with an ancient philosophy of change"
+  },
+  {
+    "issueId": "I116",
+    "programId": "P312",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Externalises what you already know within"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Reflection tool for client work"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P312",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Perspective on a hard moment"
+  },
+  {
+    "issueId": "I140",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "A score for each of the seven chakras"
+  },
+  {
+    "issueId": "I140",
+    "programId": "P113",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root chakra program"
+  },
+  {
+    "issueId": "I140",
+    "programId": "P110",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Heart chakra program"
+  },
+  {
+    "issueId": "I140",
+    "programId": "P217",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Aura cleansing"
+  },
+  {
+    "issueId": "I141",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Shows the effect of what you just did: scan before and after a program or meditation"
+  },
+  {
+    "issueId": "I141",
+    "programId": "P217",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Aura-cleanse practice as the middle step"
+  },
+  {
+    "issueId": "I142",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Builds self-awareness over time; look for patterns across several scans"
+  },
+  {
+    "issueId": "I142",
+    "programId": "P310",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Weekly re-scan also tracks change"
+  },
+  {
+    "issueId": "I143",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Turns a vague feeling into a starting point; the focus comes from what is actually showing up"
+  },
+  {
+    "issueId": "I143",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Good start when you can't name what you feel"
+  },
+  {
+    "issueId": "I144",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Distance sessions for others are possible; always get permission and start gently"
+  },
+  {
+    "issueId": "I145",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Can analyse yourself, your environment, pets and plants"
+  },
+  {
+    "issueId": "I145",
+    "programId": "P307",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Clearing a home or workspace"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Scan the aura of your business vision with a clarity focus"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P312",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Business timing and direction"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P313",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Turns a vague feeling into a starting point (e.g. overwhelmed and unsure about career and money: root and sacral lowest)"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "During a breakup, move, business launch or 'no man's land' phase; match chakra themes to programs such as Being, Release, Coherence and Inner Strength"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P004",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra themes matched to Being"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P007",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra themes matched to Release"
+  },
+  {
+    "issueId": "I102",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra themes matched to Inner Strength"
+  },
+  {
+    "issueId": "I136",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Scan at the start of a client or coaching session, before setting the focus"
+  },
+  {
+    "issueId": "I099",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Your rhythm: scan in the morning, run a program, scan again before bed"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Scan the aura of your business vision with a clarity focus"
+  },
+  {
+    "issueId": "I098",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Choose one physical action towards the focus after the scan"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Bridges the energetic and the specific"
+  },
+  {
+    "issueId": "I073",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Pets can be analysed"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Regular energetic check-in"
+  },
+  {
+    "issueId": "I147",
+    "programId": "P314",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Turning on every category gives a full wheel of life; makes vague imbalance visible and sets priorities"
+  },
+  {
+    "issueId": "I147",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic check-in first"
+  },
+  {
+    "issueId": "I147",
+    "programId": "P159",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Balance and inner order"
+  },
+  {
+    "issueId": "I147",
+    "programId": "P003",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Overall balancing"
+  },
+  {
+    "issueId": "I148",
+    "programId": "P314",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Often shows the real issue is in a different category from where you started; like peeling an onion"
+  },
+  {
+    "issueId": "I148",
+    "programId": "P311",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Subconscious patterns beneath symptoms"
+  },
+  {
+    "issueId": "I148",
+    "programId": "P190",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Root causes; only after symptoms subside"
+  },
+  {
+    "issueId": "I149",
+    "programId": "P314",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Turns insight into an action plan; put a gate's healing affirmation into the focus and work on it directly"
+  },
+  {
+    "issueId": "I149",
+    "programId": "P312",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Practical reflection questions"
+  },
+  {
+    "issueId": "I150",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Green results show where the focus is already working: a strength to build on"
+  },
+  {
+    "issueId": "I151",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Shows how deep something sits: D and C are cause and effect and easier to shift; LM is background and harder to change"
+  },
+  {
+    "issueId": "I136",
+    "programId": "P314",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Works well in a coaching session: the scan prompts the client's own insights and the coach holds the space"
+  },
+  {
+    "issueId": "I143",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Client writes their own focus; Wheel of Life feeds into choosing categories"
+  },
+  {
+    "issueId": "I138",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Put a Human Design gate affirmation into the focus and work on it directly"
+  },
+  {
+    "issueId": "I132",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Works for groups: one shared focus scanned for the room"
+  },
+  {
+    "issueId": "I142",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Repeat scans with the same focus can track progress"
+  },
+  {
+    "issueId": "I141",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Use after an Aura scan to go a level deeper"
+  },
+  {
+    "issueId": "I130",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Names finances as a specific life area and can drill into sub-areas"
+  },
+  {
+    "issueId": "I081",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Self-worth and finances as life areas"
+  },
+  {
+    "issueId": "I006",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Self-worth as a life area"
+  },
+  {
+    "issueId": "I015",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Personal Relationships sub-areas such as finding a partner and trust"
+  },
+  {
+    "issueId": "I137",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Family sub-areas such as boundaries and dissolving imprints and ancestral claims"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Follow an aura scan result into coaching for business energetics"
+  },
+  {
+    "issueId": "I083",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Goals as a life area; client-chosen goals work better"
+  },
+  {
+    "issueId": "I134",
+    "programId": "P314",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Sets priorities"
+  },
+  {
+    "issueId": "I112",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Alternative",
+    "weight": 2.4,
+    "why": "Follows each result into the next scan, down to the fear underneath"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Shows the life areas tied to the source of stress"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Shows where life is out of balance, not just that it is"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Turns a vague imbalance into named life areas"
+  },
+  {
+    "issueId": "I120",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Client work; prompts their own insights"
+  },
+  {
+    "issueId": "I078",
+    "programId": "P314",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Real issue can turn out to be guilt underneath (e.g. time away from the kids)"
+  },
+  {
+    "issueId": "I080",
+    "programId": "P314",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Negative relevances point to themes held deep in the subconscious"
+  },
+  {
+    "issueId": "I152",
+    "programId": "P315",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Tells you which category to look in: ranks the Pink program groups before you look for individual programs"
+  },
+  {
+    "issueId": "I152",
+    "programId": "P001",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Ideal starting point if you just need somewhere to begin"
+  },
+  {
+    "issueId": "I152",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Energetic check-in to choose a focus"
+  },
+  {
+    "issueId": "I153",
+    "programId": "P315",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "The trainer's default for physical concerns like body pain or health issues"
+  },
+  {
+    "issueId": "I153",
+    "programId": "P310",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Listed for physical or body pain"
+  },
+  {
+    "issueId": "I153",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Links physical complaints to the stress pattern"
+  },
+  {
+    "issueId": "I153",
+    "programId": "P007",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Systemic pain program"
+  },
+  {
+    "issueId": "I154",
+    "programId": "P315",
+    "relevance": 5,
+    "role": "Primary",
+    "weight": 5.0,
+    "why": "Basis of a client protocol: in the stress/migraine case study the overview became a 14-day schedule"
+  },
+  {
+    "issueId": "I154",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Client sessions and focus"
+  },
+  {
+    "issueId": "I154",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Before and after check-ins"
+  },
+  {
+    "issueId": "I155",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Scan 3 times: results that keep coming back are the person's own; ones that appear and disappear may be picked up from others"
+  },
+  {
+    "issueId": "I155",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Repeat scans show what is consistently yours"
+  },
+  {
+    "issueId": "I155",
+    "programId": "P114",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Protection if absorbing others' energy"
+  },
+  {
+    "issueId": "I156",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Primary",
+    "weight": 4.0,
+    "why": "Shows which Pink program to run if you want to decode its frequencies"
+  },
+  {
+    "issueId": "I100",
+    "programId": "P315",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "When you have no idea where to start"
+  },
+  {
+    "issueId": "I063",
+    "programId": "P315",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "When you have no idea where to start"
+  },
+  {
+    "issueId": "I026",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Default scan for body pain; then scan the top groups separately"
+  },
+  {
+    "issueId": "I125",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Default scan for physical concerns"
+  },
+  {
+    "issueId": "I113",
+    "programId": "P315",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Finds which program groups matter for a health concern"
+  },
+  {
+    "issueId": "I029",
+    "programId": "P315",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stress/migraine case study pointed to Watch Meridian, Sleep, Gold and Crown Chakra programs"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P315",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Stress/migraine case study became a 14-day schedule"
+  },
+  {
+    "issueId": "I087",
+    "programId": "P315",
+    "relevance": 2,
+    "role": "Supporting",
+    "weight": 1.0,
+    "why": "Scan 3 times to separate own results from picked-up energy"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P315",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Triage scan when someone just wants to feel better and does not know where to start"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P314",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Names the life areas that matter most when the need is general"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore positive qualities and personal growth"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Look at emotional patterns behind a general feeling of being off"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P220",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports an overall sense of energetic balance"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P046",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports feeling good in general"
+  },
+  {
+    "issueId": "I064",
+    "programId": "P001",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Gentle all-round starting point"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P314",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Success Coach style exploration of goals, career and finances"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P211",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports confidence when launching or growing"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P044",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports inner strength during a big step"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P019",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports focus while building"
+  },
+  {
+    "issueId": "I135",
+    "programId": "P036",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports energy during long working stretches"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P211",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports confidence in the vision"
+  },
+  {
+    "issueId": "I146",
+    "programId": "P033",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Supports getting going on the vision"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P308",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore emotional sensitivity and worry when feeling unsafe"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P310",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore stability and foundations"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P313",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Chakra scan for grounding and energetic awareness"
+  },
+  {
+    "issueId": "I069",
+    "programId": "P309",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore confidence and security"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P307",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Explore grounding, boundaries and overwhelm"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P311",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Look at the pattern behind carrying everything"
+  },
+  {
+    "issueId": "I109",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra scan to see where energy feels heavy"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P308",
+    "relevance": 4,
+    "role": "Alternative",
+    "weight": 3.2,
+    "why": "Explore worry, fear and overwhelm behind stress"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P307",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Explore grounding and overwhelm"
+  },
+  {
+    "issueId": "I001",
+    "programId": "P313",
+    "relevance": 3,
+    "role": "Supporting",
+    "weight": 1.5,
+    "why": "Chakra scan for energetic awareness of stress"
+  }
+]

@@ -1,0 +1,729 @@
+[
+  {
+    "id": "SEQ01",
+    "name": "Gentle start for new users",
+    "goal": "First-time Healy users; sensitive people start with Sensitive",
+    "basis": "From source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P184",
+        "label": "Deep Cycle H: Sensitive",
+        "timing": "Several days, until some relief",
+        "note": "If sensitive or EMF-affected. If no change the day after, move on"
+      },
+      {
+        "step": 2,
+        "programId": "P001",
+        "label": "Gold Cycle: Pure",
+        "timing": "First weeks",
+        "note": "Standard start for everyone else; supports filtering organs"
+      },
+      {
+        "step": 3,
+        "programId": "P002",
+        "label": "Gold Cycle: Care",
+        "timing": "After Pure",
+        "note": "Draft ordering - follows Gold Cycle listing"
+      }
+    ]
+  },
+  {
+    "id": "SEQ02",
+    "name": "Detox with clean-up",
+    "goal": "Release/detox followed by full cleansing",
+    "basis": "From source (Clean All advised in a sequence)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P001",
+        "label": "Gold Cycle: Pure",
+        "timing": "Before",
+        "note": "Supports filtering organs"
+      },
+      {
+        "step": 2,
+        "programId": "P188",
+        "label": "Deep Cycle H: Clean All",
+        "timing": "After detox work",
+        "note": "Go gently; drink lots of water; may cause temporary flu-like feelings"
+      }
+    ]
+  },
+  {
+    "id": "SEQ03",
+    "name": "Circulation chain",
+    "goal": "Circulation and general energetic stiffness",
+    "basis": "From source (Free Flow after kidney & lung balancing)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P105",
+        "label": "Meridians 2: Kidney",
+        "timing": "Basic balancing first",
+        "note": ""
+      },
+      {
+        "step": 2,
+        "programId": "P100",
+        "label": "Meridians 2: Lungs",
+        "timing": "Basic balancing first",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P191",
+        "label": "Deep Cycle H: Free Flow",
+        "timing": "After steps 1-2",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "SEQ04",
+    "name": "Deep root-cause series",
+    "goal": "Longer inner-work series",
+    "basis": "From source (Roots is the conclusion of a series)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P184",
+        "label": "Deep Cycle H: Sensitive",
+        "timing": "Stabilise first",
+        "note": "Draft - assistant-chosen opener"
+      },
+      {
+        "step": 2,
+        "programId": "P188",
+        "label": "Deep Cycle H: Clean All",
+        "timing": "Mid-series",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P190",
+        "label": "Deep Cycle H: Go to the Roots",
+        "timing": "Last, only when symptoms have subsided",
+        "note": "All essential body functions should work normally"
+      }
+    ]
+  },
+  {
+    "id": "SEQ05",
+    "name": "Regeneration I-III",
+    "goal": "3-week vitality build",
+    "basis": "From source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P161",
+        "label": "Bioenergetic Vitalisation: Regeneration I",
+        "timing": "1 week",
+        "note": ""
+      },
+      {
+        "step": 2,
+        "programId": "P162",
+        "label": "Bioenergetic Vitalisation: Regeneration II",
+        "timing": "1 week",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P163",
+        "label": "Bioenergetic Vitalisation: Regeneration III",
+        "timing": "1 week",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "SEQ06",
+    "name": "Wellbeing Body-Mind-Spirit",
+    "goal": "Weekly rhythm or 21-day intensive",
+    "basis": "From source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P197",
+        "label": "Wellbeing: Wellbeing Body",
+        "timing": "Mondays (or daily in 21-day intensive)",
+        "note": ""
+      },
+      {
+        "step": 2,
+        "programId": "P196",
+        "label": "Wellbeing: Wellbeing Mind",
+        "timing": "Wednesdays",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P198",
+        "label": "Wellbeing: Wellbeing Spirit",
+        "timing": "Fridays",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "SEQ07",
+    "name": "Power of Three (9 weeks)",
+    "goal": "Rebalance after a bioenergetic event or challenge",
+    "basis": "From source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P205",
+        "label": "Power of Three: Conflict Balance",
+        "timing": "Weeks 1-3, Mon/Wed/Fri",
+        "note": "Bioenergetic Rebalance group - all four programs"
+      },
+      {
+        "step": 1,
+        "programId": "P206",
+        "label": "Power of Three: Defence Support",
+        "timing": "Weeks 1-3, Mon/Wed/Fri",
+        "note": ""
+      },
+      {
+        "step": 1,
+        "programId": "P207",
+        "label": "Power of Three: Friendly Flora",
+        "timing": "Weeks 1-3, Mon/Wed/Fri",
+        "note": ""
+      },
+      {
+        "step": 1,
+        "programId": "P208",
+        "label": "Power of Three: Rebalance Physical",
+        "timing": "Weeks 1-3, Mon/Wed/Fri",
+        "note": ""
+      },
+      {
+        "step": 2,
+        "programId": "P199",
+        "label": "Power of Three: Classical Physical",
+        "timing": "Weeks 4-6, Mon/Wed/Fri",
+        "note": "Universal Frequencies group"
+      },
+      {
+        "step": 2,
+        "programId": "P200",
+        "label": "Power of Three: Classical Energetic",
+        "timing": "Weeks 4-6, Mon/Wed/Fri",
+        "note": ""
+      },
+      {
+        "step": 2,
+        "programId": "P201",
+        "label": "Power of Three: Zapper Protocol",
+        "timing": "Weeks 4-6, Mon/Wed/Fri",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P202",
+        "label": "Power of Three: Kapha",
+        "timing": "Weeks 7-9, once weekly each",
+        "note": "Digital Ayurveda group"
+      },
+      {
+        "step": 3,
+        "programId": "P203",
+        "label": "Power of Three: Pitta",
+        "timing": "Weeks 7-9, once weekly each",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P204",
+        "label": "Power of Three: Vata",
+        "timing": "Weeks 7-9, once weekly each",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "SEQ08",
+    "name": "Natural Cycle start",
+    "goal": "Re-align with natural rhythms",
+    "basis": "From source (HealAdvisor module automates timing)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P221",
+        "label": "Natural Cycle: Stabilisation Daily",
+        "timing": "About 4 weeks from a trigger date (equinox, season change)",
+        "note": "Stop when you feel in harmony; repeat at least twice a year"
+      },
+      {
+        "step": 2,
+        "programId": "P222",
+        "label": "Natural Cycle: Stabilisation Solar",
+        "timing": "After stabilising effect is noticeable",
+        "note": "Then meridian programs Tuesday and Friday per organ clock"
+      }
+    ]
+  },
+  {
+    "id": "SEQ09",
+    "name": "Sleep wind-down",
+    "goal": "Evening routine",
+    "basis": "Draft - assistant-proposed, not in source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P041",
+        "label": "Sleep: Bed Rest",
+        "timing": "Early evening",
+        "note": "Parasympathetic wind-down"
+      },
+      {
+        "step": 2,
+        "programId": "P040",
+        "label": "Sleep: Sleep (system)",
+        "timing": "At bedtime",
+        "note": "Deep sleep"
+      }
+    ]
+  },
+  {
+    "id": "SEQ10",
+    "name": "Exam preparation",
+    "goal": "Days before and day of an exam",
+    "basis": "Draft - assistant-proposed, not in source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P021",
+        "label": "Learning: Exam (system)",
+        "timing": "Days before",
+        "note": "Systemic support"
+      },
+      {
+        "step": 2,
+        "programId": "P019",
+        "label": "Learning: Concentration (system)",
+        "timing": "Study sessions",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P022",
+        "label": "Learning: Exam (acute)",
+        "timing": "Day of / acute nerves",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "SEQ11",
+    "name": "Burnout recovery",
+    "goal": "Gentle rebuild",
+    "basis": "Draft - assistant-proposed, not in source",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P037",
+        "label": "Job: Exhaustion (system)",
+        "timing": "Daytime",
+        "note": "Systemic"
+      },
+      {
+        "step": 2,
+        "programId": "P006",
+        "label": "Gold Cycle: Relax",
+        "timing": "Afternoon",
+        "note": ""
+      },
+      {
+        "step": 3,
+        "programId": "P218",
+        "label": "Soul Cycle: Stimulation",
+        "timing": "Evening",
+        "note": "Evening program"
+      }
+    ]
+  },
+  {
+    "id": "SEQ12",
+    "name": "Alaskan Gems daily ritual (Blue scan)",
+    "goal": "Daily practice or one-week focus on a single theme",
+    "basis": "From your Alaskan Gems notes",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Write your focus",
+        "timing": "Before scanning",
+        "note": "Use the Wheel of Life to pick an area, name what is bringing you down, turn it into a positive affirmation"
+      },
+      {
+        "step": 2,
+        "programId": null,
+        "label": "(Action) Scan aura and chakras",
+        "timing": "Before the gems",
+        "note": "See where you are out of balance"
+      },
+      {
+        "step": 3,
+        "programId": "P307",
+        "label": "Blue Resonance Scan: Alaskan Gem Elixirs",
+        "timing": "About 2 min 50 s, daily or same focus for a week",
+        "note": "Scan the database while saying your affirmation out loud"
+      },
+      {
+        "step": 4,
+        "programId": "P159",
+        "label": "Bioenergetic Support: Coherence",
+        "timing": "After the gems",
+        "note": "Example supporting program (balances mind and heart); choose another if it fits better"
+      },
+      {
+        "step": 5,
+        "programId": null,
+        "label": "(Action) Ritual extras",
+        "timing": "Optional",
+        "note": "Essential oils to calm the nervous system, rattle to move energy through the field, affirmations, water or tea charged with the gem frequencies"
+      }
+    ]
+  },
+  {
+    "id": "SEQ13",
+    "name": "Bach Flowers emotional scan routine",
+    "goal": "Emotional clearing; frequency per your notes",
+    "basis": "From your Bach notes (frequency and pairing); step order is a draft",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Name the focus",
+        "timing": "Before scanning",
+        "note": "If you cannot name the feeling, just start the scan"
+      },
+      {
+        "step": 2,
+        "programId": "P308",
+        "label": "Blue Resonance Scan: Bach Flowers",
+        "timing": "Daily in turbulent times, weekly for maintenance",
+        "note": "Healy gives the top 5 remedies by resonance; one or more can be mixed (up to 7 traditionally)"
+      },
+      {
+        "step": 3,
+        "programId": "P307",
+        "label": "Blue Resonance Scan: Alaskan Gem Elixirs",
+        "timing": "Optional, alongside",
+        "note": "Your notes say it fits easily with gem elixirs and longer sessions"
+      },
+      {
+        "step": 4,
+        "programId": "P114",
+        "label": "Bioenergetic Defence: General Protection",
+        "timing": "Optional, if absorbing others' emotions",
+        "note": "Pair with a Bioenergetic Defence program for energy protection"
+      }
+    ]
+  },
+  {
+    "id": "SEQ14",
+    "name": "Australian Bush Flowers one-month protocol",
+    "goal": "One intention, one month",
+    "basis": "From your Australian Bush Flowers notes (your recommended method)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Agree one intention",
+        "timing": "Before scanning",
+        "note": "Agree on one intention with the client and write it down"
+      },
+      {
+        "step": 2,
+        "programId": "P309",
+        "label": "Blue Resonance Scan: Australian Bush Flowers",
+        "timing": "Once a day for about a month",
+        "note": "Run the scan and send it into their field; physical drops are optional"
+      },
+      {
+        "step": 3,
+        "programId": null,
+        "label": "(Action) Reassess",
+        "timing": "End of the month",
+        "note": "Review the intention and results"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) If symptoms briefly get stronger",
+        "timing": "As needed",
+        "note": "Healing crisis: pause a day or two to integrate, or increase how often you run it"
+      }
+    ]
+  },
+  {
+    "id": "SEQ15",
+    "name": "Schuessler Salts daily routine",
+    "goal": "Daily foundation practice",
+    "basis": "From your Schuessler Salts notes",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Set a focus",
+        "timing": "Before scanning",
+        "note": "Write down your focus, or have the client write theirs; no focus is fine, whatever comes up is what you need"
+      },
+      {
+        "step": 2,
+        "programId": "P310",
+        "label": "Blue Resonance Scan: Schuessler Salts (Minerals)",
+        "timing": "Twice a day, morning and night, 1 min 20 s",
+        "note": "Close your eyes and hold the focus while the analysis runs; read present state, desired state and body field"
+      },
+      {
+        "step": 3,
+        "programId": null,
+        "label": "(Action) Deeper work (optional)",
+        "timing": "2-3 times a day, 1:20, up to four weeks",
+        "note": "For emotional or process-support topics; vibrate the same result"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) Re-scan or repeat",
+        "timing": "Daily re-scan, or same result up to four weeks",
+        "note": "Results often stay similar, so a weekly re-scan works well"
+      }
+    ]
+  },
+  {
+    "id": "SEQ16",
+    "name": "Creative Homeopathy scan, then body focus",
+    "goal": "Stress pattern first, then where in the body",
+    "basis": "From your Creative Homeopathy notes (pairing with Schuessler Salts)",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P311",
+        "label": "Blue Resonance Scan: Creative Homeopathy (Psyche)",
+        "timing": "Scan (takes longer than smaller databases); vibrate the top results about 6 minutes or while sleeping",
+        "note": "Short meditation or just breathe while it runs; results are short stress-pattern names"
+      },
+      {
+        "step": 2,
+        "programId": "P310",
+        "label": "Blue Resonance Scan: Schuessler Salts (Minerals)",
+        "timing": "After or alongside",
+        "note": "Shows where in the body something is vibrating; Creative Homeopathy does not"
+      },
+      {
+        "step": 3,
+        "programId": null,
+        "label": "(Action) Research and reflect",
+        "timing": "After the scan",
+        "note": "Look up what each result means; for clients add session notes and relate results to their situation"
+      }
+    ]
+  },
+  {
+    "id": "SEQ17",
+    "name": "I Ching session, step by step",
+    "goal": "A coaching-style session with one focus",
+    "basis": "From your I Ching document",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Set one clear focus",
+        "timing": "Before scanning",
+        "note": "Without a focus the scan is a melting pot of everything going on in someone's life"
+      },
+      {
+        "step": 2,
+        "programId": null,
+        "label": "(Action) Tune in",
+        "timing": "A few breaths",
+        "note": "Client holds their focus and feeling"
+      },
+      {
+        "step": 3,
+        "programId": "P312",
+        "label": "Blue Resonance Scan: I Ching",
+        "timing": "Run the I Ching analysis",
+        "note": "Write down every hexagram number in order"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) Look each hexagram up by number",
+        "timing": "After the scan",
+        "note": "Start with a reading at a glance or a quick-meaning sheet"
+      },
+      {
+        "step": 5,
+        "programId": null,
+        "label": "(Action) Turn each into a question and let the client interpret",
+        "timing": "In session",
+        "note": "Ask what is this asking of me right now; look for themes that repeat; the meaning is theirs"
+      },
+      {
+        "step": 6,
+        "programId": "P312",
+        "label": "Blue Resonance Scan: I Ching",
+        "timing": "Send the frequencies",
+        "note": "Now with conscious awareness behind them"
+      },
+      {
+        "step": 7,
+        "programId": null,
+        "label": "(Action) Follow up",
+        "timing": "Afterwards",
+        "note": "Send links for each hexagram or a short summary and reflection questions; avoid long dense PDFs"
+      }
+    ]
+  },
+  {
+    "id": "SEQ18",
+    "name": "Aura scan before and after",
+    "goal": "Check-in, focus and re-check",
+    "basis": "From your Aura Analysis notes",
+    "steps": [
+      {
+        "step": 1,
+        "programId": "P313",
+        "label": "Blue Analysis Scanner: Aura Analysis (chakra scan)",
+        "timing": "Baseline scan first",
+        "note": "Don't tune in first or the scores rise; no focus on the first scan; select all seven chakras"
+      },
+      {
+        "step": 2,
+        "programId": null,
+        "label": "(Action) Add a focus and run the deeper analysis",
+        "timing": "After the baseline",
+        "note": "Take the affirmation that resonates into the Coaching app to go deeper"
+      },
+      {
+        "step": 3,
+        "programId": null,
+        "label": "(Action) Meditation or program, then vibrate",
+        "timing": "Middle step",
+        "note": "For example an aura-cleanse meditation; do not exceed two to three frequency applications a day"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) One real-world step",
+        "timing": "After",
+        "note": "Choose one physical action towards the focus"
+      },
+      {
+        "step": 5,
+        "programId": "P313",
+        "label": "Blue Analysis Scanner: Aura Analysis (chakra scan)",
+        "timing": "Scan again (before bed if doing a morning and evening rhythm)",
+        "note": "Compare which chakras changed; write results down; patterns matter more than single readings"
+      }
+    ]
+  },
+  {
+    "id": "SEQ19",
+    "name": "Coaching scan session",
+    "goal": "One focus, read with the client, deliver, repeat",
+    "basis": "From your Coaching sessions notes",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Wheel of Life and choose categories",
+        "timing": "Before scanning",
+        "note": "The eight-area wheel feeds into choosing categories; or turn on every category for a full wheel of life"
+      },
+      {
+        "step": 2,
+        "programId": null,
+        "label": "(Action) Client writes their own focus",
+        "timing": "Before scanning",
+        "note": "Own words, present tense, one focus per scan; can start from the best affirmation of an Aura scan"
+      },
+      {
+        "step": 3,
+        "programId": "P314",
+        "label": "Blue Analysis Scanner: Coaching Analysis",
+        "timing": "Run the scan; set readings per category (up to about 20)",
+        "note": "Read the top six to eight results; use the arrow to drill into sub-areas"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) Read results together",
+        "timing": "In session",
+        "note": "Let the client find their own meaning; green = strengths; D and C easier to shift, LM background; negatives point to deep material; follow results into the next scan if needed"
+      },
+      {
+        "step": 5,
+        "programId": "P314",
+        "label": "Blue Analysis Scanner: Coaching Analysis",
+        "timing": "Send after the session while the client journals or rests, or three days in a row at an agreed time",
+        "note": "Short sessions work too; less is more"
+      },
+      {
+        "step": 6,
+        "programId": null,
+        "label": "(Action) Repeat later with the same focus",
+        "timing": "Regularly, and after big life events",
+        "note": "Tracks progress"
+      }
+    ]
+  },
+  {
+    "id": "SEQ20",
+    "name": "All Healy Programs triage, then program schedule",
+    "goal": "Find the right program groups, then build and send a schedule",
+    "basis": "From your All Healy Programs notes",
+    "steps": [
+      {
+        "step": 1,
+        "programId": null,
+        "label": "(Action) Set a focus or goal",
+        "timing": "Before scanning",
+        "note": "Use a questionnaire or discovery call; without a focus there is nothing to measure results against"
+      },
+      {
+        "step": 2,
+        "programId": "P315",
+        "label": "Blue Resonance Scan: All Healy Programs (triage scan)",
+        "timing": "Run the analysis (Blue app > Resonance > Healy Program Groups > New Resonance Analysis)",
+        "note": "Take a photo of the results so you don't keep switching screens"
+      },
+      {
+        "step": 3,
+        "programId": null,
+        "label": "(Action) Scan each top category separately",
+        "timing": "After the overview",
+        "note": "Percentages are relative within a scan, not across scans; above 50% is relevant; keep the overview's order"
+      },
+      {
+        "step": 4,
+        "programId": null,
+        "label": "(Action) Optional: scan 3 times",
+        "timing": "Optional",
+        "note": "Results that keep coming back are the person's own; ones that appear and disappear may be picked up from others"
+      },
+      {
+        "step": 5,
+        "programId": null,
+        "label": "(Action) Build the list or schedule",
+        "timing": "After scanning",
+        "note": "Run the programs in the Pink app or send them from Lists in the Blue app; if the client lacks a module use the closest program they have"
+      },
+      {
+        "step": 6,
+        "programId": null,
+        "label": "(Action) Send frequencies from Lists",
+        "timing": "Afterwards",
+        "note": "8-17 seconds is enough to imprint, a minute is fine, 2:50 per list is typical; for something chronic send once or twice a day"
+      }
+    ]
+  }
+]

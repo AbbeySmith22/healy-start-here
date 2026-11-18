@@ -1,0 +1,1984 @@
+[
+  {
+    "id": "I001",
+    "name": "Everyday stress",
+    "theme": "Emotional",
+    "keywords": [
+      "stressed",
+      "tense",
+      "overwhelmed",
+      "under pressure"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I002",
+    "name": "Anxiety / worry",
+    "theme": "Emotional",
+    "keywords": [
+      "anxious",
+      "nervous",
+      "panic",
+      "worried",
+      "on edge"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I003",
+    "name": "Fear & uncertainty about the future",
+    "theme": "Emotional",
+    "keywords": [
+      "afraid",
+      "scared",
+      "news anxiety",
+      "uncertain future"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I004",
+    "name": "Low mood",
+    "theme": "Emotional",
+    "keywords": [
+      "sad",
+      "down",
+      "flat",
+      "unmotivated"
+    ],
+    "escalation": "If the person mentions self-harm, suicide or crisis: do NOT recommend programs; respond with care and encourage immediate professional/crisis support.",
+    "escalationLevel": "crisis"
+  },
+  {
+    "id": "I005",
+    "name": "Depression / heavy negative thoughts",
+    "theme": "Emotional",
+    "keywords": [
+      "depressed",
+      "hopeless",
+      "dark thoughts"
+    ],
+    "escalation": "If the person mentions self-harm, suicide or crisis: do NOT recommend programs; respond with care and encourage immediate professional/crisis support.",
+    "escalationLevel": "crisis"
+  },
+  {
+    "id": "I006",
+    "name": "Low self-worth / self-esteem",
+    "theme": "Emotional",
+    "keywords": [
+      "not good enough",
+      "low confidence",
+      "self-doubt"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I007",
+    "name": "Needs confidence / courage to speak up",
+    "theme": "Emotional",
+    "keywords": [
+      "shy",
+      "speak up",
+      "presenting",
+      "courage"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I008",
+    "name": "Anger, resentment, irritation",
+    "theme": "Emotional",
+    "keywords": [
+      "angry",
+      "resentful",
+      "irritated",
+      "rage"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I009",
+    "name": "Trauma, panic, heavy burdens",
+    "theme": "Emotional",
+    "keywords": [
+      "trauma",
+      "flashbacks",
+      "panic attacks",
+      "carrying a burden"
+    ],
+    "escalation": "If the person mentions self-harm, suicide or crisis: do NOT recommend programs; respond with care and encourage immediate professional/crisis support.",
+    "escalationLevel": "crisis"
+  },
+  {
+    "id": "I010",
+    "name": "Obsessive / compulsive thoughts or behaviours",
+    "theme": "Emotional",
+    "keywords": [
+      "obsessing",
+      "compulsive",
+      "can't let go"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I011",
+    "name": "Cravings / addictive behaviours",
+    "theme": "Emotional",
+    "keywords": [
+      "craving",
+      "addiction",
+      "smoking",
+      "nicotine",
+      "drinking"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I012",
+    "name": "Self-acceptance / body image",
+    "theme": "Emotional",
+    "keywords": [
+      "body image",
+      "hate my body",
+      "self-acceptance"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I013",
+    "name": "Wants more optimism / happiness",
+    "theme": "Emotional",
+    "keywords": [
+      "more joy",
+      "positive",
+      "optimistic"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I014",
+    "name": "Emotional overwhelm / processing feelings",
+    "theme": "Emotional",
+    "keywords": [
+      "emotional",
+      "can't process feelings",
+      "mood swings"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I015",
+    "name": "Relationships, conflict, opening the heart",
+    "theme": "Relationships",
+    "keywords": [
+      "relationship",
+      "conflict",
+      "lonely",
+      "love",
+      "closed heart"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I016",
+    "name": "Trouble falling asleep",
+    "theme": "Sleep",
+    "keywords": [
+      "can't sleep",
+      "insomnia",
+      "racing mind at night"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I017",
+    "name": "Poor sleep quality / unrefreshing sleep",
+    "theme": "Sleep",
+    "keywords": [
+      "wake up tired",
+      "light sleeper",
+      "restless sleep"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I018",
+    "name": "Tiredness / low energy",
+    "theme": "Energy",
+    "keywords": [
+      "tired",
+      "low energy",
+      "sluggish",
+      "drained"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I019",
+    "name": "Burnout / exhaustion",
+    "theme": "Energy",
+    "keywords": [
+      "burnt out",
+      "exhausted",
+      "adrenal",
+      "running on empty"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I020",
+    "name": "Drained by others / heavy energy",
+    "theme": "Energy",
+    "keywords": [
+      "energy vampires",
+      "drained after people",
+      "heavy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I021",
+    "name": "Concentration / focus",
+    "theme": "Mind",
+    "keywords": [
+      "can't focus",
+      "distracted",
+      "brain fog"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I022",
+    "name": "Memory",
+    "theme": "Mind",
+    "keywords": [
+      "forgetful",
+      "memory",
+      "recall"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I023",
+    "name": "Exam / test anxiety",
+    "theme": "Mind",
+    "keywords": [
+      "exam",
+      "test nerves",
+      "performance anxiety"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I024",
+    "name": "Studying & learning",
+    "theme": "Mind",
+    "keywords": [
+      "student",
+      "studying",
+      "learning difficulties"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I025",
+    "name": "Mental clarity at work",
+    "theme": "Mind",
+    "keywords": [
+      "clarity",
+      "productivity",
+      "decisions"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I026",
+    "name": "Chronic pain (general)",
+    "theme": "Body",
+    "keywords": [
+      "chronic pain",
+      "aches",
+      "pain everywhere"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I027",
+    "name": "Back pain",
+    "theme": "Body",
+    "keywords": [
+      "back pain",
+      "lower back",
+      "spine"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I028",
+    "name": "Joint pain / stiffness",
+    "theme": "Body",
+    "keywords": [
+      "joints",
+      "arthritis",
+      "stiff",
+      "knees"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I029",
+    "name": "Headache / migraine",
+    "theme": "Body",
+    "keywords": [
+      "headache",
+      "migraine",
+      "head tension"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I030",
+    "name": "Tooth / jaw pain",
+    "theme": "Body",
+    "keywords": [
+      "tooth",
+      "jaw",
+      "TMJ",
+      "mouth pain"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I031",
+    "name": "Sciatica",
+    "theme": "Body",
+    "keywords": [
+      "sciatica",
+      "leg nerve pain"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I032",
+    "name": "Body stiffness / tension / pressure",
+    "theme": "Body",
+    "keywords": [
+      "stiff",
+      "tense muscles",
+      "pressure",
+      "rigid"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I033",
+    "name": "Muscle recovery",
+    "theme": "Fitness",
+    "keywords": [
+      "sore muscles",
+      "post-workout",
+      "recovery"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I034",
+    "name": "Athletic performance & endurance",
+    "theme": "Fitness",
+    "keywords": [
+      "sport",
+      "strength",
+      "stamina",
+      "endurance"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I035",
+    "name": "Weight management",
+    "theme": "Fitness",
+    "keywords": [
+      "weight",
+      "metabolism",
+      "fat loss"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I036",
+    "name": "Digestive discomfort",
+    "theme": "Digestion",
+    "keywords": [
+      "bloating",
+      "stomach issues",
+      "gut",
+      "constipation"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I037",
+    "name": "Food intolerance / sensitivity",
+    "theme": "Digestion",
+    "keywords": [
+      "food intolerance",
+      "reacts to foods"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I038",
+    "name": "Detox / toxin load",
+    "theme": "Cleansing",
+    "keywords": [
+      "detox",
+      "cleanse",
+      "toxins",
+      "heavy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I039",
+    "name": "Immune support",
+    "theme": "Immunity",
+    "keywords": [
+      "immune",
+      "run down",
+      "get sick often"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I040",
+    "name": "Colds & mucous",
+    "theme": "Immunity",
+    "keywords": [
+      "cold",
+      "runny nose",
+      "sinus",
+      "sore throat"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I041",
+    "name": "Allergies / sensitivities",
+    "theme": "Immunity",
+    "keywords": [
+      "allergy",
+      "hay fever",
+      "sensitivities"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I042",
+    "name": "Hormonal balance",
+    "theme": "Hormones",
+    "keywords": [
+      "hormones",
+      "PMS",
+      "imbalance"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I043",
+    "name": "Menopause",
+    "theme": "Hormones",
+    "keywords": [
+      "menopause",
+      "hot flushes"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I044",
+    "name": "Menstrual discomfort",
+    "theme": "Hormones",
+    "keywords": [
+      "period pain",
+      "cramps",
+      "menstruation"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I045",
+    "name": "Men's health / prostate / libido",
+    "theme": "Hormones",
+    "keywords": [
+      "prostate",
+      "libido",
+      "potency"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I046",
+    "name": "Circulation",
+    "theme": "Body systems",
+    "keywords": [
+      "cold hands",
+      "poor circulation",
+      "blood flow"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I047",
+    "name": "Heart rhythm / HRV",
+    "theme": "Body systems",
+    "keywords": [
+      "heart rate",
+      "HRV",
+      "palpitations"
+    ],
+    "escalation": "Heart symptoms (chest pain, palpitations, breathlessness) need a medical check; do not rely on Healy.",
+    "escalationLevel": "medical"
+  },
+  {
+    "id": "I048",
+    "name": "Kidney / fluid balance",
+    "theme": "Body systems",
+    "keywords": [
+      "kidney",
+      "fluid retention",
+      "bladder"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I049",
+    "name": "Thyroid",
+    "theme": "Body systems",
+    "keywords": [
+      "thyroid",
+      "metabolism"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I050",
+    "name": "Liver support",
+    "theme": "Body systems",
+    "keywords": [
+      "liver",
+      "sluggish liver",
+      "after alcohol"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I051",
+    "name": "Lungs / breathing",
+    "theme": "Body systems",
+    "keywords": [
+      "lungs",
+      "breathing",
+      "shortness of breath"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I052",
+    "name": "Eyes",
+    "theme": "Body systems",
+    "keywords": [
+      "eyes",
+      "eyesight",
+      "tired eyes"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I053",
+    "name": "Skin",
+    "theme": "Beauty",
+    "keywords": [
+      "acne",
+      "dull skin",
+      "impure skin",
+      "elasticity"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I054",
+    "name": "Hair & nails",
+    "theme": "Beauty",
+    "keywords": [
+      "hair loss",
+      "brittle nails"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I055",
+    "name": "Scars",
+    "theme": "Beauty",
+    "keywords": [
+      "scar",
+      "scar tissue"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I056",
+    "name": "Vitality & ageing",
+    "theme": "Vitality",
+    "keywords": [
+      "aging",
+      "youthful",
+      "vitality",
+      "renew"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I057",
+    "name": "Recovery after injury / surgery",
+    "theme": "Vitality",
+    "keywords": [
+      "surgery",
+      "injury",
+      "healing",
+      "operation"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I058",
+    "name": "Bones",
+    "theme": "Vitality",
+    "keywords": [
+      "bones",
+      "bone health"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I059",
+    "name": "Electro-sensitivity / EMF",
+    "theme": "Environment",
+    "keywords": [
+      "EMF",
+      "wifi",
+      "phone sensitivity",
+      "electro smog"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I060",
+    "name": "Geopathic / place-related disturbance",
+    "theme": "Environment",
+    "keywords": [
+      "geopathic",
+      "earth radiation",
+      "bad place"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I061",
+    "name": "Energetic protection",
+    "theme": "Environment",
+    "keywords": [
+      "protection",
+      "shield",
+      "absorbing others"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I062",
+    "name": "Highly sensitive person",
+    "theme": "Environment",
+    "keywords": [
+      "sensitive",
+      "overreacts to environment",
+      "travel stress"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I063",
+    "name": "New to Healy / not sure where to start",
+    "theme": "General",
+    "keywords": [
+      "beginner",
+      "first time",
+      "where do I start"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I064",
+    "name": "General all-round balance",
+    "theme": "General",
+    "keywords": [
+      "overall balance",
+      "maintenance",
+      "wellness routine"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I065",
+    "name": "After a stressful or physical event",
+    "theme": "General",
+    "keywords": [
+      "accident",
+      "shock",
+      "after vaccination",
+      "loud noise"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I066",
+    "name": "Zapper / parasite protocol",
+    "theme": "General",
+    "keywords": [
+      "zapper",
+      "parasites"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I067",
+    "name": "Out of sync with natural rhythms",
+    "theme": "General",
+    "keywords": [
+      "seasons",
+      "moon",
+      "body clock",
+      "out of rhythm"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I068",
+    "name": "Healy Watch readings (stress/HRV/tension)",
+    "theme": "General",
+    "keywords": [
+      "watch says stress",
+      "low HRV"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I069",
+    "name": "Ungrounded / unsafe",
+    "theme": "Spiritual",
+    "keywords": [
+      "ungrounded",
+      "unsafe",
+      "insecure"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I070",
+    "name": "Spiritual growth / intuition",
+    "theme": "Spiritual",
+    "keywords": [
+      "intuition",
+      "meditation",
+      "higher self"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I071",
+    "name": "Communication / self-expression",
+    "theme": "Spiritual",
+    "keywords": [
+      "throat",
+      "can't express",
+      "communicate"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I072",
+    "name": "Creativity",
+    "theme": "Spiritual",
+    "keywords": [
+      "creative block",
+      "inspiration"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I073",
+    "name": "Pet / animal wellbeing",
+    "theme": "Animals",
+    "keywords": [
+      "dog",
+      "cat",
+      "horse",
+      "pet anxious",
+      "old pet"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I074",
+    "name": "Grief, loneliness or a closed heart after loss",
+    "theme": "Emotional",
+    "keywords": [
+      "grief",
+      "lonely",
+      "alienated",
+      "closed heart",
+      "separation",
+      "loss"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I075",
+    "name": "Circular thoughts / overactive mind",
+    "theme": "Mind",
+    "keywords": [
+      "overthinking",
+      "racing thoughts",
+      "repetitive thoughts",
+      "can't switch off"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I076",
+    "name": "Acting or deciding too quickly",
+    "theme": "Mind",
+    "keywords": [
+      "impulsive",
+      "rushing decisions",
+      "rushing in"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I077",
+    "name": "Hard to connect in meditation",
+    "theme": "Spiritual",
+    "keywords": [
+      "can't meditate",
+      "restless meditation",
+      "no connection"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I078",
+    "name": "Guilt, shame or jealousy",
+    "theme": "Emotional",
+    "keywords": [
+      "guilt",
+      "shame",
+      "jealous",
+      "jealousy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I079",
+    "name": "Seeing only the negative / lack of trust in life",
+    "theme": "Emotional",
+    "keywords": [
+      "pessimistic",
+      "negative",
+      "no trust in the universe",
+      "lack of joy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I080",
+    "name": "Limiting beliefs / fear of taking risks",
+    "theme": "Self-worth",
+    "keywords": [
+      "limiting beliefs",
+      "afraid to take risks",
+      "playing small"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I081",
+    "name": "Not feeling worthy of money or abundance",
+    "theme": "Self-worth",
+    "keywords": [
+      "can't manifest",
+      "money block",
+      "unworthy",
+      "abundance"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I082",
+    "name": "Difficulty committing",
+    "theme": "Self-worth",
+    "keywords": [
+      "can't commit",
+      "indecisive",
+      "commitment"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I083",
+    "name": "Feeling lost / unsure of life purpose",
+    "theme": "Direction",
+    "keywords": [
+      "lost",
+      "crossroads",
+      "life purpose",
+      "what should I do with my life"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I084",
+    "name": "Insecurity at the start of something new",
+    "theme": "Direction",
+    "keywords": [
+      "new beginning",
+      "new job",
+      "nervous about starting"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I085",
+    "name": "Stepping into visibility, authority or leadership",
+    "theme": "Self-worth",
+    "keywords": [
+      "speaking",
+      "leadership",
+      "being seen",
+      "imposter",
+      "authority"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I086",
+    "name": "Feeling stuck, stagnant or blocked",
+    "theme": "Energy",
+    "keywords": [
+      "stuck",
+      "stagnant",
+      "blocked",
+      "no movement"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I087",
+    "name": "Empath / healer absorbing others' energy",
+    "theme": "Environment",
+    "keywords": [
+      "empath",
+      "takes things personally",
+      "absorbs others' moods",
+      "healer"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I088",
+    "name": "Easily influenced / comparing on social media",
+    "theme": "Relationships",
+    "keywords": [
+      "people pleaser",
+      "comparing",
+      "social media",
+      "influenced by others"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I089",
+    "name": "Relationships not for my highest good",
+    "theme": "Relationships",
+    "keywords": [
+      "toxic relationship",
+      "draining relationship",
+      "wrong relationship"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I090",
+    "name": "Feeling unprotected or vulnerable after being 'cracked open'",
+    "theme": "Environment",
+    "keywords": [
+      "vulnerable",
+      "exposed",
+      "open",
+      "thin skinned",
+      "unprotected"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I091",
+    "name": "Clearing the energy of a home or workspace",
+    "theme": "Environment",
+    "keywords": [
+      "clear my house",
+      "clear my space",
+      "heavy energy in room",
+      "workspace"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I092",
+    "name": "Disconnected from an injured or painful body part",
+    "theme": "Body",
+    "keywords": [
+      "numb",
+      "disconnected from my body",
+      "dissociated from injured area"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I093",
+    "name": "Uneven sexual energy after shock or trauma",
+    "theme": "Body",
+    "keywords": [
+      "sexual energy",
+      "blocked sexuality",
+      "trauma and sexuality"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I094",
+    "name": "Masculine / feminine energy balance",
+    "theme": "Spiritual",
+    "keywords": [
+      "masculine feminine",
+      "yin yang",
+      "doing vs being",
+      "wild feminine"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I095",
+    "name": "Nurturing the inner child",
+    "theme": "Emotional",
+    "keywords": [
+      "inner child",
+      "childhood wounds",
+      "playful",
+      "re-parenting"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I096",
+    "name": "Cloudy intuition / can't hear guidance",
+    "theme": "Spiritual",
+    "keywords": [
+      "intuition blocked",
+      "psychic vision",
+      "cannot hear guidance",
+      "no signs"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I097",
+    "name": "Feeling separate from everything",
+    "theme": "Spiritual",
+    "keywords": [
+      "disconnected",
+      "separate",
+      "isolated from source",
+      "no belonging"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I098",
+    "name": "Integrating healing into daily life",
+    "theme": "General",
+    "keywords": [
+      "embody",
+      "integrate",
+      "ground the work",
+      "after a session"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I099",
+    "name": "Daily morning ritual / routine",
+    "theme": "General",
+    "keywords": [
+      "morning routine",
+      "ritual",
+      "daily practice"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I100",
+    "name": "Uncomfortable feeling I can't name",
+    "theme": "Emotional",
+    "keywords": [
+      "don't know what I feel",
+      "uneasy",
+      "off",
+      "uncomfortable",
+      "can't name it"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I101",
+    "name": "Constant anger, 'black cloud' or melancholy",
+    "theme": "Emotional",
+    "keywords": [
+      "black cloud",
+      "melancholy",
+      "constant anger",
+      "heavy mood"
+    ],
+    "escalation": "If the person mentions self-harm, suicide or crisis: do NOT recommend programs; respond with care and encourage immediate professional/crisis support.",
+    "escalationLevel": "crisis"
+  },
+  {
+    "id": "I102",
+    "name": "Life transition, next step unclear",
+    "theme": "Direction",
+    "keywords": [
+      "transition",
+      "change",
+      "in between",
+      "don't know next step",
+      "crossroads"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I103",
+    "name": "Stuck in the past, daydreaming or apathetic",
+    "theme": "Emotional",
+    "keywords": [
+      "living in the past",
+      "daydreaming",
+      "apathy",
+      "checked out",
+      "no interest"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I104",
+    "name": "Isolated or cut off from others",
+    "theme": "Emotional",
+    "keywords": [
+      "isolated",
+      "cut off",
+      "alone",
+      "withdrawn"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I105",
+    "name": "Hiding pain behind a smile",
+    "theme": "Emotional",
+    "keywords": [
+      "fake smile",
+      "putting on a brave face",
+      "hide how I feel"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I106",
+    "name": "Shock or sudden emotional upset",
+    "theme": "Emotional",
+    "keywords": [
+      "shock",
+      "shaken",
+      "sudden bad news"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I107",
+    "name": "Overcaring / caregiver, wellbeing tied to others",
+    "theme": "Relationships",
+    "keywords": [
+      "caregiver",
+      "carer",
+      "controlling",
+      "fixing others",
+      "can't relax unless they're ok"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I108",
+    "name": "Too rigid or strict with self or others",
+    "theme": "Mind",
+    "keywords": [
+      "rigid",
+      "perfectionist",
+      "inflexible",
+      "strict",
+      "black and white"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I109",
+    "name": "Overwhelmed or carrying everything",
+    "theme": "Emotional",
+    "keywords": [
+      "overwhelmed",
+      "fighter",
+      "carrying everything",
+      "burden of responsibility"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I110",
+    "name": "Public speaking or job interview nerves",
+    "theme": "Mind",
+    "keywords": [
+      "public speaking",
+      "job interview",
+      "presentation nerves"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I111",
+    "name": "Emotional blocks to manifesting or starting something",
+    "theme": "Self-worth",
+    "keywords": [
+      "can't start business",
+      "stuck on soul direction",
+      "manifestation blocks"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I112",
+    "name": "Wants to catch emotional patterns before they reach the body",
+    "theme": "General",
+    "keywords": [
+      "emotional patterns",
+      "root cause",
+      "chronic emotions",
+      "before it shows physically"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I113",
+    "name": "Working through a health issue and its beliefs",
+    "theme": "General",
+    "keywords": [
+      "health issue",
+      "beliefs behind illness",
+      "emotional side of health"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I114",
+    "name": "Repeating the same patterns or beliefs",
+    "theme": "Mind",
+    "keywords": [
+      "same patterns",
+      "repeating mistakes",
+      "can't move forward",
+      "stuck in a cycle"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I115",
+    "name": "Rejection or abandonment feelings",
+    "theme": "Emotional",
+    "keywords": [
+      "rejected",
+      "abandoned",
+      "left out",
+      "excluded"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I116",
+    "name": "Wants to reach higher-self wisdom",
+    "theme": "Spiritual",
+    "keywords": [
+      "higher self",
+      "inner wisdom",
+      "faith",
+      "spiritual growth",
+      "meditation-like"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I117",
+    "name": "Healer or spiritual worker needing extra support",
+    "theme": "Spiritual",
+    "keywords": [
+      "healer",
+      "therapist",
+      "spiritual worker",
+      "light worker",
+      "needs support"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I118",
+    "name": "Needs courage and commitment to goals",
+    "theme": "Self-worth",
+    "keywords": [
+      "courage",
+      "commitment",
+      "pursue my goals",
+      "chase dreams",
+      "follow through"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I119",
+    "name": "Wants a gentle option for anyone (family, children)",
+    "theme": "General",
+    "keywords": [
+      "gentle",
+      "for my kids",
+      "family friendly",
+      "easy to use",
+      "not too strong"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I120",
+    "name": "Emotional layer alongside physical-focused scans",
+    "theme": "General",
+    "keywords": [
+      "practitioner",
+      "client emotional side",
+      "alongside physical scans"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I121",
+    "name": "Wants a tailored remedy for specific circumstances",
+    "theme": "General",
+    "keywords": [
+      "personalised",
+      "custom blend",
+      "specific circumstance",
+      "combination"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I122",
+    "name": "Feels like something is missing its foundation",
+    "theme": "General",
+    "keywords": [
+      "no foundation",
+      "unsteady",
+      "ungrounded life",
+      "missing a base",
+      "shaky"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I123",
+    "name": "Life feels chaotic and I don't know where to start",
+    "theme": "General",
+    "keywords": [
+      "chaotic",
+      "everything going wrong",
+      "overwhelmed",
+      "don't know where to begin"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I124",
+    "name": "Something missing in life (relationship, money, abundance)",
+    "theme": "General",
+    "keywords": [
+      "missing something",
+      "want a relationship",
+      "money worries",
+      "lack of abundance"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I125",
+    "name": "Physical discomfort in skin, bones or muscles, or recovery",
+    "theme": "Body",
+    "keywords": [
+      "skin issues",
+      "bone discomfort",
+      "muscle discomfort",
+      "recovering"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I126",
+    "name": "Wants one foundational database to use daily",
+    "theme": "General",
+    "keywords": [
+      "daily practice",
+      "one database",
+      "daily routine",
+      "foundation"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I127",
+    "name": "Fertility support",
+    "theme": "Hormones",
+    "keywords": [
+      "fertility",
+      "trying to conceive",
+      "reproductive health"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I128",
+    "name": "Something worked on for a long time still isn't shifting",
+    "theme": "Mind",
+    "keywords": [
+      "nothing changes",
+      "worked on it for years",
+      "still stuck",
+      "not shifting"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I129",
+    "name": "Physical complaint and don't know why I'm struggling",
+    "theme": "Body",
+    "keywords": [
+      "unexplained symptoms",
+      "why do I feel this way",
+      "symptom has a meaning",
+      "mind body link"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I130",
+    "name": "Money blocks and limiting beliefs about money",
+    "theme": "Self-worth",
+    "keywords": [
+      "money block",
+      "scarcity",
+      "can't earn",
+      "beliefs about money"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I131",
+    "name": "Wants to look at the whole life situation (past, present, direction)",
+    "theme": "Direction",
+    "keywords": [
+      "where did this come from",
+      "where is my life going",
+      "life situation"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I132",
+    "name": "Scanning a group, not just an individual",
+    "theme": "General",
+    "keywords": [
+      "group scan",
+      "family scan",
+      "team scan"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I133",
+    "name": "Wants a highly specific, personalised scan result",
+    "theme": "General",
+    "keywords": [
+      "very specific",
+      "personalised",
+      "different for each person",
+      "deep scan"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I134",
+    "name": "Big life, work or relationship decision pending",
+    "theme": "Direction",
+    "keywords": [
+      "decision",
+      "should I",
+      "crossroads",
+      "choose between",
+      "torn"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I135",
+    "name": "Business timing, launch, growth or networking",
+    "theme": "Direction",
+    "keywords": [
+      "business",
+      "launch",
+      "when to start",
+      "timing",
+      "networking",
+      "grow my business"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I136",
+    "name": "Practitioner wants a ready-made coaching session",
+    "theme": "General",
+    "keywords": [
+      "coaching session",
+      "reflection session",
+      "oracle style",
+      "session with client"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I137",
+    "name": "Family dynamics beneath the surface",
+    "theme": "Relationships",
+    "keywords": [
+      "family issues",
+      "family patterns",
+      "parents",
+      "siblings",
+      "family tension"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I138",
+    "name": "Uses Human Design and wants another layer",
+    "theme": "Spiritual",
+    "keywords": [
+      "human design",
+      "gates",
+      "profile lines",
+      "64 gates"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I139",
+    "name": "Challenging situation, how to move forward now",
+    "theme": "General",
+    "keywords": [
+      "difficult situation",
+      "how do I move forward",
+      "tough time",
+      "what is this asking of me"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I140",
+    "name": "Wants to know which chakra is out of balance",
+    "theme": "Spiritual",
+    "keywords": [
+      "chakra check",
+      "which chakra",
+      "aura reading",
+      "energy check",
+      "chakra scores"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I141",
+    "name": "Wants to see the effect of a program or meditation",
+    "theme": "General",
+    "keywords": [
+      "before and after",
+      "did it work",
+      "see a shift",
+      "measure change",
+      "what changed"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I142",
+    "name": "Tracking shifts over time",
+    "theme": "General",
+    "keywords": [
+      "track progress",
+      "patterns over time",
+      "regular check-in",
+      "journal energy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I143",
+    "name": "Doesn't know what focus to choose for a session",
+    "theme": "General",
+    "keywords": [
+      "what should my focus be",
+      "choose a focus",
+      "start a session",
+      "vague feeling"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I144",
+    "name": "Distance session for someone else",
+    "theme": "General",
+    "keywords": [
+      "remote session",
+      "for a friend",
+      "for a client far away",
+      "distance healing"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I145",
+    "name": "Scanning an environment, pet or plant",
+    "theme": "Environment",
+    "keywords": [
+      "scan my home",
+      "scan my pet",
+      "scan my plants",
+      "scan my space"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I146",
+    "name": "Checking the energy of a business vision",
+    "theme": "Direction",
+    "keywords": [
+      "business vision",
+      "business energetics",
+      "new business",
+      "launch energy"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I147",
+    "name": "Feels out of balance but can't tell which life area",
+    "theme": "General",
+    "keywords": [
+      "out of balance",
+      "wheel of life",
+      "don't know which area",
+      "everything feels off",
+      "life areas"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I148",
+    "name": "Suspects the real issue is somewhere else",
+    "theme": "Mind",
+    "keywords": [
+      "something underneath",
+      "what is really going on",
+      "root of the problem",
+      "real reason",
+      "peeling back"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I149",
+    "name": "Has insight or a report but doesn't know what to do with it",
+    "theme": "Direction",
+    "keywords": [
+      "what do I do with this",
+      "action plan",
+      "turn insight into action",
+      "gateways to gold",
+      "what next"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I150",
+    "name": "Wants to build on what is already working",
+    "theme": "Self-worth",
+    "keywords": [
+      "my strengths",
+      "what's working",
+      "build on strengths",
+      "positives"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I151",
+    "name": "Wants to know how deep an issue sits and what to work on first",
+    "theme": "General",
+    "keywords": [
+      "how deep",
+      "what first",
+      "cause or background",
+      "priority",
+      "easy to shift or not"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I152",
+    "name": "No idea which program group to look in",
+    "theme": "General",
+    "keywords": [
+      "where do I start",
+      "which programs",
+      "too many programs",
+      "which category",
+      "overwhelmed by options"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I153",
+    "name": "Physical concern or body pain and no idea where to start",
+    "theme": "Body",
+    "keywords": [
+      "body pain",
+      "health issue",
+      "physical concern",
+      "don't know which program"
+    ],
+    "escalation": "Healy is a wellness tool. If symptoms are persistent, severe or new, encourage seeing a qualified health professional.",
+    "escalationLevel": "professional"
+  },
+  {
+    "id": "I154",
+    "name": "Practitioner building a client protocol or schedule",
+    "theme": "General",
+    "keywords": [
+      "protocol",
+      "schedule",
+      "14 day plan",
+      "client plan",
+      "program list"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I155",
+    "name": "Wants to tell what is theirs versus picked up from others",
+    "theme": "Environment",
+    "keywords": [
+      "is this mine",
+      "picked up from others",
+      "results keep changing",
+      "consistent results"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  },
+  {
+    "id": "I156",
+    "name": "Wants to decode a Pink program's frequencies",
+    "theme": "General",
+    "keywords": [
+      "decode frequencies",
+      "which program to decode",
+      "hz values",
+      "what does this program do"
+    ],
+    "escalation": "",
+    "escalationLevel": "none"
+  }
+]

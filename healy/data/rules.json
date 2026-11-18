@@ -1,0 +1,192 @@
+{
+  "parameters": {
+    "primaryMultiplier": 1.0,
+    "alternativeMultiplier": 0.8,
+    "supportingMultiplier": 0.5,
+    "topN": 3,
+    "minDaysBeforeRepeat": 14
+  },
+  "disclaimer": "Healy programs are described as supporting the bioenergetic field. They are not a medical treatment and do not diagnose, treat, cure or prevent disease. This is not medical advice; please consult a qualified professional for health concerns.",
+  "rules": [
+    {
+      "id": "R01",
+      "name": "Weighted selection",
+      "rule": "From Issue_Program_Map take rows for the matched issue. Sample ONE Primary using Selection Weight (higher = more likely); do not always take the top row."
+    },
+    {
+      "id": "R02",
+      "name": "Add supporting options",
+      "rule": "Add 0-2 programs with role Supporting or Alternative, sampled by weight, from a different module than the primary where possible."
+    },
+    {
+      "id": "R03",
+      "name": "Variety",
+      "rule": "Check Session_Log: avoid recommending the same program to the same person within the 'min days before repeating' parameter. If all candidates were used, pick the least recently used."
+    },
+    {
+      "id": "R04",
+      "name": "Match multiple issues",
+      "rule": "If several issues match, choose the issue with most keyword hits, then combine at most 3 programs in total across issues."
+    },
+    {
+      "id": "R05",
+      "name": "New users",
+      "rule": "If the person is new to Healy or unsure, prefer GC_PURE or DC_SENSITIVE (see SEQ01) before specialised programs."
+    },
+    {
+      "id": "R06",
+      "name": "Respect usage notes",
+      "rule": "Always show the 'Usage notes / cautions' column from Programs (e.g. Power Reserve not in evening; Energy Work only when somewhat balanced; Go to the Roots only after symptoms subside)."
+    },
+    {
+      "id": "R07",
+      "name": "Systemic vs acute",
+      "rule": "If the person describes a long-standing problem prefer (system) programs; for a sudden, current moment prefer (acute) programs."
+    },
+    {
+      "id": "R08",
+      "name": "Sequences",
+      "rule": "If the issue suits a sequence in Sequences, offer the sequence instead of single programs. Do not invent new sequences; draft ones are flagged in the Basis column."
+    },
+    {
+      "id": "R09",
+      "name": "Soul Cycle pacing",
+      "rule": "Soul Cycle (SC_) programs: focus on one issue for three days, then move on."
+    },
+    {
+      "id": "R10",
+      "name": "Crisis & sensitive topics",
+      "rule": "For issues with a safety note (LOWMOOD, DEPRESS, TRAUMA) and any mention of self-harm or crisis: no program recommendation first; respond with care and point to professional/crisis support. For issues flagged PRO, add a line suggesting a professional check if symptoms persist."
+    },
+    {
+      "id": "R11",
+      "name": "Language",
+      "rule": "Say programs 'support' or 'harmonise the bioenergetic field'. Never say they diagnose, treat, cure or prevent disease (the source material says the same)."
+    },
+    {
+      "id": "R12",
+      "name": "Delivery",
+      "rule": "Give delivery from Programs (wristbands, sticky pads, coil). Local Stimulation programs go on the affected area; Defence programs need no electrodes."
+    },
+    {
+      "id": "R13",
+      "name": "Animals",
+      "rule": "For pet questions use Audience = Animal programs, plus any Blue database marked Human & Animal (e.g. Australian Bush Flowers); for people use Audience = Human or Human & Animal."
+    },
+    {
+      "id": "R14",
+      "name": "Unmapped needs",
+      "rule": "If no issue fits, search Programs keywords; if still nothing, suggest GC_BALANCE and say so honestly."
+    },
+    {
+      "id": "R15",
+      "name": "Blue scan databases",
+      "rule": "Programs with Type = 'Blue - resonance scan database' are chosen in the resonance scan rather than run as a fixed program. Offer them when the issue map lists one; see Blue_Database_Detail for why and how to start."
+    },
+    {
+      "id": "R16",
+      "name": "Alaskan Gems start steps",
+      "rule": "When recommending Alaskan Gems, give the SEQ12 steps: write a focus/affirmation, scan aura and chakras, scan the gems while saying the affirmation, run about 2 min 50 s, add a supporting program."
+    },
+    {
+      "id": "R17",
+      "name": "Not instead of care",
+      "rule": "For Alaskan Gems issues flagged PRO or CRISIS (depression, trauma, pain, allergies), state that the elixirs go alongside medical or therapeutic care, not instead of it."
+    },
+    {
+      "id": "R18",
+      "name": "Bach Flowers use",
+      "rule": "Offer Bach Flowers for emotional states and patterns (fear, uncertainty, loneliness, oversensitivity, despondency, overcare). Healy returns the top 5 by resonance; mention daily for turbulent times, weekly for maintenance. See Blue_Database_Detail for group guidance."
+    },
+    {
+      "id": "R19",
+      "name": "Bach Flowers caution",
+      "rule": "Describe Bach Flowers as a complement to medical or psychological care, not a replacement; evidence is limited and anecdotal. Do not present them as treating physical conditions."
+    },
+    {
+      "id": "R20",
+      "name": "Australian Bush Flowers use",
+      "rule": "Offer Australian Bush Flowers when the person feels stuck, blocked or repeating patterns; for emotional (not physical) needs such as fear, anger, grief, low self-worth, rejection or abandonment; for higher-self connection, courage and commitment; for manifestation; and as a gentle option for anyone including pets. Give the one-intention, once-a-day for about a month method (SEQ14)."
+    },
+    {
+      "id": "R21",
+      "name": "Australian Bush Flowers caution",
+      "rule": "Present as complementary emotional support, not treatment for PTSD, night terrors, depression or any condition. If symptoms briefly get stronger, suggest pausing a day or two or increasing frequency, and a professional check if they persist."
+    },
+    {
+      "id": "R22",
+      "name": "Schuessler Salts use",
+      "rule": "Offer Schuessler Salts as the foundational database: for daily practice, when something feels like it is missing its foundation, for stability in chaos, fear/anxiety and big changes, transitions, physical comfort and recovery, weight and metabolism goals, and protection and resilience. Give the SEQ15 routine."
+    },
+    {
+      "id": "R23",
+      "name": "Schuessler Salts caution",
+      "rule": "Wellness support only. Never say it diagnoses, treats, cures or prevents disease; mainstream research has not confirmed that Schuessler salts treat illness. Keep prescribed treatment and see a qualified health professional for medical concerns. Traditional links (sleep, exhaustion, fever and cough, detox, allergies, hormones, fertility, ageing, beauty) are areas to explore alongside, not instead of, a doctor."
+    },
+    {
+      "id": "R24",
+      "name": "Creative Homeopathy use",
+      "rule": "Offer Creative Homeopathy for subconscious blocks and things that have not shifted, repeating patterns, limiting beliefs (including money), transitions or crossroads, physical complaints where the person doesn't know why, and when a very specific personalised result is wanted. Suggest pairing with Schuessler Salts (SEQ16). It takes longer to scan than smaller databases."
+    },
+    {
+      "id": "R25",
+      "name": "Creative Homeopathy caution",
+      "rule": "Use 'supports' and 'harmonises', never 'treats' or 'cures'. Symptoms are described as messages about an underlying pattern, not as diagnosed conditions. For medical conditions the person keeps working with their doctor."
+    },
+    {
+      "id": "R26",
+      "name": "I Ching use",
+      "rule": "Offer the I Ching for crossroads and big decisions, life direction, feeling stuck, overthinking, relationship and family dynamics, business timing, challenging situations, spiritual practice, Human Design users, and as a ready-made coaching session. Follow SEQ17 and tell the person to record hexagram numbers."
+    },
+    {
+      "id": "R27",
+      "name": "I Ching caution",
+      "rule": "Describe it as a tool for reflection and awareness, not prediction. Never present readings as medical, legal or financial advice. Always use the hexagram number, since Healy's names differ from books. Warn that AI interpretations can be wrong."
+    },
+    {
+      "id": "R28",
+      "name": "Aura Analysis use",
+      "rule": "Offer Aura Analysis (type 'Blue - analysis scanner') as a check-in: before and after a program or meditation, morning and evening, at the start of a client or coaching session, during transitions, before business decisions, and for distance sessions with permission. Follow SEQ18. It is a scanner for choosing a focus, not one of the six resonance databases."
+    },
+    {
+      "id": "R29",
+      "name": "Aura Analysis framing",
+      "rule": "Present as a reflective, intuitive tool, not a diagnostic reading. A single number is not a verdict; high does not mean balanced; look at what changes and repeats across scans. Always get permission before a distance session. Do not exceed two to three frequency applications a day."
+    },
+    {
+      "id": "R30",
+      "name": "Coaching Analysis use",
+      "rule": "Offer Coaching Analysis (type 'Blue - analysis scanner') when the person wants answers about specific life areas (finances, self-worth, goals, relationships, family), suspects the real issue is elsewhere, wants an action plan from insight or a Human Design report, wants to see strengths and priorities, or is a practitioner running a coaching session or group. It is more specific than the Aura scan; suggest following an Aura scan result into it. Follow SEQ19."
+    },
+    {
+      "id": "R31",
+      "name": "Coaching Analysis framing",
+      "rule": "Present as a coaching and reflection tool, not a health claim. The client writes their own focus (present tense, own words) and interprets their own results; one focus per scan."
+    },
+    {
+      "id": "R32",
+      "name": "All Healy Programs use",
+      "rule": "Offer All Healy Programs (triage scan) as the first step when the person has no idea where to start, has a physical concern or body pain, or a practitioner is building a client protocol or schedule. After it, scan each top Pink category separately (SEQ20). Percentages are relative within each scan; above 50% is relevant."
+    },
+    {
+      "id": "R33",
+      "name": "Choosing databases by goal",
+      "rule": "Physical or body pain: All Healy Programs, Schuessler Salts (plus Materia Medica, Vital Substances, Digital Nutrition, not yet in this workbook). Mental or emotional: Schuessler Salts (connects emotion and body part), Bach Flowers, Australian Bush Flowers, Creative Homeopathy (takes about 10 minutes). Energetic or protection: Alaskan Gem Elixirs, Australian Bush Flowers, Bach Flowers. Direction, decisions, relationships, business: I Ching (scanning a relationship needs both people's consent)."
+    },
+    {
+      "id": "R34",
+      "name": "Session limits and order",
+      "rule": "Scan no more than about 5 databases per session and up to 3 Pink programs; one database is often better because clients get tired and overwhelmed. End with Alaskan Gem Elixirs so the session finishes on a positive note. Schuessler Salts (1) gives more detail than Schuessler Salts 2."
+    },
+    {
+      "id": "R35",
+      "name": "Reading results with a client",
+      "rule": "Let the client read the results first and say what resonates, then explain. Lead with the desired state (the solution), then the present state. Have them read any affirmation aloud 3 times. In a first session skip potencies and percentages; the short version is D = physical, C = mental/emotional, LM = spiritual. If something doesn't resonate it may not be theirs and can be released. Healy does not say whether something is needed physically; use judgement."
+    },
+    {
+      "id": "R36",
+      "name": "Compliance wording",
+      "rule": "Say Healy may 'rebalance', not 'heal'. Serious conditions still need medical care; keep that framing with clients. Treat AI explanations of frequency numbers as prompts for reflection, not established facts."
+    }
+  ]
+}
