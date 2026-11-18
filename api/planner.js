@@ -202,9 +202,22 @@ function textFromAnswers(answers) {
     .join(". ");
 }
 
-function databaseShortlist(input, choices) {
+// Explicit self-harm language is already stopped by detectCrisis(). Everyday
+// words like "sad" can also match crisis-flagged issues, which would return no
+// recommendations at all, so those are skipped here and a gentle support note
+// is added to the result instead.
+function matchedIssues(input) {
   const text = textFromAnswers(input.answers);
-  const ids = healy.matchIssues(text, { max: 3 }).map(m => m.issue.id);
+  const all = healy.matchIssues(text, { max: 6 }).map(m => m.issue);
+  const usable = all.filter(i => i.escalationLevel !== "crisis").slice(0, 3);
+  const needsSupportNote = all.some(i =>
+    ["crisis", "professional", "medical"].includes(i.escalationLevel)
+  );
+  return { ids: usable.map(i => i.id), needsSupportNote };
+}
+
+function databaseShortlist(input, choices) {
+  const { ids } = matchedIssues(input);
   if (!ids.length) return [];
 
   const allowedCodes = new Set(choices.map(c => DB_CODE[c.id]));
@@ -230,8 +243,7 @@ const PINK_TYPE = "Pink - microcurrent (IMF)";
 const WATCH_MODULES = ["Healy Watch", "Meridian Healy Watch", "Healy Watch DN"];
 
 function pinkShortlist(input) {
-  const text = textFromAnswers(input.answers);
-  const ids = healy.matchIssues(text, { max: 3 }).map(m => m.issue.id);
+  const { ids } = matchedIssues(input);
   if (!ids.length) return pinkFallback();
 
   const result = healy.recommend({
@@ -319,9 +331,13 @@ function validateResult(plan, choices, input, pinkOptions) {
   const steps = plan.steps.map(s => cleanText(s, 500));
 
   // Do not let AI invent an application module or database name.
-  const accessNote = input.moduleAccessKnown
+  const supportNote = matchedIssues(input).needsSupportNote
+    ? " If what you are feeling is heavy or has lasted a while, please also talk to your doctor, a therapist or someone you trust. Healy is a wellness support, not a substitute."
+    : "";
+
+  const accessNote = (input.moduleAccessKnown
     ? "This recommendation uses the analysis modules you confirmed. Check that the specific database or Coaching category is available in your activated app."
-    : "Before starting, check that this analysis module and database or category are available in your activated Healy app.";
+    : "Before starting, check that this analysis module and database or category are available in your activated Healy app.") + supportNote;
 
   // Pink program: always one. Must come from the database shortlist; if the model
   // gives none or an unknown one, the top database suggestion is used.
