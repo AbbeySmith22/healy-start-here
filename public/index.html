@@ -566,9 +566,9 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
         <button class="option-btn" data-value="Something else"><div class="option-label">Something else</div>My main concern isn't listed.</button>
       </div>
       <div class="field" style="margin-top:20px;">
-        <label for="q1-details">Tell me a little more (optional)</label>
-        <div class="field-hint">What's actually happening? A little detail helps make your pathway personal.</div>
-        <textarea id="q1-details" rows="3" placeholder="e.g. I wake up exhausted, struggle to focus by lunchtime and feel wired at bedtime."></textarea>
+        <label for="q1-details">Tell me a little more (optional, but it really helps)</label>
+        <div class="field-hint">The more you share, the better your results. Tell me what's actually happening, how long it has been going on, how it affects your days and what you would love to feel instead. Even two or three sentences make your pathway far more personal.</div>
+        <textarea id="q1-details" rows="3" placeholder="e.g. For the last few months I wake up exhausted, struggle to focus by lunchtime and feel wired at bedtime. I would love to feel calm and clear through the day."></textarea>
       </div>
     </div>
 
@@ -692,6 +692,17 @@ input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans
 
     <div id="result-alternative" class="result-body"
          style="margin-top:24px;"></div>
+
+    <div id="result-focus" class="result-body" style="margin-top:24px;">
+      <div class="result-label">Sharpen your focus first</div>
+      <div>Your intention above is a starting idea. Before you scan, use the
+      Focus Generator to turn it into a clear, positive focus that is just
+      right for you. A well-worded focus gives you a better scan.</div>
+      <p style="margin-top:12px;">
+        <a id="result-focus-link" class="btn-secondary" target="_blank" rel="noopener"
+           style="display:none;text-decoration:none;">Open the Focus Generator</a>
+      </p>
+    </div>
 
     <div id="result-pink" class="result-body" style="display:none;margin-top:24px;">
       <div class="result-label">Pink program to pair with it</div>
@@ -998,6 +1009,9 @@ async function handleEmailSubmit() {
 // Render results
 // ============================================
 
+// Paste the Focus Generator web address between the quotes to show its button.
+const FOCUS_GENERATOR_URL = '';
+
 function showResults(data) {
   document.getElementById('result-module').textContent =
     data.module || '';
@@ -1041,6 +1055,12 @@ function showResults(data) {
       '. ' + (data.alternative.why || '');
   } else {
     alternative.textContent = '';
+  }
+
+  const focusLink = document.getElementById('result-focus-link');
+  if (FOCUS_GENERATOR_URL) {
+    focusLink.href = FOCUS_GENERATOR_URL;
+    focusLink.style.display = 'inline-block';
   }
 
   const pinkBox = document.getElementById('result-pink');
@@ -1111,6 +1131,9 @@ function downloadResult() {
     '',
     'ANOTHER OPTION',
     alternative,
+    '',
+    'NEXT: SHARPEN YOUR FOCUS',
+    'Use the Focus Generator to turn your intention into a clear, positive focus before you scan.' + (FOCUS_GENERATOR_URL ? ' ' + FOCUS_GENERATOR_URL : ''),
     '',
     'PINK PROGRAM TO PAIR WITH IT',
     r.pink_program
