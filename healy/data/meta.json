@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-11-18T16:55:07.737760+00:00",
+  "sourceWorkbook": "Healy_Master_Database.xlsx",
+  "counts": {
+    "programs": 315,
+    "issues": 156,
+    "mapRows": 745,
+    "sequences": 20,
+    "databases": 9,
+    "rules": 36
+  }
+}

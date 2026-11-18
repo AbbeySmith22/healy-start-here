@@ -1,3 +1,39 @@
+import healy from "../healy/index.cjs";
+
+// Links each approved analysis to its entry in the Healy master database (healy/data).
+const DB_CODE = {
+  aura: "BLU_AURA_ANALYSIS",
+  bach: "BLU_BACH_FLOWERS",
+  bush: "BLU_AUS_BUSH_FLOWERS",
+  gems: "BLU_ALASKAN_GEMS",
+  psyche: "BLU_CREATIVE_HOMEOPATHY",
+  salts: "BLU_SCHUESSLER_SALTS",
+  iching: "BLU_I_CHING",
+  programs: "BLU_ALL_HEALY_PROGRAMS",
+  personal: "BLU_COACHING_ANALYSIS",
+  success: "BLU_COACHING_ANALYSIS"
+};
+
+const BLUE_TYPES = [
+  "Blue - resonance scan database",
+  "Blue - analysis scanner (Analyze app)"
+];
+
+const PROGRAM_BY_CODE = new Map(
+  healy.data.programs.map(p => [p.code, p])
+);
+
+function reasonsFor(id) {
+  const program = PROGRAM_BY_CODE.get(DB_CODE[id]);
+  const info = program ? healy.getProgram(program.id) : null;
+  if (!info?.databaseDetail) return null;
+
+  // Reasons and guidance only. Lists of possible scan results are not passed on.
+  const keep = /^(Why|When|How|Caution|Framing|Background|What it is)/;
+  return Object.fromEntries(
+    Object.entries(info.databaseDetail.sections).filter(([k]) => keep.test(k))
+  );
+}
 
 const ANALYSES = [
   {
@@ -156,6 +192,37 @@ function parseInput(body) {
       : [],
     avoid: cleanText(body.avoid, 1000)
   };
+}
+
+// Your own database picks a varied shortlist of suitable scans; the model only
+// chooses from the approved list and words the reply.
+function textFromAnswers(answers) {
+  return Object.values(answers || {})
+    .filter(v => typeof v === "string")
+    .join(". ");
+}
+
+function databaseShortlist(input, choices) {
+  const text = textFromAnswers(input.answers);
+  const ids = healy.matchIssues(text, { max: 3 }).map(m => m.issue.id);
+  if (!ids.length) return [];
+
+  const allowedCodes = new Set(choices.map(c => DB_CODE[c.id]));
+  const result = healy.recommend({
+    issueIds: ids,
+    includeTypes: BLUE_TYPES,
+    maxPrograms: 4
+  });
+
+  return result.recommendations
+    .map(r => {
+      const program = healy.data.programs.find(p => p.id === r.programId);
+      const choice = choices.find(c => DB_CODE[c.id] === program.code);
+      return choice && allowedCodes.has(program.code)
+        ? { id: choice.id, name: choice.name, whyFromDatabase: r.why }
+        : null;
+    })
+    .filter(Boolean);
 }
 
 function approvedChoices(input) {
@@ -321,6 +388,12 @@ const body = req.body || {};
     });
   }
 
+  if (healy.detectCrisis(textFromAnswers(input.answers))) {
+    return res.status(400).json({
+      error: "It sounds like you are going through something really hard. Healy analyses are not the right support for this. Please reach out to a local crisis line or emergency services, or someone you trust, right now."
+    });
+  }
+
   const choices = approvedChoices(input);
 
   if (!choices.length) {
@@ -338,6 +411,14 @@ with at most ONE genuinely useful alternative.
 This is NOT a seven-day frequency-program planner.
 
 Use only the supplied APPROVED ANALYSES.
+Each approved analysis includes "reasonsToUse" taken from the
+owner's own notes. Base your reasoning on those reasons and do
+not add reasons or claims of your own about what a database does.
+"databaseShortlist" lists analyses suggested by the owner's
+database for this person. Prefer an analysis from the shortlist
+unless the person's full situation clearly fits another approved
+analysis better. Vary the choice rather than defaulting to the
+same route.
 Choose by interpreting the person's full situation, wording,
 goals, emotional context and desired direction.
 
@@ -453,7 +534,11 @@ different but relevant starting route.
               moduleAccessKnown: input.moduleAccessKnown,
               confirmedGroups: input.confirmedGroups,
               avoid: input.avoid,
-              approvedAnalyses: choices
+              approvedAnalyses: choices.map(c => ({
+                ...c,
+                reasonsToUse: reasonsFor(c.id)
+              })),
+              databaseShortlist: databaseShortlist(input, choices)
             })
           }]
         })
