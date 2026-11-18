@@ -139,6 +139,7 @@ function decorate(row, issueId) {
  *  - audience: "human" (default) | "animal" | "any"
  *  - maxPrograms: default 3 (rule R04)
  *  - excludeModules / excludeTypes: hide programs the user can't use, e.g. ["Healy Watch", "Meridian Healy Watch", "Healy Watch DN"]
+ *  - crisisBlocking: default true. Set false so crisis-flagged issues (e.g. Low mood) still get recommendations, with a notice
  *  - includeTypes: only allow these program types, e.g. ["Blue - resonance scan database", "Blue - analysis scanner (Analyze app)"]
  *  - primaryFrom: "top-n" (default: sample the lead from the top N weighted rows so single-Primary
  *                 issues still vary) | "primary-only" (strictly follow rule R01)
@@ -154,6 +155,7 @@ function recommend(opts = {}) {
     primaryFrom = "top-n",
     excludeModules = [],
     excludeTypes = [],
+    crisisBlocking = true, // false: crisis-flagged issues are treated like professional-support ones (notice, but still recommend)
     includeTypes = [], // if set, ONLY programs of these types (e.g. the two Blue types)
   } = opts;
 
@@ -176,13 +178,13 @@ function recommend(opts = {}) {
   }
 
   // R10: crisis issues -> no recommendation first
-  const crisis = matchedIssues.find((i) => i.escalationLevel === "crisis");
+  const crisis = crisisBlocking ? matchedIssues.find((i) => i.escalationLevel === "crisis") : null;
   if (crisis) {
     out.safety = { level: "crisis", issueId: crisis.id, message: crisis.escalation };
     return out;
   }
   for (const i of matchedIssues) {
-    if (i.escalationLevel === "professional" || i.escalationLevel === "medical") {
+    if (["professional", "medical", "crisis"].includes(i.escalationLevel)) {
       out.notices.push({ issueId: i.id, level: i.escalationLevel, text: i.escalation });
     }
   }

@@ -202,14 +202,13 @@ function textFromAnswers(answers) {
     .join(". ");
 }
 
-// Explicit self-harm language is already stopped by detectCrisis(). Everyday
-// words like "sad" can also match crisis-flagged issues, which would return no
-// recommendations at all, so those are skipped here and a gentle support note
-// is added to the result instead.
+// Issues flagged as heavier topics (e.g. Low mood) no longer block a
+// recommendation. They add a gentle "talk to someone you trust" note instead.
+// Only explicit self-harm wording (detectCrisis) stops a request.
 function matchedIssues(input) {
   const text = textFromAnswers(input.answers);
-  const all = healy.matchIssues(text, { max: 6 }).map(m => m.issue);
-  const usable = all.filter(i => i.escalationLevel !== "crisis").slice(0, 3);
+  const all = healy.matchIssues(text, { max: 3 }).map(m => m.issue);
+  const usable = all;
   const needsSupportNote = all.some(i =>
     ["crisis", "professional", "medical"].includes(i.escalationLevel)
   );
@@ -224,6 +223,7 @@ function databaseShortlist(input, choices) {
   const result = healy.recommend({
     issueIds: ids,
     includeTypes: BLUE_TYPES,
+    crisisBlocking: false,
     maxPrograms: 4
   });
 
@@ -249,6 +249,7 @@ function pinkShortlist(input) {
   const result = healy.recommend({
     issueIds: ids,
     includeTypes: [PINK_TYPE],
+    crisisBlocking: false,
     excludeModules: WATCH_MODULES,
     maxPrograms: 3
   });

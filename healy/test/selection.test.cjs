@@ -109,3 +109,11 @@ test("includeTypes restricts results to the allowed types", () => {
     for (const r of recs) assert.ok(blue.includes(r.type), `${r.name} is ${r.type}`);
   }
 });
+
+test("crisisBlocking:false still recommends for crisis-flagged issues, with a notice", () => {
+  const issue = issues.find((i) => i.escalationLevel === "crisis");
+  const r = healy.recommend({ issueIds: [issue.id], crisisBlocking: false });
+  assert.strictEqual(r.safety, null);
+  assert.ok(r.recommendations.length >= 1);
+  assert.ok(r.notices.length >= 1);
+});
