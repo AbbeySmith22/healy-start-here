@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CUSTOMIZE: Change this title to match your tool -->
+<title>Weekly Frequency Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     CUSTOMIZE: Change these color variables to
+     match your brand.
+  ============================================ */
+  :root {
+    --bg-page:        #080B1A;
+    --bg-card:        #0F1629;
+    --bg-card-inner:  #141D35;
+    --accent-primary: #7C3AED;
+    --accent-secondary: #06B6D4;
+    --accent-glow:    rgba(124, 58, 237, 0.25);
+    --text-primary:   #F0F4FF;
+    --text-secondary: #9BA8C4;
+    --border-color:   rgba(124, 58, 237, 0.3);
+    --border-subtle:  rgba(255, 255, 255, 0.08);
+    --error-color:    #F87171;
+    --success-color:  #34D399;
+    --btn-gradient:   linear-gradient(135deg, #7C3AED, #06B6D4);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg-page);
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 32px 20px 80px;
+  }
+
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  /* ---- Header ---- */
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .kicker {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+  }
+  /* CUSTOMIZE: Change the subtitle */
+  .header p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ---- Progress bar ---- */
+  .progress-wrap {
+    margin-bottom: 28px;
+  }
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .progress-bar {
+    height: 4px;
+    background: var(--bg-card-inner);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--btn-gradient);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 20px;
+  }
+
+  /* Question steps */
+  .question-step { display: none; }
+  .question-step.active { display: block; }
+
+  .question-text {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .question-hint {
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    margin-bottom: 22px;
+    line-height: 1.6;
+  }
+
+  /* Option buttons (multi-choice) */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option-btn {
+    text-align: left;
+    background: var(--bg-card-inner);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text-primary);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    line-height: 1.4;
+  }
+  .option-btn:hover {
+    border-color: var(--accent-primary);
+    background: rgba(124,58,237,0.08);
+  }
+  .option-btn.selected {
+    border-color: var(--accent-primary);
+    background: rgba(124,58,237,0.15);
+    color: var(--text-primary);
+  }
+  .option-btn .option-label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 3px;
+  }
+
+  /* Text input fields */
+  .field { margin-bottom: 16px; }
+  .field:last-child { margin-bottom: 0; }
+  label {
+    display: block;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+  }
+  .field-hint {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    background: var(--bg-card-inner);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+  }
+  input::placeholder, textarea::placeholder { color: var(--text-secondary); opacity: 0.7; }
+  select option { background: var(--bg-card); }
+
+  /* Navigation */
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .btn-primary {
+    flex: 1;
+    background: var(--btn-gradient);
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .btn-back {
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    white-space: nowrap;
+  }
+  .btn-back:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+  .extra-groups-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+  .extra-groups-grid label { display:flex;align-items:center;gap:9px;font-family:Inter,sans-serif;font-size:12px;font-weight:500;background:var(--bg-card-inner);padding:10px;border-radius:8px;margin:0;cursor:pointer; }
+  .extra-groups-grid input { accent-color:var(--accent-primary);flex-shrink:0; }
+  @media(max-width:550px){.extra-groups-grid{grid-template-columns:1fr;}}
+
+  /* ---- Email gate ---- */
+  #email-gate {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  #email-gate h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  #email-gate p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  /* ---- Error ---- */
+  .error-msg {
+    background: rgba(248,113,113,0.1);
+    border: 1px solid rgba(248,113,113,0.3);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--error-color);
+    margin-top: 12px;
+    display: none;
+  }
+
+  /* ---- Results ---- */
+  #results { display: none; }
+
+  .result-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 16px;
+  }
+
+  .result-headline {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .result-label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    margin-bottom: 14px;
+  }
+
+  .result-body {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-secondary);
+  }
+  .result-body p { margin-bottom: 12px; }
+  .result-body p:last-child { margin-bottom: 0; }
+
+  /* Pathway name */
+  .pathway-box {
+    background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(6,182,212,0.1));
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .pathway-box .label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 8px;
+  }
+  .pathway-box .name {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--text-primary);
+  }
+
+  /* Step-by-step plan */
+  .steps-list {
+    list-style: none;
+    margin: 20px 0 0;
+  }
+  .steps-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--btn-gradient);
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    padding-top: 4px;
+  }
+  .step-text strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  /* Next step */
+  .next-step {
+    background: rgba(52, 211, 153, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .next-step .label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--success-color);
+    margin-bottom: 8px;
+  }
+  .next-step .content {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .actions .btn-primary { flex: 1; }
+
+  .disclaimer {
+    font-size: 11.5px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 28px;
+    line-height: 1.6;
+    opacity: 0.7;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 500px) {
+    .header h1 { font-size: 24px; }
+  }
+
+/* HIGH VIBRANCY LIVING — BRAND MATCH */
+:root {
+  --bg-page:#F8F7FF; --bg-card:#FFFFFF; --bg-card-inner:#F0EDFC;
+  --accent-primary:#8370D9; --accent-secondary:#A8E9E1;
+  --accent-glow:rgba(131,112,217,.18); --text-primary:#19172F;
+  --text-secondary:#68657C; --border-color:#DCD7F4;
+  --border-subtle:rgba(131,112,217,.16); --error-color:#D65C72;
+  --success-color:#248A76;
+  --btn-gradient:linear-gradient(135deg,#8370D9 0%,#A8E9E1 100%);
+}
+body {font-family:'Inter',sans-serif;padding:22px 16px 70px;}
+.wrap {max-width:900px;margin:auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 12px 35px rgba(25,23,47,.05);}
+.header {background:var(--btn-gradient);text-align:left;padding:44px 48px 40px;margin-bottom:30px;}
+.kicker {font-family:'Fraunces',serif;font-weight:400;color:#fff;font-size:12px;letter-spacing:2px;margin-bottom:14px;}
+.header h1 {font-family:'Fraunces',serif;font-weight:400;font-size:42px;line-height:1.18;color:#fff;background:none;-webkit-text-fill-color:#fff;margin-bottom:16px;}
+.header p {font-family:'Inter',sans-serif;color:#D8FFF5;max-width:600px;margin:0;line-height:1.7;font-size:16px;}
+.header .credibility {font-style:italic;color:rgba(255,255,255,.88);font-size:13px;margin-top:20px;}
+#question-card,#email-gate,#results {margin-left:36px;margin-right:36px;}
+.card,#email-gate,.result-card {border:1px solid var(--border-color);border-radius:18px;padding:34px;}
+.question-text {font-family:'Fraunces',serif;font-size:25px;font-weight:500;letter-spacing:0;text-transform:none;}
+.question-hint {font-size:14px;}
+.option-btn {font-family:'Inter',sans-serif;border-color:var(--border-color);padding:16px 18px;}
+.option-btn:hover {background:#F5F1FF;}
+.option-btn.selected {background:#F0EDFC;border-color:#8370D9;box-shadow:inset 3px 0 0 #8370D9;}
+.option-btn .option-label {font-family:'Inter',sans-serif;color:#6D5AC2;}
+label,.btn-primary,.btn-back,.btn-secondary,.result-label,.next-step .label,.pathway-box .label {font-family:'Inter',sans-serif;}
+input[type='text'],input[type='email'],textarea,select {font-family:'Inter',sans-serif;background:#F0EDFC;border:1px solid #DCD7F4;}
+.btn-primary {background:var(--btn-gradient);color:#fff;}
+.progress-fill,.step-num {background:var(--btn-gradient);}
+.pathway-box {background:linear-gradient(135deg,#F0EDFC,#E6F9F6);}
+.pathway-box .name {font-family:'Fraunces',serif;font-weight:500;font-size:30px;}
+.next-step {background:#F0FAF8;border-color:#C5EAE4;}
+.footer {padding:24px 20px 32px;margin-top:28px;opacity:1;text-align:center;}
+.footer-logo {display:block;width:90px;height:auto;object-fit:contain;margin:0 auto 15px;}
+.footer p {font-family:'Inter',sans-serif;font-size:12px;color:#68657C;}
+@media(max-width:600px) {
+ body {padding:0 0 36px;}
+ .wrap {border-radius:0;}
+ .header {padding:30px 24px;}
+ .header h1 {font-size:31px;}
+ .header p {font-size:14px;}
+ #question-card,#email-gate,#results {margin-left:16px;margin-right:16px;}
+ .card,#email-gate,.result-card {padding:22px 18px;}
+ .question-text {font-size:22px;}
+ .pathway-box .name {font-size:25px;}
+}
+
+  /* ---- Weekly planner additions ---- */
+  .options.multi .option-btn { position: relative; }
+  .pick-count { font-size: 12px; color: var(--text-secondary); margin: 10px 0 0; }
+  .day-card {
+    background: var(--bg-card-inner);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .day-card[open] { border-color: var(--border-color); }
+  .day-card summary {
+    list-style: none; cursor: pointer; padding: 16px 18px;
+    display: flex; gap: 14px; align-items: center;
+  }
+  .day-card summary::-webkit-details-marker { display: none; }
+  .day-badge {
+    flex: 0 0 auto; min-width: 54px; text-align: center;
+    background: var(--btn-gradient); color: #fff; border-radius: 10px;
+    font-weight: 800; font-size: 12px; letter-spacing: .08em;
+    text-transform: uppercase; padding: 8px 10px;
+  }
+  .day-head { flex: 1; min-width: 0; }
+  .day-theme { font-weight: 700; font-size: 16px; }
+  .day-sub { font-size: 12.5px; color: var(--text-secondary); margin-top: 2px; }
+  .day-body { padding: 0 18px 18px; }
+  .item {
+    border-left: 3px solid var(--accent-primary);
+    background: rgba(255,255,255,0.03);
+    border-radius: 0 10px 10px 0; padding: 12px 14px; margin-top: 12px;
+  }
+  .item.scan { border-left-color: var(--accent-secondary); }
+  .item .tag {
+    font-size: 11px; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent-secondary); margin-bottom: 4px;
+  }
+  .item.pink .tag { color: #F472B6; }
+  .item .nm { font-weight: 700; font-size: 15px; }
+  .item .why { font-size: 14px; color: var(--text-primary); margin-top: 4px; line-height: 1.5; }
+  .item .meta { font-size: 12.5px; color: var(--text-secondary); margin-top: 6px; line-height: 1.45; }
+  .item ol { margin: 8px 0 0 18px; font-size: 13px; color: var(--text-secondary); line-height: 1.45; }
+  .day-tip { margin-top: 14px; font-size: 14px; color: var(--text-secondary); font-style: italic; }
+  .week-grid-note { font-size: 13px; color: var(--text-secondary); margin: 6px 0 18px; }
+  .check-row { display:flex; gap:10px; align-items:flex-start; margin-top:22px; font-size:14px; color: var(--text-secondary); }
+  .check-row input { margin-top: 3px; }
+  @media print {
+    body { background: #fff; color: #000; padding: 0; }
+    .actions, .nav-row, .footer, #focus-box a { display: none !important; }
+    .day-card { break-inside: avoid; border: 1px solid #ccc; }
+    .day-card[open] summary { border-bottom: 1px solid #eee; }
+    * { color: #000 !important; background: transparent !important; }
+  }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="kicker">High Vibrancy Living</div>
+    <h1>Weekly Frequency Planner</h1>
+    <p>Get a simple 7-day plan built from the full Healy program database. Choose Pink programs, Blue scans, or both, and get a different week every time.</p>
+  </div>
+
+  <div class="card" id="question-card">
+
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span id="step-label">Question 1 of 4</span>
+        <span id="step-pct">25%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:25%"></div></div>
+    </div>
+
+    <!-- Question 1: focus areas -->
+    <div class="question-step active" data-step="1" data-type="multi">
+      <div class="question-text">What would you like support with this week?</div>
+      <div class="question-hint">Choose up to three areas. Your week will rotate through them so nothing is rushed.</div>
+      <div class="options multi" id="focus-options">
+        <button class="option-btn" data-value="Energy & exhaustion"><div class="option-label">Energy &amp; exhaustion</div>I'm tired and want to feel more alive.</button>
+        <button class="option-btn" data-value="Stress & overwhelm"><div class="option-label">Stress &amp; overwhelm</div>I feel stressed, overwhelmed or anxious.</button>
+        <button class="option-btn" data-value="Sleep & rest"><div class="option-label">Sleep &amp; rest</div>I'm struggling to sleep or feel rested.</button>
+        <button class="option-btn" data-value="Focus & brain fog"><div class="option-label">Focus &amp; brain fog</div>My mind feels scattered or foggy.</button>
+        <button class="option-btn" data-value="Physical discomfort & tension"><div class="option-label">Physical discomfort &amp; tension</div>I'm dealing with discomfort or tension.</button>
+        <button class="option-btn" data-value="Emotional wellbeing & mood"><div class="option-label">Emotional wellbeing &amp; mood</div>I'd like support with how I feel.</button>
+        <button class="option-btn" data-value="Confidence & self-worth"><div class="option-label">Confidence &amp; self-worth</div>I want to feel more confident and grounded.</button>
+        <button class="option-btn" data-value="Motivation, work & money blocks"><div class="option-label">Motivation, work &amp; money blocks</div>I feel stuck or held back.</button>
+        <button class="option-btn" data-value="Hormonal changes & women&#39;s wellbeing"><div class="option-label">Hormonal changes &amp; women's wellbeing</div>I'd like wellness support through changes.</button>
+        <button class="option-btn" data-value="General wellbeing & maintenance"><div class="option-label">General wellbeing &amp; maintenance</div>I want a simple ongoing routine.</button>
+        <button class="option-btn" data-value="Something else"><div class="option-label">Something else</div>My main concern isn't listed.</button>
+      </div>
+      <div class="pick-count" id="pick-count">0 of 3 chosen</div>
+      <div class="field" style="margin-top:20px;">
+        <label for="q1-details">Tell me a little more (optional, but it really helps)</label>
+        <div class="field-hint">The more you share, the better your week. Tell me what is actually happening, how long it has been going on, how it affects your days and what you would love to feel instead.</div>
+        <textarea id="q1-details" rows="3" placeholder="e.g. For the last few months I wake up exhausted and my mind races at bedtime. I would love to feel calm and clear through the day."></textarea>
+      </div>
+    </div>
+
+    <!-- Question 2: Pink / Blue / Both -->
+    <div class="question-step" data-step="2" data-type="options">
+      <div class="question-text">What would you like in your week?</div>
+      <div class="question-hint">Pink programs are microcurrent programs you run on your Healy with wristbands, sticky pads or the coil. Blue scans are resonance scans and analyses you choose in your app.</div>
+      <div class="options">
+        <button class="option-btn" data-value="pink"><div class="option-label">Pink programs</div>A daily microcurrent program (wristbands, pads or coil).</button>
+        <button class="option-btn" data-value="blue"><div class="option-label">Blue scans</div>A daily scan to explore with your intention.</button>
+        <button class="option-btn" data-value="both"><div class="option-label">Both</div>A Pink program every day plus Blue scans on four days.</button>
+      </div>
+    </div>
+
+    <!-- Question 3: experience -->
+    <div class="question-step" data-step="3" data-type="options">
+      <div class="question-text">Where are you on your Healy journey?</div>
+      <div class="question-hint">This keeps your week at the right level. No complicated routines!</div>
+      <div class="options">
+        <button class="option-btn" data-value="Brand new — I've barely used my Healy">Brand new — I've barely used my Healy.</button>
+        <button class="option-btn" data-value="Beginner — I've tried a few programs">Beginner — I've tried a few programs but I'm still figuring it out.</button>
+        <button class="option-btn" data-value="Finding my rhythm — I use it on and off">Finding my rhythm — I use it on and off but don't have a consistent routine.</button>
+        <button class="option-btn" data-value="Experienced — I use my Healy regularly">Experienced — I use my Healy regularly and want more targeted recommendations.</button>
+      </div>
+    </div>
+
+    <!-- Question 4: time + watch -->
+    <div class="question-step" data-step="4" data-type="options">
+      <div class="question-text">How much would you like to do each day?</div>
+      <div class="question-hint">Less is often better. You can always add more later.</div>
+      <div class="options">
+        <button class="option-btn" data-value="simple"><div class="option-label">Keep it simple</div>One Pink program a day.</button>
+        <button class="option-btn" data-value="more"><div class="option-label">I have a bit more time</div>Up to two Pink programs a day.</button>
+      </div>
+      <label class="check-row">
+        <input type="checkbox" id="has-watch">
+        <span>I also use the Healy Watch (include Watch programs)</span>
+      </label>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-back" id="back-btn" onclick="prevStep()" style="display:none;">Back</button>
+      <button class="btn-primary" id="next-btn" onclick="nextStep()">Next</button>
+    </div>
+    <div class="error-msg" id="step-error"></div>
+  </div>
+
+  <div id="loading" style="display:none;text-align:center;padding:40px 10px;color:var(--text-secondary);">
+    Building your week...
+  </div>
+
+  <!-- Results -->
+  <div id="results" style="display:none;">
+    <div class="result-card">
+      <div class="result-label">Your 7-day plan</div>
+      <div id="result-intro" class="result-body"></div>
+
+      <div class="result-label" style="margin-top:22px;">Your intention for the week</div>
+      <div id="result-intention" class="result-body"></div>
+
+      <div id="focus-box" class="result-body" style="margin-top:22px;">
+        <div class="result-label">Sharpen your focus first</div>
+        <div>Before you scan, use the Focus Generator to turn your intention into a clear, positive focus that is just right for you. A well-worded focus gives you a better scan.</div>
+        <p style="margin-top:12px;"><a class="btn-secondary" target="_blank" rel="noopener" href="https://www.frequencytoolkit.com/focus-generator" style="display:inline-block;text-decoration:none;">Open the Focus Generator</a></p>
+      </div>
+
+      <div class="week-grid-note" style="margin-top:22px;">Tap a day to open it. Skip a day whenever you need to rest.</div>
+      <div id="days"></div>
+
+      <p id="result-support" class="disclaimer"></p>
+    </div>
+
+    <div class="actions">
+      <button class="btn-primary" onclick="regenerate()">Shuffle my week</button>
+      <button class="btn-secondary" onclick="downloadPlan()">Download</button>
+      <button class="btn-secondary" onclick="window.print()">Print</button>
+      <button class="btn-secondary" onclick="resetTool()">Start over</button>
+    </div>
+
+    <p class="disclaimer" id="result-disclaimer">
+      This planner is for wellness exploration only. Healy programs support and harmonise the bioenergetic field and are not medical advice, diagnosis or treatment. Check each program is available in your Healy app and follow any cautions shown.
+    </p>
+  </div>
+
+    <div class="footer"><img src="/images/HVL%20Icon%20Logo%20final%20(trans).png" alt="High Vibrancy Living" class="footer-logo" onerror="this.style.display='none'"><p>High Vibrancy Living · Powered by AI · frequencytoolkit.com</p></div>
+
+</div>
+
+<script>
+const totalSteps = 4;
+const MAX_FOCUS = 3;
+let currentStep = 1;
+const state = { focus: [], mode: '', experience: '', time: '' };
+let currentPlan = null;
+
+function el(id) { return document.getElementById(id); }
+function showError(msg) { const e = el('step-error'); e.textContent = msg; e.style.display = 'block'; }
+function hideError() { el('step-error').style.display = 'none'; }
+
+function updateProgress() {
+  const pct = Math.round((currentStep / totalSteps) * 100);
+  el('progress-fill').style.width = pct + '%';
+  el('step-pct').textContent = pct + '%';
+  el('step-label').textContent = 'Question ' + currentStep + ' of ' + totalSteps;
+  el('back-btn').style.display = currentStep > 1 ? 'block' : 'none';
+  el('next-btn').textContent = currentStep === totalSteps ? 'Build my week' : 'Next';
+}
+
+function showStep(n) {
+  document.querySelectorAll('.question-step').forEach(s => s.classList.remove('active'));
+  document.querySelector('.question-step[data-step="' + n + '"]').classList.add('active');
+  updateProgress();
+  hideError();
+}
+
+// Single-choice options
+document.querySelectorAll('.question-step[data-type="options"] .option-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    this.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+    this.classList.add('selected');
+  });
+});
+
+// Multi-choice focus areas (up to 3)
+document.querySelectorAll('#focus-options .option-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const selected = document.querySelectorAll('#focus-options .option-btn.selected');
+    if (!this.classList.contains('selected') && selected.length >= MAX_FOCUS) {
+      showError('Choose up to three areas. Tap one to swap it.');
+      return;
+    }
+    hideError();
+    this.classList.toggle('selected');
+    const n = document.querySelectorAll('#focus-options .option-btn.selected').length;
+    el('pick-count').textContent = n + ' of ' + MAX_FOCUS + ' chosen';
+  });
+});
+
+function chosen(step) {
+  const s = document.querySelector('.question-step[data-step="' + step + '"] .option-btn.selected');
+  return s ? s.dataset.value : null;
+}
+
+function nextStep() {
+  hideError();
+  if (currentStep === 1) {
+    state.focus = [...document.querySelectorAll('#focus-options .option-btn.selected')].map(b => b.dataset.value);
+    state.details = el('q1-details').value.trim();
+    if (!state.focus.length) { showError('Please choose at least one area.'); return; }
+    if (state.focus.length === 1 && state.focus[0] === 'Something else' && !state.details) {
+      showError('Please tell me a little more about what you need support with.'); return;
+    }
+  } else if (currentStep === 2) {
+    state.mode = chosen(2);
+    if (!state.mode) { showError('Please choose Pink, Blue or both.'); return; }
+  } else if (currentStep === 3) {
+    state.experience = chosen(3);
+    if (!state.experience) { showError('Please make a selection before continuing.'); return; }
+  } else if (currentStep === 4) {
+    state.time = chosen(4);
+    if (!state.time) { showError('Please make a selection before continuing.'); return; }
+    state.hasWatch = el('has-watch').checked;
+    generate();
+    return;
+  }
+  currentStep++;
+  showStep(currentStep);
+}
+
+function prevStep() { if (currentStep > 1) { currentStep--; showStep(currentStep); } }
+
+// Remembers (in this browser only) what this person was recently given.
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem('healyWeeklyHistory') || '[]'); } catch (e) { return []; }
+}
+function saveHistory(entries) {
+  try {
+    localStorage.setItem('healyWeeklyHistory',
+      JSON.stringify(loadHistory().concat(entries || []).slice(-80)));
+  } catch (e) { /* storage unavailable: the plan still works */ }
+}
+
+async function generate() {
+  el('question-card').style.display = 'none';
+  el('results').style.display = 'none';
+  el('loading').style.display = 'block';
+  try {
+    const res = await fetch('/api/weekly-planner', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        focus: state.focus, details: state.details, mode: state.mode,
+        experience: state.experience, time: state.time,
+        hasWatch: state.hasWatch, history: loadHistory()
+      })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+    currentPlan = data;
+    saveHistory(data.history_entries);
+    showResults(data);
+  } catch (err) {
+    el('loading').style.display = 'none';
+    el('question-card').style.display = 'block';
+    showError(err.message);
+  }
+}
+
+function regenerate() { generate(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+function node(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function showResults(data) {
+  el('result-intro').textContent = data.intro || '';
+  el('result-intention').textContent = data.intention || '';
+  el('result-support').textContent = data.support_note || '';
+
+  const days = el('days');
+  days.replaceChildren();
+
+  data.days.forEach((d, i) => {
+    const card = node('details', 'day-card');
+    if (i === 0) card.open = true;
+
+    const sum = node('summary');
+    sum.append(node('div', 'day-badge', 'Day ' + d.day));
+    const head = node('div', 'day-head');
+    head.append(node('div', 'day-theme', d.theme));
+    const bits = [];
+    if (d.pink.length) bits.push(d.pink.map(p => p.name).join(' + '));
+    if (d.scan) bits.push('Scan: ' + d.scan.name);
+    head.append(node('div', 'day-sub', bits.join('  ·  ')));
+    sum.append(head);
+    card.append(sum);
+
+    const body = node('div', 'day-body');
+
+    d.pink.forEach(p => {
+      const it = node('div', 'item pink');
+      it.append(node('div', 'tag', 'Pink program'));
+      it.append(node('div', 'nm', p.name));
+      if (p.why) it.append(node('div', 'why', p.why));
+      const meta = [];
+      if (p.how_to_use) meta.push('Use with: ' + p.how_to_use);
+      if (p.note) meta.push('Note: ' + p.note);
+      if (meta.length) it.append(node('div', 'meta', meta.join('. ')));
+      body.append(it);
+    });
+
+    if (d.scan) {
+      const it = node('div', 'item scan');
+      it.append(node('div', 'tag', 'Blue ' + d.scan.kind.toLowerCase()));
+      it.append(node('div', 'nm', d.scan.name));
+      if (d.scan.why) it.append(node('div', 'why', d.scan.why));
+      if (d.scan.how_to) it.append(node('div', 'meta', d.scan.how_to));
+      body.append(it);
+    }
+
+    if (d.tip) body.append(node('div', 'day-tip', d.tip));
+    card.append(body);
+    days.append(card);
+  });
+
+  el('loading').style.display = 'none';
+  el('results').style.display = 'block';
+  el('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function downloadPlan() {
+  if (!currentPlan) return;
+  const r = currentPlan;
+  const lines = [
+    'HIGH VIBRANCY LIVING — WEEKLY FREQUENCY PLANNER', '',
+    r.intro || '', '',
+    'INTENTION FOR THE WEEK', r.intention || '', '',
+    'TIP: use the Focus Generator to sharpen your focus before you scan:',
+    'https://www.frequencytoolkit.com/focus-generator', ''
+  ];
+  r.days.forEach(d => {
+    lines.push('DAY ' + d.day + ' — ' + d.theme);
+    d.pink.forEach(p => {
+      lines.push('  Pink: ' + p.name + (p.how_to_use ? ' (' + p.how_to_use + ')' : ''));
+      if (p.why) lines.push('    ' + p.why);
+      if (p.note) lines.push('    Note: ' + p.note);
+    });
+    if (d.scan) {
+      lines.push('  Blue scan: ' + d.scan.name);
+      if (d.scan.why) lines.push('    ' + d.scan.why);
+    }
+    if (d.tip) lines.push('  Tip: ' + d.tip);
+    lines.push('');
+  });
+  if (r.support_note) lines.push(r.support_note, '');
+  lines.push(r.disclaimer || 'For wellness exploration only. Not medical advice.');
+
+  const blob = new Blob([lines.join('\n')], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'healy-weekly-plan.txt'; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function resetTool() {
+  currentStep = 1; currentPlan = null;
+  document.querySelectorAll('.option-btn.selected').forEach(b => b.classList.remove('selected'));
+  el('pick-count').textContent = '0 of ' + MAX_FOCUS + ' chosen';
+  el('q1-details').value = ''; el('has-watch').checked = false;
+  el('results').style.display = 'none';
+  el('question-card').style.display = 'block';
+  showStep(1);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

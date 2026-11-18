@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/weekly-planner", "destination": "/public/weekly-planner.html" },
     { "source": "/(.*)", "destination": "/public/$1" }
   ]
 }
